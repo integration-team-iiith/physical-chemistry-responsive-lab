@@ -1,0 +1,176 @@
+body{
+	width:1000px; 	
+    height:700px; 
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container{
+    width:1000px; 	
+    height:660px; 
+    position: absolute;
+    border: 1px solid black;
+    border-color: black;
+}
+
+hr{
+	border-style: dotted;
+	width: 1px;
+	color: grey;
+}
+
+#demo{
+	font-family: Parkavenue, cursive;
+	font-size: 90%;
+}
+	
+#aspirine{
+	position: absolute;
+	margin-top: 10%;
+	left: 3%;
+	cursor: pointer;
+}
+
+#nitrophenol{
+	position: absolute;
+	margin-top: 25%;
+	left: 2%;
+	cursor: pointer;
+}
+
+#sample{
+	z-index: 998;
+	position: absolute;
+	margin-top: 8%;
+	left: 35%;
+	cursor: pointer;
+}
+
+#solvent{
+	z-index: 998;
+	position: absolute;
+	margin-top: 8%;
+	left: 75%;
+	cursor: pointer;
+}
+
+#empty-bottle{
+	z-index: 998;
+	position: absolute;
+	margin-top: 26%;
+	left: 53%;
+	cursor: pointer;
+}
+
+#spatula{
+	z-index: 998;
+	position: absolute;
+	margin-top: 3%;
+	margin-left: 28%;
+	width: 8%;
+	height: 12%;
+	cursor: pointer;
+}
+#injectors{
+	z-index: 998;
+	position: absolute;
+	margin-top: 2%;
+	margin-left: 30%;
+	cursor: pointer;
+
+}
+
+#injector{
+	z-index: 998;
+	position: absolute;
+	height: 8%;
+	width: 2%;
+	margin-left:30%;
+	margin-top: 2%; 
+	cursor: pointer;
+}
+
+#injector1{
+	z-index: 2;
+	position: absolute;
+	width: 1.5%;
+	height: 3%;
+	margin-left: 30.2%;
+	margin-top: 1.5%;
+	cursor: pointer;
+}
+
+#mass-spec{
+	position: absolute;
+	margin-top: 6%;
+}
+
+#evaluate{
+	position: absolute;
+	margin-top: 22%;
+	left: 68%;
+	cursor: pointer;
+}
+
+#demo{
+	position: absolute;
+	margin-top: 52%;
+}
+
+#action{
+	width: 480px;
+	height: 300px;
+}
+
+#graph-plot{
+	position: absolute;
+	/*top: 1px;*/
+	left: 60px;
+
+	height:300px;
+}
+
+         
+/*#syringe{
+    background-image: url(images/injector.png);
+    background-image: url(images/injector1.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-top:95px;
+    margin-bottom:60px;
+    -webkit-animation-duration: 10s;
+    animation-duration: 10s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+   }
+         
+   
+   @-webkit-keyframes fadeInDown {
+            0% {
+               opacity: 0;
+               -webkit-transform: translateY(-20px);
+            }
+            100% {
+               opacity: 1;
+               -webkit-transform: translateY(0);
+            }
+         }
+         
+         @keyframes fadeInDown {
+            0% {
+               opacity: 0;
+               transform: translateY(-20px);
+            }
+            100% {
+               opacity: 1;
+               transform: translateY(0);
+            }
+         }
+         
+         .fadeInDown {
+            -webkit-animation-name: fadeInDown;
+            animation-name: fadeInDown;
+         }
+     
+*/
