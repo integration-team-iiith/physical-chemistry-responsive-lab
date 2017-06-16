@@ -43,7 +43,7 @@ function cursorPointers(id1, id2){
 
 
 /* If a person clicks on aspirin btn then this function is called, function hides both buttons when someone clicks on aspirin button
-*/
+and sets y to 0*/
 function removeBtn1(){
     $('#aspirin').hide();
     $('#asprntxt').hide();
@@ -55,7 +55,8 @@ function removeBtn1(){
 }
 
 
-/* If a person clicks on caffine btn then this function is called, function hides both buttons when someone clicks on caffine button
+/* If a person clicks on caffine btn then this function is called, function hides both buttons when someone clicks on caffine button and 
+sets variable y to 1
 */
 function removeBtn2(){
     $('#aspirin').hide();
@@ -68,7 +69,7 @@ function removeBtn2(){
 }
 
 
-/* function simply transffers some amount of sample to mortar*/
+/* function simply transffers some amount of sample to mortar. function just shows filling of spoon(by using gify)*/
 
 function clickSampl(){
     $('#spoonfill').show();
@@ -84,7 +85,7 @@ function emptySpoon(){
     setTimeout(removeSpoon,2800);
 }
 
-/* just to hide spoon */
+/* function hides spoon and activates onclick function on nozal bottol */
 
 function removeSpoon(){
     $('#emptyspoon').hide();
@@ -98,7 +99,7 @@ function sirinj(){
     setTimeout(replaceSirinj,2400);
 }
 
-/* function empties sirinj */
+/* function empties sirinj into mortar */
 
 function replaceSirinj(){
     $('#fillsirinj').hide();
@@ -107,13 +108,14 @@ function replaceSirinj(){
 }
 
 /* to hide sirinj*/
+
 function removeSirinj(){
     $('#emptysirinj').hide();
     $('#mortar').on("click", function(){ mix() ;});
     document.getElementById('instr').innerHTML = "click on the mortar to make a fine paste of sample"
 }
 
-/* to mix the solution in mortar*/
+/* function calls gify image to mix the solution in mortar*/
 
 function mix(){
     $('#mortar').show();
@@ -121,6 +123,8 @@ function mix(){
     img.src = "bowl.gif";
     setTimeout(offMortar,3000); 
 }
+
+/* function stops movement of mortar and also defines onclick function on mortar to transffer mixture onto the IR disc*/
 
 
 function offMortar(){
@@ -133,17 +137,23 @@ function offMortar(){
 }
 
 
+/* just to show IR disc and moving of syringe to pour mixture into tht IR disc */
+
 function putinplat(){
     $('#spoonfill2').show();
     $('#plate').show();
     setTimeout(fillplate,2500);
 }
 
+
+
 function fillplate(){
     $('#spoonfill2').hide();
     $('#emptyspoon2').show();
     setTimeout(removeSpoon2,2500);
 }
+
+/* function removes syringe and defines onclick on IR disc to form a thin film*/
 
 function removeSpoon2(){
     document.getElementById('instr').innerHTML = "Click on IR discs Place carefully the other disc  and press to form a thin film."
@@ -152,6 +162,9 @@ function removeSpoon2(){
     $('#plate').on("click",function(){ startexp() ;});
     $('#fill').on('click',function(){startexp() ;});
 }
+
+
+/* function moves holder on each other and defines onclick function to show the spectrometer with uses of fo helper function */
 
 function startexp(){
     if(y==1){
@@ -253,6 +266,8 @@ function green23(){
 }
 
 
+/* function shows spectrometer and defines onclick to start the experiment */
+
 function spectro1(){
     $('#machine').show();
     var img = document.getElementById("machine");
@@ -265,6 +280,8 @@ function spectro(){
     $('#machine').show();
     setTimeout(spectro1,3500);
 }
+
+
 
 function evaluate(){
     $('#exp').show();
