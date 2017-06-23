@@ -1,0 +1,290 @@
+#pipe1{
+    position: absolute;
+    left: 7%;
+    top: 2%;
+    height: 95%;
+    width: 80%;
+}
+
+#round1{
+    position: absolute;
+    top: 24%;
+    left: 37.5%;
+    height: 10%;
+}
+
+
+#round2{
+    position: absolute;
+    top: 24.5%;
+    left: 40.2%;
+    height: 10%;
+}
+
+
+#round3{
+    position: absolute;
+    top: 25.5%;
+    left: 43.5%;
+    height: 10%;
+}
+
+#irplate{
+    position: absolute;
+    top: 23.5%;
+    left: 28%;
+    width: 5%;
+}
+
+#irplate1{
+    position: absolute;
+    top: 76%;
+    left: 60%;
+}
+
+#spring{
+    position: absolute;
+    top: 21%;
+    left: 26%;
+    width: 8%;
+}
+
+#spring1{
+    position: absolute;
+    top: 60%;
+    left: 60%;
+}
+
+#north{
+    position: absolute;
+    top: 15%;
+    left: 48%;
+}
+
+#south{
+    position: absolute;
+    top: 40%;
+    left: 48%;
+}
+
+
+#syringe{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 25%;
+}
+
+
+#greennew{
+    position: absolute;
+    top: 60%;
+    left: 47%;
+    width: 35%;
+}
+
+
+#S{
+    position: absolute;
+    top: 44%;
+    left: 49%;
+}
+
+#N{
+    position: absolute;
+    top: 19%;
+    left: 49%;
+}
+
+#load{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    height: 7%;
+}
+
+
+#loadtxt{
+    position: absolute;
+    top: 6%;
+    left: 12%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+#ionisation{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    height: 7%;
+}
+
+#ionisationtxt{
+    position: absolute;
+    top: 17%;
+    left: 11%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+
+#acceleration{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    height: 7%;
+}
+
+
+#accelerationtxt{
+    position: absolute;
+    top: 27%;
+    left: 11%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+
+#deflection{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    height: 7%;
+}
+
+
+#deflectiontxt{
+    position: absolute;
+    top: 37%;
+    left: 11%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+#evaluation{
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    height: 7%;
+}
+
+
+#evaluationtxt{
+    position: absolute;
+    top: 47%;
+    left: 11%;font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+#innerinstr{
+    position: absolute;
+    top: 90%;
+    width: 70%;
+    left: 8%;
+    display: none;
+}
+
+#innerinstrtxt{
+    position: absolute;
+    top: 91%;
+    left: 9%;
+    display: none;
+}
+
+#ylwdrop1{
+    display: none;
+}
+
+#ylwdrop2{
+    display: none;
+}
+
+#ylwdrop3{
+    display: none;
+}
+
+#ylwdrop4{
+    display: none;
+}
+
+#ylwdrop5{
+    display: none;
+}
+
+#ion1{
+    display: none;
+}
+
+
+#ion2{
+    display: none;
+}
+
+#ion3{
+    display: none;
+}
+
+#ion4{
+    display: none;
+}
+
+#ion5{
+    display: none;
+}
+
+#ion6{
+    display: none;
+}
+
+#ion7{
+    display: none;
+}
+
+#ion8{
+    display: none;
+}
+
+#temp1{
+    display: none;
+}
+
+#temp2{
+    display: none;
+}
+
+#rainbow{
+    display: none;
+}
+
+#box{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    display: none;
+}
+
+#box1{
+    display: none;
+}
+
+#arrow{
+    position: absolute;
+    top: 8%;
+    left: 25%;
+    height: 7%;
+    display:none
+}
+
+#arrow1{
+    display: none;
+}
+
+
+#arrow2{
+    display: none;
+}

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" height="3219.4px" width="35.95px" xmlns="http://www.w3.org/2000/svg">
+  <g transform="matrix(1.0, 0.0, 0.0, 1.0, 0.05, 0.05)">
+    <use height="805.4" transform="matrix(1.0, 0.0, 0.0, 1.0, 2.3, 2413.95)" width="33.6" xlink:href="#sprite0"/>
+    <use height="805.4" transform="matrix(1.0, 0.0, 0.0, 1.0, 0.15, 1611.05)" width="33.6" xlink:href="#sprite0"/>
+    <use height="805.4" transform="matrix(1.0, 0.0, 0.0, 1.0, -0.05, 802.25)" width="33.6" xlink:href="#sprite0"/>
+    <use height="805.4" transform="matrix(1.0, 0.0, 0.0, 1.0, 0.15, -0.05)" width="33.6" xlink:href="#sprite0"/>
+  </g>
+  <defs>
+    <g id="sprite0" transform="matrix(1.0, 0.0, 0.0, 1.0, 0.05, 0.05)">
+      <use height="54.15" transform="matrix(1.0, 0.0, 0.0, 1.0, -0.05, -0.05)" width="31.1" xlink:href="#sprite1"/>
+      <use height="54.15" transform="matrix(1.0, 0.0, 0.0, 1.0, 1.6, 53.45)" width="31.1" xlink:href="#sprite1"/>
+      <use height="54.15" transform="matrix(1.0, 0.0, 0.0, 1.0, 1.6, 103.45)" width="31.1" xlink:href="#sprite1"/>
+      <use height="54.15" transform="matrix(1.0, 0.0, 0.0, 1.0, 1.6, 153.45)" width="31.1" xlink:href="#sprite1"/>
+      <use height="54.15" transform="matrix(1.0, 0.0, 0.0, 1.0, 0.8, 196.7)" width="31.1" xlink:href="#sprite1"/>
+      <use height="54.15" transform="matrix(1.0, 0.0, 0.0, 1.0, 2.45, 250.2)" width="31.1" xlink:href="#sprite1"/>
+      <use height="54.15" transform="matrix(1.0, 0.0, 0.0, 1.0, 2.45, 300.2)" width="31.1" xlink:href="#sprite1"/>
+      <use height="54.15" transform="matrix(1.0, 0.0, 0.0, 1.0, 2.45, 350.2)" width="31.1" xlink:href="#sprite1"/>
+      <use height="54.15" transform="matrix(1.0, 0.0, 0.0, 1.0, 0.8, 397.7)" width="31.1" xlink:href="#sprite1"/>
+      <use height="54.15" transform="matrix(1.0, 0.0, 0.0, 1.0, 2.45, 451.2)" width="31.1" xlink:href="#sprite1"/>
+      <use height="54.15" transform="matrix(1.0, 0.0, 0.0, 1.0, 2.45, 501.2)" width="31.1" xlink:href="#sprite1"/>
+      <use height="54.15" transform="matrix(1.0, 0.0, 0.0, 1.0, 2.45, 551.2)" width="31.1" xlink:href="#sprite1"/>
+      <use height="54.15" transform="matrix(1.0, 0.0, 0.0, 1.0, 0.8, 597.7)" width="31.1" xlink:href="#sprite1"/>
+      <use height="54.15" transform="matrix(1.0, 0.0, 0.0, 1.0, 2.45, 651.2)" width="31.1" xlink:href="#sprite1"/>
+      <use height="54.15" transform="matrix(1.0, 0.0, 0.0, 1.0, 2.45, 701.2)" width="31.1" xlink:href="#sprite1"/>
+      <use height="54.15" transform="matrix(1.0, 0.0, 0.0, 1.0, 2.45, 751.2)" width="31.1" xlink:href="#sprite1"/>
+    </g>
+    <g id="sprite1" transform="matrix(1.0, 0.0, 0.0, 1.0, 6.05, 49.1)">
+      <use height="54.15" transform="matrix(1.0, 0.0, 0.0, 1.0, -6.05, -49.1)" width="31.1" xlink:href="#shape0"/>
+    </g>
+    <g id="shape0" transform="matrix(1.0, 0.0, 0.0, 1.0, 6.05, 49.1)">
+      <path d="M20.45 -37.15 Q25.0 -26.1 25.0 -17.0 25.0 -7.9 20.45 -1.45 15.9 5.0 9.5 5.0 3.1 5.0 -1.45 -1.45 -6.0 -7.9 -6.0 -17.0 -6.0 -26.1 -1.45 -37.9 3.1 -49.75 9.5 -49.0 15.9 -48.25 20.45 -37.15" fill="#0066ff" fill-rule="evenodd" stroke="none"/>
+      <path d="M20.45 -37.15 Q25.0 -26.1 25.0 -17.0 25.0 -7.9 20.45 -1.45 15.9 5.0 9.5 5.0 3.1 5.0 -1.45 -1.45 -6.0 -7.9 -6.0 -17.0 -6.0 -26.1 -1.45 -37.9 3.1 -49.75 9.5 -49.0 15.9 -48.25 20.45 -37.15 Z" fill="none" stroke="#0033ff" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.1"/>
+    </g>
+  </defs>
+</svg>

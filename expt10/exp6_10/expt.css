@@ -1,0 +1,564 @@
+#hrline1{
+    position: absolute;
+    z-index: 4;
+    top: 60%;
+    width: 42%;
+    left: 7%;
+    border: 1px dotted black;
+    border-style: none none dotted;
+    color: white;
+    background-color: white;
+}
+
+
+#hrline2{
+    position: absolute;
+    z-index: 4;
+    left: 49%;
+    top: 50%;
+    width: 42%;
+    border: 1px dotted black;
+    border-style: none none dotted;
+    color: white;
+    background-color: white;
+}
+
+#vrline1{
+    position: absolute;
+    left: 49%;
+    border-left: thin dotted black;
+    z-index: 4;
+    height: 100%;
+    top: 4%;
+}
+
+
+#instr{
+    position: absolute;
+    top: 55%;
+    left: 2%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 160%;
+}
+
+
+#graph{
+    position: absolute;
+    top: 52%;
+    left: 54%;
+    height: 43%;
+    width: 33%;
+    z-index: 1;
+}
+
+#aspirin{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 9%;
+    height: 7%;
+    border: darkblue;
+}
+
+#aspirintxt{
+    position: absolute;
+    top: 16%;
+    left: 6%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 160%;
+    font-weight: bold;
+}
+
+
+#nitrophenol{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    width: 9%;
+    height: 7%;
+    border: darkred;
+}
+
+#nitrotxt{
+    position: absolute;
+    top: 26%;
+    left: 6%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 160%;
+    font-weight: bold;
+}
+
+
+#samplsol{
+    position: absolute;
+    left: 18%;
+    top: 9%;
+    height: 17%;
+}
+
+#samplsoltxt{
+    position: absolute;
+    left: 18%;
+    top: 27%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 160%;
+    font-weight: bold;
+}
+
+#solvent{
+    position: absolute;
+    left: 40%;
+    top: 9%;
+    height: 17%;
+}
+
+
+
+#solvent1{
+    position: absolute;
+    left: 40%;
+    top: 9%;
+    height: 17%;
+    display: none;
+}
+
+
+#solventtxt{
+    position: absolute;
+    left: 40%;
+    top: 27%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 160%;
+    font-weight: bold;
+}
+
+#sample{
+    position: absolute;
+    left: 30%;
+    top: 35%;
+    height: 17%;
+}
+
+
+#sample2{
+    position: absolute;
+    left: 30%;
+    top: 35.3%;
+    height: 20%;
+    width: 5.2%;
+    display: none;
+}
+
+
+#changebeaker{
+    position: absolute;
+    left: 30%;
+    top: 35.3%;
+    height: 20%;
+    width: 5.2%;
+    display: none;
+}
+
+#sampletxt{
+    position: absolute;
+    left: 28.5%;
+    top: 53%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 160%;
+    font-weight: bold;
+}
+
+#spectro{
+    position: absolute;
+    left: 20%;
+    top: 65%;
+    height: 30%;
+}
+
+#spectrotxt{
+    font-weight: bold;
+    position: absolute;
+    left: 23%;
+    top: 66%;
+    font-size: 120%;
+}
+
+#evaluate{
+    position: absolute;
+    left: 40%;
+    top: 75%;
+    width: 8%;
+    height: 8%;
+}
+
+#evlttxt{
+    position: absolute;
+    left: 41.5%;
+    top: 77.5%;
+    color: yellow;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 160%;
+    font-weight: bold;
+}
+
+#blue1{
+    position: absolute;
+    left: 40.3%;
+    top: 2%;
+    height: 15%;
+    width: 4%;
+    display: none;
+}
+
+#green1{
+    position: absolute;
+    left: 30.5%;
+    top: 20%;
+    height: 30%;
+    width: 4%;
+    display: none;
+    z-index: 2;
+}
+
+
+
+#spoon1{
+    position: absolute;
+    left: 16%;
+    top: 3%;
+    height: 20%;
+    display: none;
+}
+
+#spoon2{
+    position: absolute;
+    height: 20%;
+    top: 27%;
+    left:28%;
+    display: none;
+}
+
+#fill{
+    position: absolute;
+    top: 50%;
+    left: 30.5%;
+    width: 4%;
+    display: none;
+}
+
+
+#syringe2{
+    position: absolute;
+    height: 19%;
+    top: 24%;
+    left: 32%;
+    display: none;
+}
+
+#syringe1{
+    position: absolute;
+    height: 19%;
+    left: 41.5%;
+    top: 3%;
+    display: none;
+}
+
+
+#pipe1{
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    width: 35%;
+}
+
+#round1{
+    position: absolute;
+    left: 63.3%;
+    top: 15%;
+    z-index: 2;
+    width: 0.4%;
+}
+
+
+#round3{
+    position: absolute;
+    left: 66%;
+    top: 15.9%;
+    z-index: 2;
+    width: 0.4%;
+}
+
+
+#round2{
+    position: absolute;
+    left: 64.6%;
+    top: 15.5%;
+    z-index: 2;
+    width: 0.4%;
+}
+
+#irplate{
+    position: absolute;
+    left: 59%;
+    top: 15%;
+    width: 2%;
+    transform: rotate(-1deg);
+}
+
+#spring{
+    position: absolute;
+    left: 58%;
+    top: 14%;
+    width: 3.5%;
+}
+
+#north{
+    position: absolute;
+    left: 68%;
+    top: 9%;
+    height: 5%;
+}
+
+#N{
+    position: absolute;
+    left: 68.5%;
+    top: 11%;
+}
+
+
+#south{
+    position: absolute;
+    top: 22%;
+    left: 68%;
+    height: 5%;
+}
+
+
+#S{
+    position: absolute;
+    top: 24%;
+    left: 68.5%;
+}
+
+#greennew{
+    position: absolute;
+    top: 35%;
+    left: 53%;
+    width: 30%;
+}
+
+#greennew1{
+    position: absolute;
+    top: 35%;
+    left: 53%;
+    width: 30%;
+    display: none;
+}
+
+#ylwdrop1{
+    position: absolute;
+    left: 75%;
+    top: 40%;
+    width: 0.7%;
+    display: none;
+}
+
+
+#ylwdrop2{
+    position: absolute;
+    left: 75%;
+    top: 42%;
+    width: 0.7%;
+    display: none;
+}
+
+
+#ylwdrop3{
+    position: absolute;
+    left: 73%;
+    top: 40%;
+    width: 0.7%;
+    display: none;
+}
+
+
+#ylwdrop4{
+    position: absolute;
+    left: 72%;
+    top: 41%;
+    width: 0.7%;
+    display: none;
+}
+
+
+#ylwdrop5{
+    position: absolute;
+    left: 73%;
+    top: 42%;
+    width: 0.7%;
+    display: none;
+}
+
+#temp1{
+    position: absolute;
+    left: 55%;
+    top: 33%;
+    width: 10%;
+    display: none;
+}
+
+#ion1{
+    position: absolute;
+    left: 57%;
+    top: 36%;
+    width: 1.5%;
+    display: none;
+}
+
+
+#ion2{
+    position: absolute;
+    left: 57.5%;
+    top: 38%;
+    width: 1.5%;
+    display: none;
+}
+
+
+#ion3{
+    position: absolute;
+    left: 58%;
+    top: 40%;
+    width: 1.5%;
+    display: none;
+}
+
+
+#ion4{
+    position: absolute;
+    left: 58%;
+    top: 36%;
+    width: 1.5%;
+    display: none;
+}
+
+
+#ion5{
+    position: absolute;
+    left: 60%;
+    top: 40%;
+    width: 1.5%;
+    display: none;
+}
+
+
+#ion6{
+    position: absolute;
+    left: 60%;
+    top: 37%;
+    width: 1.5%;
+    display: none;
+}
+
+
+#ion7{
+    position: absolute;
+    left: 58%;
+    top: 42%;
+    width: 1.5%;
+    display: none;
+}
+
+
+#ion8{
+    position: absolute;
+    left: 61%;
+    top: 41%;
+    width: 1.5%;
+    display: none;
+}
+
+#temp2{
+    position: absolute;
+    left: 60%;
+    top: 30%;
+    display: none;
+}
+
+
+#hrblue{
+    position: absolute;
+    top: 60.5%;
+    left: 30%;
+    display: none;
+}
+
+
+#hrgreen{
+    position: absolute;
+    top: 60.5%;
+    left: 30%;
+    display: none;
+}
+
+#rainbow{
+    position: absolute;
+    top: 35%;
+    left: 65%;
+    height: 15%;
+    transform: rotate(20deg);
+    display: none;
+}
+
+#box1{
+    position: absolute;
+    top: 13%;
+    left: 63%;
+    height: 8%;
+    display: none;
+}
+
+#box{
+    position: absolute;
+    top: 11%;
+    left: 56%;
+    height: 8%;
+    display: none;
+}
+
+#arrow{
+    position: absolute;
+    top: 5%;
+    left: 58%;
+    display: none;
+}
+
+#arrow1{
+    position: absolute;
+    top: 6%;
+    left: 65%;
+    display: none;
+}
+
+#arrow2{
+    position: absolute;
+    top: 20%;
+    left: 54%;
+    height: 15%;
+    display: none;
+}
+
+#innerinstr{
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    display: none;
+}
+
+
+#innerinstrtxt{
+    position: absolute;
+    top: 47.5%;
+    left: 51%;
+    display: none;
+}
