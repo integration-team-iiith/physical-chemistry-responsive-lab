@@ -60,6 +60,22 @@ function ionisation(){
     $("#ion6").show();
     $("#ion7").show();
     $("#ion8").show();
+    $("#negdrop1").show();
+    $("#negdrop2").show();
+    $("#negdrop3").show();
+    $("#negdrop4").show();
+    $("#negdrop5").show();
+    $("#negdrop6").show();
+    $("#negdrop7").show();
+    $("#negdrop8").show();
+    setInterval(helper2,50);
+    setInterval(helper3,50);
+    setInterval(helper4,50);
+    setInterval(helper5,50);
+    setInterval(helper6,50);
+    setInterval(helper7,50);
+    setInterval(helper8,50);
+    setInterval(helper9,50);
     $("#ion1").velocity({translateX: 10, translateY: 10}, {loop: true});
     $("#ion2").velocity({translateX: 10, translateY: 10}, {loop: true});
     $("#ion3").velocity({translateX: 10, translateY: 10}, {loop: true});
@@ -75,6 +91,54 @@ function ionisation(){
     $("#accelerationtxt").on("click", function(){acceleration();});
 }
 
+
+function helper2(){
+    $("#negdrop1").velocity({translateY: 300}, {duration:400});
+    $("#negdrop1").velocity("reverse", {duration:1});
+}
+
+
+function helper3(){
+    $("#negdrop2").velocity({translateY: 300}, {duration:500});
+    $("#negdrop2").velocity("reverse", {duration:1});
+}
+
+
+function helper4(){
+    $("#negdrop3").velocity({translateY: 300}, {duration:600});
+    $("#negdrop3").velocity("reverse", {duration:1});
+}
+
+
+function helper5(){
+    $("#negdrop4").velocity({translateY: 300}, {duration:700});
+    $("#negdrop4").velocity("reverse", {duration:1});
+}
+
+
+function helper6(){
+    $("#negdrop5").velocity({translateY: 300}, {duration:800});
+    $("#negdrop5").velocity("reverse", {duration:1});
+}
+
+
+function helper7(){
+    $("#negdrop6").velocity({translateY: 300}, {duration:900});
+    $("#negdrop6").velocity("reverse", {duration:1});
+}
+
+
+function helper8(){
+    $("#negdrop7").velocity({translateY: 300}, {duration:300});
+    $("#negdrop7").velocity("reverse", {duration:1});
+}
+
+
+function helper9(){
+    $("#negdrop8").velocity({translateY: 300}, {duration:800});
+    $("#negdrop8").velocity("reverse", {duration:1});
+}
+
 function acceleration(){
     $("#temp1").hide();
     $("#ion1").hide();
@@ -85,6 +149,14 @@ function acceleration(){
     $("#ion6").hide();
     $("#ion7").hide();
     $("#ion8").hide();
+    $("#negdrop1").hide();
+    $("#negdrop2").hide();
+    $("#negdrop3").hide();
+    $("#negdrop4").hide();
+    $("#negdrop5").hide();
+    $("#negdrop6").hide();
+    $("#negdrop7").hide();
+    $("#negdrop8").hide();
     $("#arrow1").show();
     $("#box1").show();
     $("#temp2").show();
