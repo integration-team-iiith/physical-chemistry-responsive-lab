@@ -190,8 +190,18 @@
 #emptysirinj{
     position: absolute;
     height: 20%;
-    left: 23%;
-    top: 25%;
+    left: 23.5%;
+    top: 20%;
+    z-index: 2;
+    display: none;
+}
+
+
+#drop{
+    position: absolute;
+    top: 28%;
+    left: 24%;
+    height: 5%;
     display: none;
 }
 

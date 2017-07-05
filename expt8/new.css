@@ -1,0 +1,472 @@
+#load{
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    height: 7%;
+    z-index: 1;
+}
+
+
+#loadtxt{
+    position: absolute;
+    top: 6%;
+    left: 12%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 150%;
+    font-weight: bold;
+    z-index: 1;
+}
+
+#ionisation{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    height: 7%;
+    z-index: 1;
+}
+
+#ionisationtxt{
+    position: absolute;
+    top: 17%;
+    left: 11%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 150%;
+    font-weight: bold;
+    z-index: 1;
+}
+
+
+#acceleration{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    height: 7%;
+    z-index: 1;
+}
+
+
+#accelerationtxt{
+    position: absolute;
+    top: 27%;
+    left: 11%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 150%;
+    font-weight: bold;
+    z-index: 1;
+}
+
+
+#deflection{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    height: 7%;
+    z-index: 1;
+}
+
+
+#deflectiontxt{
+    position: absolute;
+    top: 37%;
+    left: 11%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 150%;
+    font-weight: bold;
+    z-index: 1;
+}
+
+#evaluation{
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    height: 7%;
+    z-index: 1;
+}
+
+
+#evaluationtxt{
+    position: absolute;
+    top: 47%;
+    left: 11%;font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 150%;
+    font-weight: bold;
+    z-index: 1;
+}
+
+#innerinstr{
+    position: absolute;
+    top: 95%;
+    width: 70%;
+    left: 8%;
+    display: none;
+    z-index: 1;
+}
+
+#innerinstrtxt{
+    position: absolute;
+    top: 96%;
+    left: 9%;
+    display: none;
+    z-index: 1;
+}
+
+
+
+#temp2{
+    position: absolute;
+    top: 57%;
+    left: 40%;
+    height: 35%;
+    display: none;
+}
+
+#rainbow{
+    display: none;
+}
+
+#box{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    display: none;
+}
+
+#box1{
+    position: absolute;
+    top: 18%;
+    left: 36%;
+    width: 10%;
+    display: none;
+}
+
+#arrow{
+    position: absolute;
+    top: 8%;
+    left: 25%;
+    height: 7%;
+    display:none
+}
+
+#arrow1{
+    position: absolute;
+    top: 9%;
+    left: 39%;
+    height: 8%;
+    display: none;
+}
+
+
+
+#ylwdrop{
+    position: absolute;
+    left: 59%;
+    top: 71%;
+    display: none;
+}
+
+
+#ylwdrop1{
+    position: absolute;
+    left: 61%;
+    top: 72%;
+    z-index: 2;
+    display: none;
+}
+
+#ylwdrop2{
+    position: absolute;
+    left: 63%;
+    top: 73%;
+    z-index: 2;
+    display: none;
+}
+
+#ylwdrop3{
+    position: absolute;
+    left: 64%;
+    top: 75%;
+    z-index: 2;
+    display: none;
+}
+
+#ylwdrop4{
+    position: absolute;
+    left: 61%;
+    top: 75%;
+    z-index: 2;
+    display: none;
+}
+
+#ylwdrop5{
+    position: absolute;
+    left: 62%;
+    top: 78%;
+    z-index: 2;
+    display: none;
+}
+
+#ion1{
+    position: absolute;
+    top: 66%;
+    left: 28%;
+    z-index: 2;
+    height: 1.5%;
+    display: none;
+}
+
+
+#ion2{
+    position: absolute;
+    top: 67%;
+    left: 25%;
+    z-index: 2;
+    height: 1.5%;
+    display: none;
+}
+
+#ion3{
+    position: absolute;
+    top: 68%;
+    left: 27.5%;
+    z-index: 2;
+    height: 1.5%;
+    display: none;
+}
+
+#ion4{
+    position: absolute;
+    top: 70%;
+    left: 27.5%;
+    z-index: 2;
+    height: 1.5%;
+    display: none;
+}
+
+#ion5{
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    z-index: 2;
+    height: 1.5%;
+    display: none;
+}
+
+#ion6{
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    z-index: 2;
+    height: 1.5%;
+    display: none;
+}
+
+#ion7{
+    position: absolute;
+    top: 73%;
+    left: 27%;
+    z-index: 2;
+    height: 1.5%;
+    display: none;
+}
+
+#ion8{
+    position: absolute;
+    top: 74%;
+    left: 25%;
+    z-index: 2;
+    height: 1.5%;
+    display: none;
+}
+
+#temp1{
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    display: none;
+}
+
+
+#arrow2{
+    position: absolute;
+    top: 35%;
+    left: 19%;
+    height: 33%;
+    width: 17%;
+    display: none;
+}
+
+#pipe1{
+    position: absolute;
+    left: 7%;
+    top: 2%;
+    height: 95%;
+    width: 80%;
+    z-index: -1;
+}
+
+
+#round1{
+    position: absolute;
+    top: 24%;
+    left: 37.5%;
+    height: 10%;
+    z-index: 1;
+}
+
+
+#round2{
+    position: absolute;
+    top: 24.5%;
+    left: 40.2%;
+    height: 10%;
+    z-index: 1;
+}
+
+
+#round3{
+    position: absolute;
+    top: 25.5%;
+    left: 43.5%;
+    height: 10%;
+    z-index: 1;
+}
+
+#irplate{
+    position: absolute;
+    top: 23.5%;
+    left: 28%;
+    width: 5%;
+    z-index: 1;
+}
+
+#irplate1{
+    position: absolute;
+    top: 76%;
+    left: 60%;
+    z-index: 1;
+}
+
+#spring{
+    position: absolute;
+    top: 21%;
+    left: 26%;
+    width: 8%;
+    z-index: 1;
+}
+
+#spring1{
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    z-index: 1;
+}
+
+#north{
+    position: absolute;
+    top: 15%;
+    left: 48%;
+    z-index: 1;
+}
+
+#south{
+    position: absolute;
+    top: 40%;
+    left: 48%;
+    z-index: 1;
+}
+
+
+#syringe{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 25%;
+    z-index: 2;
+}
+
+
+#greennew{
+    position: absolute;
+    top: 60%;
+    left: 47%;
+    width: 35%;
+    z-index: 1;
+}
+
+
+#S{
+    position: absolute;
+    top: 44%;
+    left: 49%;
+    z-index: 1;
+}
+
+#N{
+    position: absolute;
+    top: 19%;
+    left: 49%;
+    z-index: 1;
+}
+
+#negdrop1{
+    position: absolute;
+    top: 55%;
+    left: 23%;
+    display: none;
+}
+
+
+#negdrop2{
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    display: none;
+}
+
+
+#negdrop3{
+    position: absolute;
+    top: 55%;
+    left: 27%;
+    display: none;
+}
+
+
+#negdrop4{
+    position: absolute;
+    top: 57%;
+    left: 22%;
+    display: none;
+}
+
+
+#negdrop5{
+    position: absolute;
+    top: 57%;
+    left: 24%;
+    display: none;
+}
+
+#negdrop6{
+    position: absolute;
+    top: 58%;
+    left: 26%;
+    display: none;
+}
+
+#negdrop7{
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    display: none;
+}
+
+
+
+#negdrop8{
+    position: absolute;
+    top: 60%;
+    left: 23%;
+    display: none;
+}
+

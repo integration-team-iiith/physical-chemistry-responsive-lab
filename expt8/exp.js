@@ -1,3 +1,0 @@
-function moveSyringe(){
-    $("#innerinstr").show();
-}

@@ -101,6 +101,7 @@
     top: 5%;
     left: 10%;
     height: 7%;
+    display: none;
 }
 
 
@@ -111,6 +112,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 150%;
     font-weight: bold;
+    display: none;
 }
 
 #ionisation{
@@ -118,6 +120,7 @@
     top: 15%;
     left: 10%;
     height: 7%;
+    display: none;
 }
 
 #ionisationtxt{
@@ -127,6 +130,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 150%;
     font-weight: bold;
+    display: none;
 }
 
 
@@ -135,6 +139,7 @@
     top: 25%;
     left: 10%;
     height: 7%;
+    display: none;
 }
 
 
@@ -145,6 +150,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 150%;
     font-weight: bold;
+    display: none;
 }
 
 
@@ -153,6 +159,7 @@
     top: 35%;
     left: 10%;
     height: 7%;
+    display: none;
 }
 
 
@@ -163,6 +170,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 150%;
     font-weight: bold;
+    display: none;
 }
 
 #evaluation{
@@ -170,6 +178,7 @@
     top: 45%;
     left: 10%;
     height: 7%;
+    display: none;
 }
 
 
@@ -179,6 +188,7 @@
     left: 11%;font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 150%;
     font-weight: bold;
+    display: none;
 }
 
 #innerinstr{

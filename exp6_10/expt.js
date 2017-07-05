@@ -7,7 +7,7 @@ function vanish1(){
     $('#nitrophenol').hide();
     $('#nitrotxt').hide();
     y=1;
-    document.getElementById('instr').innerHTML = "Click on the solvent bottle to draw 1 ml of the solvent (methanol) and inject it into the sample inlet to clean any impurity in the sample pathway."
+    document.getElementById('instr').innerHTML = "Click on the solvent bottle to draw 1 ml of the solvent (methanol)  and inject it into the sample inlet to clean any impurity in the sample pathway."
     $('#solvent').on("click", function(){ draw1() ;});
 }
 
@@ -97,6 +97,7 @@ function helper4(){
 
 function shake(){
     $("#sample2").velocity({rotateZ: 10}, {loop: 10, duration: 100});
+    $("#fill").velocity({rotateZ: 10}, {loop: 10, duration: 100});
     setTimeout(helper9,1000);
 }
 
@@ -243,5 +244,18 @@ function stopGraph(){
     }
     else{
         img.src = "cafingraph.png";
+    }
+        $("#evaluate").on("click", function(){urlChange();});
+}
+
+function urlChange(){
+    if(y == 1){
+        var win = window.open('https://ccnsb06-iiith.vlabs.ac.in/exp6_10/aspirin/aspirin_MS_exp9.html','_blank');
+        win.focus();
+    }
+
+    else{
+        var win = window.open('https://ccnsb06-iiith.vlabs.ac.in/exp6_10/nitrophenol/2-nitrophenol_MS.html','_blank');
+        win.focus();
     }
 }

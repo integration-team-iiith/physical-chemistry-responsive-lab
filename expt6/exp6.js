@@ -80,6 +80,7 @@ function clickSampl(){
 /* function pours sample solution into moratr*/
 
 function emptySpoon(){
+    document.getElementById("sampl").onclick = false;
     $('#spoonfill').hide();
     $('#emptyspoon').show();
     setTimeout(removeSpoon,2800);
@@ -97,6 +98,7 @@ function removeSpoon(){
 function sirinj(){
     $('#fillsirinj').show();
     setTimeout(replaceSirinj,2400);
+    document.getElementById("nizol").onclick = false;
 }
 
 /* function empties sirinj into mortar */
@@ -104,7 +106,14 @@ function sirinj(){
 function replaceSirinj(){
     $('#fillsirinj').hide();
     $('#emptysirinj').show();
+    $("#drop").show();
+    $("#drop").velocity({translateY: 60},{duration:1000});
+    setTimeout(helper1,1000);
     setTimeout(removeSirinj,2800);
+}
+
+function helper1(){
+    $("#drop").hide();
 }
 
 /* to hide sirinj*/
@@ -246,7 +255,7 @@ function green22(){
     else{
         $('#green1').hide();
         $('#red3').show();
-        setTimeout(green23,2600);
+        setTimeout(green23,2800);
     }
 }
 
@@ -278,7 +287,7 @@ function spectro1(){
 function spectro(){
     document.getElementById('instr').innerHTML = "Click start to run the spectrometer."
     $('#machine').show();
-    setTimeout(spectro1,3500);
+    setTimeout(spectro1,3600);
 }
 
 
@@ -287,7 +296,7 @@ function evaluate(){
     $('#exp').show();
     var img = document.getElementById('exp');
     img.src = "binaryData/light.gif";
-    setTimeout(showGraph,5500);
+    setTimeout(showGraph,5000);
 }
 
 function showGraph(){
@@ -311,8 +320,21 @@ function stopgraph(){
     var img =  document.getElementById('graph');
     if(y==1){
         img.src = "sprites/DefineSprite_133_IR_Powder_exp6_fla.graph_aspirine_45/105.png";
-    }
+}
     else{
         img.src = "sprites/DefineSprite_136_IR_Powder_exp6_fla.graph_caffeine_46/105.png";
     }
+    $("#evltbtn").on("click", function(){urlChange();});
+}
+
+function urlChange(){
+    if(y==0){
+        var win = window.open('https://ccnsb06-iiith.vlabs.ac.in/exp6_10/aspirin/plot_IR_aspirin_exp6.html','_blank');
+        win.focus();
+    }
+    else{
+        var win = window.open('https://ccnsb06-iiith.vlabs.ac.in/exp6_10/caffeine/plot_IR_caffeine_exp6.html','_blank');
+        win.focus();    
+    }
+
 }

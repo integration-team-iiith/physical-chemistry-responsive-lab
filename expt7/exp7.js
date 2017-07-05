@@ -124,11 +124,20 @@ function stopgraph(){
     else{
         img.src = "yellowf.png";
     }
+	$("#evltbtn").on("click", function(){urlChange();});
+}
+
+function urlChange(){
+	if(y == 1){
+		var win = window.open('https://ccnsb06-iiith.vlabs.ac.in/exp6_10/benzoic/benzoic_acid_IR_expt10.html','_blank');
+        win.focus();
+	}
+	else{
+		var win = window.open('https://ccnsb06-iiith.vlabs.ac.in/exp6_10/nitrophenol/2-nitrophenol_IR_expt10.html','_blank');
+        win.focus();
+	}
 }
 
 
-/*
-var model = {
-	instr4: ,
-	instr5: "Click on the solution IR cell to transfer the sample solution until all the air is expelled from the solution cell.",
-*/
+
+
