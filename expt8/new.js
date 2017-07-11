@@ -1,3 +1,15 @@
+/* when someone clicks loadsample button : 
+ 1. syringe moves towards that hollow instrument (1st line)
+ 2. after 1sec calls helper function just to show the yellowdrop released by syringe (2nd...)
+ 3. movement of that yellow drop(3rd...)
+ 4. to show instructon t bottom(4&5th..)
+ 5. at top box and arrow appears()6&7th..
+ 6. movement of arrow(8th)
+ 7. helper1 funtion just shows those bunch of drops and their movement after 2sec
+ */
+
+
+
 function loadSample(){
     $("#syringe").velocity({translateX:450}, {duration:1000});
     setTimeout(helper,1000);
@@ -8,8 +20,6 @@ function loadSample(){
     $("#arrow").show();
     $("#arrow").velocity({translateX:-5, translateY:5},{loop:true,duration:100});
     setTimeout(helper1,2000);
-    $("#ionisation").on("click", function(){ionisation();});
-    $("#ionisationtxt").on("click", function(){ionisation();});
     document.getElementById("load").onclick = false;
     document.getElementById("loadtxt").onclick = false;    
 }
@@ -24,6 +34,8 @@ function helper(){
 /* this function just shows movement of ion drops */
 
 function helper1(){
+    $("#ionisation").on("click", function(){ionisation();});
+    $("#ionisationtxt").on("click", function(){ionisation();});
     $('#ylwdrop1').show();
     $('#ylwdrop2').show();
     $('#ylwdrop3').show();
@@ -37,6 +49,11 @@ function helper1(){
     $("#ylwdrop").hide();
 }
 
+
+/* when someone clicks on ionisation button: 
+1. The box and arrow at top,syringe,that hollow instrument,irplate and all drops hides
+2. new things(ions and a circle shaped thing) appears at bottom af page
+3. helper2 to helper9 functins are just for movement of -ve ions dropping up to down */
 
 function ionisation(){
     $("#box").hide();
@@ -139,6 +156,11 @@ function helper9(){
     $("#negdrop8").velocity("reverse", {duration:1});
 }
 
+/* when someone clicks on acceleration button 
+1.All previous images from last onclick will hide
+2. A gif will appear with acceleration part of ions */
+
+
 function acceleration(){
     $("#temp1").hide();
     $("#ion1").hide();
@@ -169,10 +191,20 @@ function acceleration(){
     document.getElementById("accelerationtxt").onclick = false;
 }
 
+/* when someone clicks on deflection button:
+1. gif from last onclick disppears
+2. new gif drawing 3 different color of lines into a pipe appears
+3. onclick on evaluation button wii get activated 
+*/
+
 function deflection(){
     document.getElementById("innerinstrtxt").innerHTML = "The ions are sorted and separted by the magnetic filed according to their mass/ charge ratio."
     $("#evaluation").on("click",function(){ evaluation();});
 }
+
+/* when someone clicks on  evaluation button: 
+1. opens a new url in new tab showing graph 
+*/
 
 function evaluation(){
     var win = window.open('https://ccnsb06-iiith.vlabs.ac.in/exp6_10/aspirin/aspirin_MS_exp9.html','_blank');

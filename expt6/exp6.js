@@ -72,10 +72,28 @@ function removeBtn2(){
 /* function simply transffers some amount of sample to mortar. function just shows filling of spoon(by using gify)*/
 
 function clickSampl(){
+    $("#mortar").on("click",function(){mix1();});
     $('#spoonfill').show();
     setTimeout(emptySpoon,3000);
-    document.getElementById('instr').innerHTML = "click on the bottol containing nozal to transffer few drops to mortar."
+    document.getElementById('instr').innerHTML = "Click on the mortar to grind the sample to fine paste"
 }
+
+
+function mix1(){
+    $('#mortar').show();
+    var img =  document.getElementById('mortar');
+    img.src = "bowl.gif";
+    setTimeout(offMortar1,3000); 
+}
+
+function offMortar1(){
+    $('#mortar').show();
+    var img =  document.getElementById('mortar');
+    img.src = "sprites/DefineSprite_82/1.png";
+    document.getElementById("instr").innerHTML = "Click on the bottle containing Nujol to transfer few drops to the mortar.";
+    $('#nizol').on("click",function(){ sirinj() ;})
+}
+
 
 /* function pours sample solution into moratr*/
 
@@ -90,7 +108,6 @@ function emptySpoon(){
 
 function removeSpoon(){
     $('#emptyspoon').hide();
-    $('#nizol').on("click",function(){ sirinj() ;})
 }
 
 /* function fills sirinj with nozal solution */

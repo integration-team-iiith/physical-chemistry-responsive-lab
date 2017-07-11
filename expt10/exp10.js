@@ -4,6 +4,7 @@ var z = 101;
 
 
 function showoptn1(){
+    y = 0;
     $('#selected1').show();
     $('#exp1').show();
     $('#exp3').show();
@@ -16,6 +17,7 @@ function showoptn1(){
 }
 
 function showoptn2(){
+    y = 1;
     $('#selected2').show();
     $('#exp1').show();
     $('#exp3').show();
@@ -218,15 +220,40 @@ function IRshowGraph(){
     img1.src = "exp6/sprites/DefineSprite_20/124.png"    
     $('#IRgraph').show();
     var img = document.getElementById('IRgraph');
-    setTimeout(IRstopgraph,10500);
-    img.src = "exp6/binaryData/yellowgraph.gif"
+    if(y==1){
+        setTimeout(IRstopgraph,10500);
+        img.src = "exp6/binaryData/bluegraph.gif";
+    }
+    else{
+        setTimeout(IRstopgraph,10500);
+        img.src = "exp6/binaryData/yellowgraph.gif"
+    }
 }
 
 function IRstopgraph(){
-    $('#IRgraph').show();
+    $('#IRgraph.show');
     var img =  document.getElementById('IRgraph');
-    img.src = "exp6/sprites/DefineSprite_136_IR_Powder_exp6_fla.graph_caffeine_46/105.png";
+    if(y==1){
+        img.src = "exp6/sprites/DefineSprite_133_IR_Powder_exp6_fla.graph_aspirine_45/105.png";
 }
+    else{
+        img.src = "exp6/sprites/DefineSprite_136_IR_Powder_exp6_fla.graph_caffeine_46/105.png";
+    }
+    $("#IRevltbtn").on("click", function(){IRsurlChange();});
+}
+
+function IRurlChange(){
+    if(y==0){
+        var win = window.open('https://ccnsb06-iiith.vlabs.ac.in/exp6_10/aspirin/plot_IR_aspirin_exp6.html','_blank');
+        win.focus();
+    }
+    else{
+        var win = window.open('https://ccnsb06-iiith.vlabs.ac.in/exp6_10/caffeine/plot_IR_caffeine_exp6.html','_blank');
+        win.focus();    
+    }
+
+}
+
 
 
 // End of IR solution experiment js code
@@ -447,14 +474,39 @@ function MShelper12(){
 function MSgraphshow(){
     $("MSgraph").show();
     var img = document.getElementById("MSgraph");
-    img.src = "exp6_10/cafingraph.gif";
+    if(y==0){
+        img.src = "exp6_10/cafingraph.gif";
+    }
+    else{
+        img.src = "exp6_10/asprngraph.gif"
+    }
     setTimeout(MSstopGraph,4000);
 }
 
 function MSstopGraph(){
     $("MSgraph").show();
     var img = document.getElementById("MSgraph");
-    img.src = "exp6_10/asprngraph.png";
+    if(y==0){
+        img.src = "exp6_10/asprngraph.png";
+    }
+    else{
+        img.src = "exp6_10/cafingraph.png";
+    }
+        $("#MSevaluate").on("click", function(){MSurlChange();});
+}
+
+
+
+function MSurlChange(){
+    if(y == 0){
+        var win = window.open('https://ccnsb06-iiith.vlabs.ac.in/exp6_10/aspirin/aspirin_MS_exp9.html','_blank');
+        win.focus();
+    }
+
+    else if(y == 1){
+        var win = window.open('https://ccnsb06-iiith.vlabs.ac.in/exp6_10/nitrophenol/2-nitrophenol_MS.html','_blank');
+        win.focus();
+    }
 }
 
 
@@ -484,17 +536,28 @@ function NMRpushinjector(){
     $("#NMRring").show();
     $("#NMRbelow-arrow").show();
     $("#NMRvertical-arrows").show();
-    $("#NMRvertical-arrows").velocity({translateY:100},{duration:500, loop:true});
+    setInterval(NMRhelper2,510);
     $("#NMRstart").on("click",function(){NMRhelper();})
+}
+
+function NMRhelper2(){
+    $("#NMRvertical-arrows").velocity({translateY:100},{duration:500});
+    $("#NMRvertical-arrows").velocity("reverse",{duration: 10});
 }
 
 function NMRhelper(){
     $("#NMRup-arrow").show();
     $("#NMRhorizontal-arrows-2").show();
     $("#NMRhorizontal-arrows-1").show();
-    $("#NMRhorizontal-arrows-2").velocity({translateX:500},{duration:1000,loop:true});
-    $("#NMRhorizontal-arrows-1").velocity({translateX:500},{duration:1000,loop:true});
+    setInterval(NMRhelper3,1000);
     $("#NMRplot").on("click",function(){NMRhelper1();});
+}
+
+function NMRhelper3(){
+    $("#NMRhorizontal-arrows-2").velocity({translateX:500},{duration:1000});
+    $("#NMRhorizontal-arrows-1").velocity({translateX:500},{duration:1000});
+    $("#NMRhorizontal-arrows-2").velocity("reverse",{duration:1});
+    $("#NMRhorizontal-arrows-1").velocity("reverse",{duration:1});
 }
 
 function NMRhelper1(){

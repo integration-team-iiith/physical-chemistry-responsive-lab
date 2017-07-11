@@ -92,6 +92,7 @@ function spectro1(){
 function evaluate(){
 	$('#mirror').show();
     $('#exp').show();
+	$("#movablemirror").hide();
     var img = document.getElementById('exp');
     img.src = "light.gif";
     setTimeout(showGraph,5000);
@@ -99,6 +100,7 @@ function evaluate(){
 
 
 function showGraph(){
+	$("#movablemirror").show();
 	$('#mirror').hide();
     $('#exp').show();
     var img1 = document.getElementById('exp');

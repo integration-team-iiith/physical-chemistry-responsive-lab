@@ -9,10 +9,10 @@
 
 #asprntxt{
     position: absolute;
-    top: 23%;
+    top: 24%;
     left: 6%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 160%;
+    font-size: 130%;
     font-weight: bold;
 }
 
@@ -27,10 +27,10 @@
 
 #cafintxt{
     position: absolute;
-    top: 33%;
+    top: 34%;
     left: 6%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 160%;
+    font-size: 130%;
     font-weight: bold;
 }
 

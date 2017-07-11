@@ -1,5 +1,10 @@
 var y = 0;
 
+/* when someone clicks on aspirin btn:
+1. both buttons disappears
+2. innerhtml changes and onclick on solvent bottle activates
+3. sets variable to 0 for later selection of graph */
+
 function vanish1(){
     y = 1;
     $('#aspirin').hide();
@@ -12,6 +17,11 @@ function vanish1(){
 }
 
 
+/* when someone clicks on nitrpphenol btn:
+1. both buttons disappears
+2. innerhtml changes and onclick on solvent bottle activates
+3. sets variable to 0 for later selection of graph */
+
 function vanish2(){
     y = 0;
     $('#aspirin').hide();
@@ -23,6 +33,11 @@ function vanish2(){
     $('#solvent').on("click", function(){ draw1() ;});
 }
 
+/* when someone clicks on solvent bottle first time: 
+1. shows giphy of syringe drawing
+2. solvent & solvent1 images are same 
+3. calls helper function after 1sec */
+
 function draw1(){
     $("#solvent").hide();
     $("#solvent1").show();
@@ -31,12 +46,18 @@ function draw1(){
     setTimeout(helper1,1000);
 }
 
+/* 1.hides old animation of syringe
+   2. displays new syringe horizontally placed and changes its height as well as moves towards spectro machine */
+
 function helper1(){
     $('#blue1').hide();
     $('#hrblue').show();
     $("#hrblue").velocity({width: 100, translateY: 240}, {duration: 1000});
     setTimeout(setMachine,1000);
 }
+
+/* 1. shows animation of spectromachine filling with solvent liquid
+   2. calls helper7 after 1sec function which just hides the syringe and activates onclick on samplesol bottle */
 
 function setMachine(){
     $('#spectro').show();
@@ -53,8 +74,12 @@ function helper7(){
     $('#samplsol').on("click", function(){ spoon1() ;});
 }
 
+/* when someone clicks on samplesol bottle: 
+1. instr changes and animation of spoon taking solution from sample bottle appears
+2. calls spoon2 function after 2 sec which just hides first spoon gif and shows 2nd spoon on empty sample bottle */
+
 function spoon1(){
-        document.getElementById("instr").innerHTML = "Click on the solvent bottle to transfer 5 ml of the solvent (methanol) to the substance taken.";
+    document.getElementById("instr").innerHTML = "Click on the solvent bottle to transfer 5 ml of the solvent (methanol) to the substance taken.";
     $('#spoon1').show();
     setTimeout(spoon2,3000);
 }
@@ -65,11 +90,19 @@ function spoon2(){
     setTimeout(helper2,2800);
 }
 
+/* 1. shows plate having sample on a plate inside empty sample bottle
+2. disapears that old spoon animation
+3. activates onclik on solvent bottle again */
+
 function helper2(){
     $('#fill').show();
     $('#spoon2').hide();
     $('#solvent1').on("click",function(){draw2();});
 }
+
+/* when someone clicks on solvent solution again:
+1. instr changes and it shows a syringe drawing solvent from solvent box
+2. calls helper3 function after 1 sec  */
 
 function draw2(){
     document.getElementById("instr").innerHTML = "Click on the sample solution to draw 1 ml of the sample prepared to load on to the mass spectrometer."
@@ -77,6 +110,10 @@ function draw2(){
     $('#syringe1').show();
     setTimeout(helper3,1000);
 }
+
+/* 1. shows syringe pouring solvent into emty sample bottle
+2. hides old syringe bottle/
+3. shows animation of filling sample bottle also calls helper4 function*/
 
 function helper3(){
     $('#syringe2').show();
@@ -86,6 +123,8 @@ function helper3(){
     setTimeout(helper4,1500);
 }
 
+/* 1. activates onclick on sample bottle */
+
 function helper4(){
     $('#sample2').show();
     var img = document.getElementById('sample2');
@@ -94,6 +133,8 @@ function helper4(){
     $('#sample2').on("click", function(){ shake(); });
     document.getElementById("instr").innerHTML = "Click on the sample solution to make a clear solution.";
 }
+
+/* 1. shakes sample bottle and calls helper9 after 1 second sample2 and defines on sample bottle containing mixture solution again (changebeaker are same images) */
 
 function shake(){
     $("#sample2").velocity({rotateZ: 10}, {loop: 10, duration: 100});
@@ -109,11 +150,16 @@ function helper9(){
 }
 
 
+/* 1. shows syringe drawing mixture from sample bottle containing mix. solution also calls helper5 function after 1sec  */
+
 function draw3(){
     $('#green1').show();
     setTimeout(helper5,1000);
 }
 
+/* 1. hides that syring animation
+2. shows horizontal syringe and moves towards spectromachine
+3. calls setMachine2 after 1 second  */
 
 function helper5(){
     $('#green1').hide();
@@ -122,6 +168,8 @@ function helper5(){
     setTimeout(setMachine2,1000);
 }
 
+/*  
+*/
 
 function setMachine2(){
     $('#spectro').show();
@@ -224,6 +272,7 @@ function helper12(){
     setTimeout(graphshow,1000);
 }
 
+/* shows graph depending which button is clicked */
 function graphshow(){
     $("graph").show();
     var img = document.getElementById("graph");
@@ -236,6 +285,9 @@ function graphshow(){
     setTimeout(stopGraph,4000);
 }
 
+
+/* to stop graph also activates onclick on evaluate button */
+
 function stopGraph(){
     $("graph").show();
     var img = document.getElementById("graph");
@@ -247,6 +299,8 @@ function stopGraph(){
     }
         $("#evaluate").on("click", function(){urlChange();});
 }
+
+/* when someone clicks on evaluate button it opens a new url in a new tab showing graph */
 
 function urlChange(){
     if(y == 1){

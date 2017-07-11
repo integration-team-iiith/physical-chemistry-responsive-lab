@@ -2,8 +2,8 @@
     position: absolute;
     top: 15%;
     left: 5%;
-    width: 9%;
-    height: 7%;
+    width: 10%;
+    height: 8%;
     border: darkblue;
 }
 
@@ -12,7 +12,7 @@
     top: 16%;
     left: 6%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 160%;
+    font-size: 130%;
     font-weight: bold;
 }
 
@@ -21,17 +21,17 @@
     position: absolute;
     top: 25%;
     left: 5%;
-    width: 9%;
-    height: 7%;
+    width: 10%;
+    height: 8%;
     border: darkred;
 }
 
 #redtxt{
     position: absolute;
-    top: 26%;
-    left: 6%;
+    top: 27%;
+    left: 5.5%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 160%;
+    font-size: 130%;
     font-weight: bold;
 }
 
@@ -222,6 +222,49 @@
     width: 25%;
     height: 25%;
 }
+
+#stand{
+    position: absolute;
+    top: 66%;
+    left: 31.5%;
+    width: 8%;
+    height: 15%;
+}
+
+#beamsplitter{
+    position: absolute;
+    top: 17.2%;
+    left: 67%;
+    height: 12%;
+}
+
+#fixedmirror{
+    position: absolute;
+    left: 64%;
+    height: 4.5%;
+}
+
+#movablemirror{
+    position: absolute;
+    left: 85%;
+    top: 17%;
+}
+
+#uppersupport{
+    position: absolute;
+    width: 10%;
+    top: 17.7%;
+    left: 86%;
+}
+
+
+#lowersupport{
+    position: absolute;
+    width: 10%;
+    top: 29%;
+    left: 86%;
+}
+
 
 
 #chain{
