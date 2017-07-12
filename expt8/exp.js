@@ -198,6 +198,11 @@ function acceleration(){
 */
 
 function deflection(){
+    $("#arrow1").hide();
+    $("#box1").hide();
+    $("#temp2").hide();
+    $("#emptypipe").show();
+    $("#lines").velocity({opacity:1},{duration: 5000});
     document.getElementById("innerinstrtxt").innerHTML = "The ions are sorted and separted by the magnetic filed according to their mass/ charge ratio."
     $("#evaluation").on("click",function(){ evaluation();});
 }

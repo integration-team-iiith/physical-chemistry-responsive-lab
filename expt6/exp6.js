@@ -3,6 +3,8 @@
 var y = 0;
 var x = 1;
 var z = 101;
+var p = 1;
+var askint;
 function moveImage(){
     id = setInterval(frame, 5);
     function frame() {
@@ -51,7 +53,7 @@ function removeBtn1(){
     $('#cafintxt').hide();
     y = 0;
     $('#sampl').on("click", function(){clickSampl(); }); 
-    document.getElementById('instr').innerHTML = "click on the sample bottle to transffer a small quantity of the sample to the mortar."
+    document.getElementById('instr').innerHTML = "Click on the sample bottle (the first bottle) to transfer a small quantity of the sample to the mortar."
 }
 
 
@@ -65,7 +67,7 @@ function removeBtn2(){
     $('#cafintxt').hide();
     y = 1;
     $('#sampl').on("click", function(){clickSampl(); });
-    document.getElementById('instr').innerHTML = "click on the sample bottle to transffer a small quantity of the sample to the mortar."
+    document.getElementById('instr').innerHTML = "Click on the sample bottle (the first bottle) to transfer a small quantity of the sample to the mortar."
 }
 
 
@@ -90,7 +92,7 @@ function offMortar1(){
     $('#mortar').show();
     var img =  document.getElementById('mortar');
     img.src = "sprites/DefineSprite_82/1.png";
-    document.getElementById("instr").innerHTML = "Click on the bottle containing Nujol to transfer few drops to the mortar.";
+    document.getElementById("instr").innerHTML = "Click on the bottle containing Nizol to transfer few drops to the mortar.";
     $('#nizol').on("click",function(){ sirinj() ;})
 }
 
@@ -126,7 +128,7 @@ function replaceSirinj(){
     $("#drop").show();
     $("#drop").velocity({translateY: 60},{duration:1000});
     setTimeout(helper1,1000);
-    setTimeout(removeSirinj,2800);
+    setTimeout(removeSirinj,1000);
 }
 
 function helper1(){
@@ -159,7 +161,7 @@ function offMortar(){
     var img =  document.getElementById('mortar');
     img.src = "sprites/DefineSprite_82/1.png";
     $('#mortar1').on('click',function(){putinplat();});
-    document.getElementById('instr').innerHTML = "click on the mortar to transffer the sample prepared onto one of the IR discs"
+    document.getElementById('instr').innerHTML = "Click on mortar to Transfer the sample prepared onto one of the IR discs"
 }
 
 
@@ -175,8 +177,21 @@ function putinplat(){
 
 function fillplate(){
     $('#spoonfill2').hide();
-    $('#emptyspoon2').show();
-    setTimeout(removeSpoon2,2500);
+    setInterval(helper2,50);
+    setTimeout(removeSpoon2,2000);
+}
+
+function helper2(){
+    if(p<40){
+        $('#emptyspoon2').show();
+        var img = document.getElementById("emptyspoon2");
+        img.src = "sprites/DefineSprite_84_IR_Powder_exp6_fla.emptysepctual_28/"+ p + ".png";
+    }
+    else{
+        $("#emptyspoon2").hide();
+    }
+    p++;
+
 }
 
 /* function removes syringe and defines onclick on IR disc to form a thin film*/
@@ -193,16 +208,9 @@ function removeSpoon2(){
 /* function moves holder on each other and defines onclick function to show the spectrometer with uses of fo helper function */
 
 function startexp(){
-    if(y==1){
-        $('#green1').show();
-        setInterval(green1,50);
-        setTimeout(green21,3300);
-    }
-    else {
-        $('#green1').show();
-        setInterval(red1,50);
-        setTimeout(green21,3200);
-    }
+    $('#green1').show();
+    var askInt = setInterval(red1,50);
+    setTimeout(green21,3200);
 
     $('#mortartxt').hide();
     $('#mortar1').hide();
@@ -212,24 +220,7 @@ function startexp(){
     $('#fill').hide();
     $('#sampltxt').hide();
     $('#nizoltxt').hide();
-    document.getElementById('instr').innerHTML = "Click on the holder to place the the sample in the spectrometer."
-}
-
-function green1(){
-    var flask = [];
-    var i;
-    $('#green1').show();
-    var img = document.getElementById("green1");
-    for(i=1;i<=65;i++){
-        flask[i] = "sprites/DefineSprite_43_IR_Powder_exp6_fla.top_scene_3/" + i + '.png' 
-    }
-    if(x <= 65){
-        img.src = flask[x];
-        x++;
-    }
-    else{
-        x = 223;
-    }
+    document.getElementById('instr').innerHTML = "Click the IR discs to Move the IR plates to the plate holder."
 }
 
 
@@ -241,54 +232,49 @@ function red1(){
     for(i=101;i<=163;i++){
         flask[i] = "sprites/DefineSprite_43_IR_Powder_exp6_fla.top_scene_3/" + i + ".png" 
     }
-    if(z <= 163){
+    if(z < 163){
         img.src = flask[z];
         z++;
     }
-    else{
+    if(z === 163){
         z = 165;
     }
+
+    if(z === 165){
+        clearInterval(askInt);
+    }
+
 }
 
 function green21(){
-    if(y==1){
-        $('#green2').show();
-        $('#green2').on('click',function(){ green22();});
-    }
-    else{
-        $('#red2').show();
-        $('#red2').on('click',function(){ green22();});
-    }
-
+    document.getElementById('instr').innerHTML = "Click on the holder to place the the sample in the spectrometer."
+    $('#green1').on('click',function(){ green22();});
     
 }
 
 function green22(){
-    if(y==1){
-        $('#green1').hide();
-        $('#green3').show()
-        setTimeout(green23,3600);
+    $('#green1').hide();
+    $('#red3').show();
+    var int2 = setInterval(helper3,50);
+    setTimeout(green23,2800);
+}
+
+function helper3(){
+    if(z>=165 && z<=221){
+        $('#red3').show();
+        var img = document.getElementById("red3");
+        img.src = "sprites/DefineSprite_43_IR_Powder_exp6_fla.top_scene_3/" + z + ".png"
+        z++;
     }
     else{
-        $('#green1').hide();
-        $('#red3').show();
-        setTimeout(green23,2800);
+        clearInterval(int2);
     }
 }
 
 function green23(){
-    if(y==1){
-        $('#green3').show();
-        var img = document.getElementById('green3');
-        img.src = "sprites/DefineSprite_43_IR_Powder_exp6_fla.top_scene_3/320.png"
-        $('#green3').on('click',function(){ spectro() ;});
-    }
-    else{
-        $('#red3').show();
-        var img = document.getElementById('red3');
-        img.src = "sprites/DefineSprite_43_IR_Powder_exp6_fla.top_scene_3/221.png"
-        $('#red3').on('click',function(){ spectro() ;});
-    }
+    var img = document.getElementById('red3');
+    img.src = "sprites/DefineSprite_43_IR_Powder_exp6_fla.top_scene_3/221.png"
+    $('#red3').on('click',function(){ spectro() ;});
 }
 
 

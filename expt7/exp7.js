@@ -36,16 +36,18 @@ function solventTransffer(){
 function helper(){
 	$('#fillsolution').hide();
 	$('#fullsolution').show();
+	$("#fullbottle").show();
 	$('#desicator').on('click',function(){showSlide();});
 }
 
 function showSlide(){
 	$('#slide').show();
-	$('#fullsolution').on('click', function(){fillSlide();});
+	$('#fullbottle').on('click', function(){fillSlide();});
 	document.getElementById('instr').innerHTML = "Click on the sample solution to draw 1ml of the solution with a syringe";
 }
 
 function fillSlide(){
+	$("#fullbottle").hide();
 	document.getElementById('instr').innerHTML = "Click on the solution IR cell to transfer the sample solution until all the air is expelled from the solution cell."
 	$('#fillsirinj').show();
 	$('#sirinj').show();

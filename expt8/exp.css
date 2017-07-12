@@ -1,7 +1,7 @@
 #load{
     position: absolute;
     top: 5%;
-    left: 10%;
+    left: 8%;
     height: 7%;
     z-index: 1;
 }
@@ -9,8 +9,8 @@
 
 #loadtxt{
     position: absolute;
-    top: 6%;
-    left: 12%;
+    top: 5%;
+    left: 10%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 150%;
     font-weight: bold;
@@ -20,7 +20,7 @@
 #ionisation{
     position: absolute;
     top: 15%;
-    left: 10%;
+    left: 8%;
     height: 7%;
     z-index: 1;
 }
@@ -28,7 +28,7 @@
 #ionisationtxt{
     position: absolute;
     top: 17%;
-    left: 11%;
+    left: 9%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 150%;
     font-weight: bold;
@@ -39,7 +39,7 @@
 #acceleration{
     position: absolute;
     top: 25%;
-    left: 10%;
+    left: 8%;
     height: 7%;
     z-index: 1;
 }
@@ -48,7 +48,7 @@
 #accelerationtxt{
     position: absolute;
     top: 27%;
-    left: 11%;
+    left: 9%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 150%;
     font-weight: bold;
@@ -59,7 +59,7 @@
 #deflection{
     position: absolute;
     top: 35%;
-    left: 10%;
+    left: 8%;
     height: 7%;
     z-index: 1;
 }
@@ -68,7 +68,7 @@
 #deflectiontxt{
     position: absolute;
     top: 37%;
-    left: 11%;
+    left: 9%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 150%;
     font-weight: bold;
@@ -78,7 +78,7 @@
 #evaluation{
     position: absolute;
     top: 45%;
-    left: 10%;
+    left: 8%;
     height: 7%;
     z-index: 1;
 }
@@ -87,7 +87,8 @@
 #evaluationtxt{
     position: absolute;
     top: 47%;
-    left: 11%;font-family: Georgia, 'Times New Roman', Times, serif;
+    left: 9%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 150%;
     font-weight: bold;
     z-index: 1;
@@ -468,5 +469,21 @@
     top: 60%;
     left: 23%;
     display: none;
+}
+
+#emptypipe{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    height: 39%;
+    width: 30%;
+    display: none;
+}
+
+#lines{
+    position: absolute;
+    top: 49.5%;
+    left: 29.5%;
+    opacity: 0;
 }
 

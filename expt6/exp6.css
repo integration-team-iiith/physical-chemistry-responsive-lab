@@ -160,12 +160,13 @@
     left: 2%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 160%;
+    width: 50%;
 }
 
 #spoonfill{
     position: absolute;
     top: 0.1%;
-    left: 13%;
+    left: 12.8%;
     height: 20%;
     display: none;
 }
@@ -245,6 +246,7 @@
     width: 45%;
     height: 50%;
     display: none;
+    z-index: 2;
 }
 
 #machine{
@@ -252,7 +254,7 @@
     z-index: 6;
     top: 30%;
     left: 15%;
-    height: 50%;
+    height: 60%;
     display: none;
 }
 
@@ -277,7 +279,7 @@
     position: absolute;
     width: 6.5%;
     height: 8.8%;
-    top: 11%;
+    top: 10.5%;
     left: 13.5%;
     z-index: 3;
     display: none;
@@ -311,3 +313,25 @@
     height: 50%;
     display: none;
 }
+
+#beamsplitter{
+    position: absolute;
+    top: 17.2%;
+    left: 67%;
+    height: 12%;
+}
+
+#fixedmirror{
+    position: absolute;
+    left: 64%;
+    height: 4.5%;
+    top: 0.6%;
+}
+
+
+#movablemirror{
+    position: absolute;
+    left: 83%;
+    top: 17%;
+}
+
