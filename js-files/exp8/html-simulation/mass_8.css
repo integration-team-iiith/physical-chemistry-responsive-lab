@@ -1,0 +1,178 @@
+#container{
+	width: 1000px;
+	height: 650px;
+	position: absolute;
+	margin-left: 12%;
+	margin-top: 1%;
+	border: solid 1px grey;
+}
+
+#load{
+	position: absolute;
+	margin-top: 3%;
+	margin-left: 1%;
+	cursor: pointer;
+}
+
+#ionisation{
+	position: absolute;
+	margin-top: 8%;
+	margin-left: 1%; 
+	cursor: pointer;
+}
+
+#acceleration{
+	position: absolute;
+	margin-top: 13%;
+	margin-left: 1%;	
+	cursor: pointer;
+}
+
+#deflection{
+	position: absolute;
+	margin-top: 18%;
+	margin-left: 1%;
+	cursor: pointer;
+}
+
+#evaluation{
+	position: absolute;
+	margin-top: 23%;
+	margin-left: 1%;	
+	cursor: pointer;
+}
+
+#syringe{
+	z-index: 3;
+	position: absolute;
+	margin-top: 45%;
+	margin-left: 1%;
+}
+
+#box{
+	position: absolute;
+	width: 75%;
+	height: 50%;
+	margin-top: 0%;
+	margin-left: 15%;
+}
+
+#ions{
+	z-index: 2;
+	position: absolute;
+	width: 55%;
+	margin-top: 40%;
+	margin-left: 40%;
+	display: none;
+}
+
+#tube{
+	z-index: 2;
+	position: absolute;
+	margin-top: 34%;
+	margin-left: 39%;
+	width: 60%;
+	height: 35%;
+}
+
+#molecule{
+	z-index: 3;
+	position: absolute;
+	margin-top: 35%;
+	margin-left: 57%;
+	display: none;
+	-webkit-transition: 2s ease-in-out;
+    animation: molecule 1s ;
+    animation-iteration-count: 1;
+    overflow: hidden;
+}
+
+@keyframes molecule {
+    from {left: 0px; top:0px;}
+    to {left: 55px; top: 30px;}
+
+}
+
+#axis .move-right{
+    transform: translate(350px,0);
+    -webkit-transform: translate(350px,0); * Chrome & Safari *
+    -o-transform: translate(350px,0); /** Opera *
+    /*-moz-transform: translate(350px,0); /** Firefox **/
+/*}*/
+}
+
+@keyframes moving-molecule {
+    from {left: 0px;}
+    to {left: 20px;}
+}
+
+#moving-molecules{
+	position: absolute;
+	z-index: 3;
+	margin-top: 31%;
+	margin-left: 60%;
+	display: none;
+	animation: moving-molecule 5s ;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease;
+}
+
+#arrow{
+	position: absolute;
+	margin-top: 0%;
+	margin-left: 26%;
+	display: none;
+	animation: arrow 5s;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease;
+}
+@keyframes arrow {
+    from {top: 0px;}
+    to {top: 20px;}
+}
+
+#square{
+	position: absolute;
+	margin-top:3.5%;
+	margin-left: 18.6%;
+	width: 15%;
+	display: none;
+
+}
+
+#electrons{
+	position: absolute;
+	margin-top: 14%;
+	margin-left: 16%;
+	display: none;
+}
+#demo{
+	position: absolute;
+	width: 800px;
+	margin-left: 16%;
+	margin-top: 47%;
+	border : solid 1px black;
+	display: none;
+	/*border : 2px solid grey;*/
+}
+
+#instruction_steps{
+	position: absolute;
+	margin-left: 15%;
+	margin-top:28%;
+	display: none;
+}
+
+#northpole {
+	position: absolute;
+	margin-left: 52%;
+	margin-top: 28%;
+	display: none;
+}
+
+#southpole {
+	position: absolute;
+	margin-left: 52%;
+	margin-top: 43%;
+	display: none;
+}

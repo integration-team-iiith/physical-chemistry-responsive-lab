@@ -1,0 +1,416 @@
+#yellowbtn{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    width: 10%;
+    height: 8%;
+    border: darkblue;
+}
+
+#yellowtxt{
+    position: absolute;
+    top: 16%;
+    left: 6%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 130%;
+    font-weight: bold;
+}
+
+
+#redbtn{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    width: 10%;
+    height: 8%;
+    border: darkred;
+}
+
+#redtxt{
+    position: absolute;
+    top: 27%;
+    left: 5.5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 130%;
+    font-weight: bold;
+}
+
+
+#samplbotl{
+    position: absolute;
+    top: 31%;
+    left: 17%;
+    height: 15%;
+    z-index: 2;
+}
+
+
+#fullbottle{
+    position: absolute;
+    top: 31%;
+    left: 17.4%;
+    height: 15.1%;
+    z-index: 2;
+    display: none;
+}
+
+#samplbtltxt{
+    position: absolute;
+    left: 16%;
+    top: 48%;
+}
+
+#sampl{
+    position: absolute;
+    top: 3%;
+    height: 18%;
+    width: 4%;
+    left: 18%;
+}
+
+#sampltxt{
+    position: absolute;
+    top: 23%;
+    left: 18%;
+}
+
+
+#yellow{
+    position: absolute;
+    left: 18.2%;
+    top: 43%;
+    width: 3%;
+    height: 3%;
+    z-index: 1;
+    display: none;
+}
+
+#solvent{
+    position: absolute;
+    left: 27%;
+    height: 22%;
+    top: 3%;
+    width: 5%;
+}
+
+#solventtxt{
+    position: absolute;
+    left: 28%;
+    top: 26%;
+}
+
+#desicator{
+    position: absolute;
+    left: 36%;
+    top: 3%;
+    height: 18%;
+
+}
+
+#desicatortxt{
+    position: absolute;
+    left: 36%;
+    top: 23%;
+}
+
+#hrline1{
+    position: absolute;
+    z-index: 4;
+    top: 55%;
+    width: 48%;
+    border: 1px dotted black;
+    border-style: none none dotted;
+    color: white;
+    background-color: white;
+}
+
+
+#hrline2{
+    position: absolute;
+    z-index: 4;
+    top: 56%;
+    width: 50%;
+    border: 1px dotted black;
+    border-style: none none dotted;
+    color: white;
+    background-color: white;
+}
+
+
+
+#hrline3{
+    position: absolute;
+    z-index: 4;
+    left: 50%;
+    top: 55%;
+    width: 50%;
+    border: 1px dotted black;
+    border-style: none none dotted;
+    color: white;
+    background-color: white;
+}
+
+
+#hrline4{
+    position: absolute;
+    z-index: 4;
+    left: 55%;
+    top: 56%;
+    width: 48%;
+    border: 1px dotted black;
+    border-style: none none dotted;
+    color: white;
+    background-color: white;
+}
+
+#vrline1{
+    position: absolute;
+    left: 49%;
+    border-left: thin dotted black;
+    z-index: 4;
+    height: 50%;
+    top: 7%;
+}
+
+#vrline2{
+    position: absolute;
+    left: 49.7%;
+    border-left: thin dotted black;
+    z-index: 4;
+    height: 50%;
+    top: 6%;
+}
+
+#vrline3{
+
+    position: absolute;
+    left: 49.7%;
+    border-left: thin dotted black;
+    z-index: 4;
+    height: 47%;
+    top: 46%;
+}
+
+#vrline4{
+    position: absolute;
+    left: 49%;
+    border-left: thin dotted black;
+    z-index: 4;
+    height: 45%;
+    top: 50%;
+}
+
+#instr{
+    position: absolute;
+    top: 52%;
+    left: 2%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 160%;
+    width: 50%;
+}
+
+
+#exp{
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    width: 55%;
+    height: 50%;
+}
+
+
+#graph{
+    position: absolute;
+    top: 54%;
+    left: 54%;
+    height: 45%;
+    width: 35%;
+    z-index: 1;
+}
+
+
+#spectrometer{
+    position: absolute;
+    top: 64%;
+    left: 18%;
+    width: 25%;
+    height: 25%;
+}
+
+#stand{
+    position: absolute;
+    top: 66%;
+    left: 31.5%;
+    width: 8%;
+    height: 15%;
+}
+
+#beamsplitter{
+    position: absolute;
+    top: 17.2%;
+    left: 67%;
+    height: 12%;
+}
+
+#fixedmirror{
+    position: absolute;
+    left: 64%;
+    height: 4.5%;
+}
+
+#movablemirror{
+    position: absolute;
+    left: 85%;
+    top: 17%;
+}
+
+#uppersupport{
+    position: absolute;
+    width: 10%;
+    top: 17.7%;
+    left: 86%;
+}
+
+
+#lowersupport{
+    position: absolute;
+    width: 10%;
+    top: 29%;
+    left: 86%;
+}
+
+
+
+#chain{
+    position: absolute;
+    top: 63%;
+    left: 21%;
+    width: 6%;
+}
+
+#bigchain{
+    position: absolute;
+    top: 60%;
+    left: 26.5%;
+    width: 12%;
+}
+
+#cap{
+    position: absolute;
+    top: 65%;
+    left: 33%;
+    width: 7.5%;
+}
+
+#strtbtn{
+    position: absolute;
+    top: 90%;
+    left: 10%;
+    width: 10%;
+}
+
+
+#evltbtn{
+    position: absolute;
+    top: 90%;
+    left: 35%;
+    width: 10%;
+}
+
+
+#fillsolution{
+    position: absolute;
+    left: 18.3%;
+    top: 40.4%;
+    width: 3%;
+    z-index: 1;
+    display: none;
+}
+
+
+#fullsolution{
+    position: absolute;
+    left: 18.3%;
+    top: 38%;
+    height: 8%;
+    width: 3%;
+    z-index: 1;
+    display: none;
+}
+
+#slide{
+    position: absolute;
+    left: 35%;
+    top: 30%;
+    width: 5%;
+    display: none;
+}
+
+#sirinj{
+    position: absolute;
+    left: 18.2%;
+    top: 27%;
+    height: 15%;
+    display: none;
+}
+
+#fillsirinj{
+    position: absolute;
+    height: 10%;
+    left: 18.6%;
+    top: 32%;
+    width: 1%;
+    display: none;
+}
+
+#fillslide{
+    position: absolute;
+    left: 37%;
+    top: 39%;
+    width: 1.7%;
+    height: 6%;
+    display: none;
+}
+
+
+#fullslide{
+    position: absolute;
+    left: 37%;
+    top: 39%;
+    width: 1.7%;
+    display: none;
+}
+
+#sirinj2{
+    position: absolute;
+    left: 38%;
+    top: 44.5%;
+    height: 3%;
+    display: none;
+}
+
+#empty{
+    position: absolute;
+    left: 38%;
+    top: 45.5%;
+    height: 1%;
+    display: none;
+}
+
+
+#machine{
+    position: absolute;
+    z-index: 5;
+    top: 30%;
+    left: 15%;
+    height: 50%;
+    display: none;
+}
+
+#mirror{
+    position: absolute;
+    top: 17.7%;
+    left: 87%;
+    height: 12.7%;
+    display: none;
+}
