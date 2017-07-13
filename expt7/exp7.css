@@ -41,18 +41,10 @@
     top: 31%;
     left: 17%;
     height: 15%;
-    z-index: 2;
+    width: 5.2%;
 }
 
 
-#fullbottle{
-    position: absolute;
-    top: 31%;
-    left: 17.4%;
-    height: 15.1%;
-    z-index: 2;
-    display: none;
-}
 
 #samplbtltxt{
     position: absolute;
@@ -77,13 +69,32 @@
 
 #yellow{
     position: absolute;
-    left: 18.2%;
-    top: 43%;
-    width: 3%;
+    left: 18.5%;
+    top: 42.4%;
+    width: 2.1%;
     height: 3%;
-    z-index: 1;
     display: none;
 }
+
+
+#fillsolution{
+    position: absolute;
+    left: 18.6%;
+    top: 40.4%;
+    width: 2.1%;
+    display: none;
+}
+
+
+#fullsolution{
+    position: absolute;
+    left: 18.6%;
+    top: 37.5%;
+    height: 8%;
+    width: 2.1%;
+    display: none;
+}
+
 
 #solvent{
     position: absolute;
@@ -104,7 +115,18 @@
     left: 36%;
     top: 3%;
     height: 18%;
+    width: 9.5%;
+    z-index: 1;
+}
 
+
+#desicatorbtn{
+    position: absolute;
+    left: 39.5%;
+    top: 15%;
+    width: 2%;
+    height: 4.3%;
+    z-index: 2;
 }
 
 #desicatortxt{
@@ -260,7 +282,7 @@
 
 #movablemirror{
     position: absolute;
-    left: 85%;
+    left: 84%;
     top: 17%;
 }
 
@@ -318,38 +340,20 @@
 }
 
 
-#fillsolution{
-    position: absolute;
-    left: 18.3%;
-    top: 40.4%;
-    width: 3%;
-    z-index: 1;
-    display: none;
-}
-
-
-#fullsolution{
-    position: absolute;
-    left: 18.3%;
-    top: 38%;
-    height: 8%;
-    width: 3%;
-    z-index: 1;
-    display: none;
-}
-
 #slide{
     position: absolute;
     left: 35%;
     top: 30%;
     width: 5%;
+    height: 20%;
     display: none;
 }
 
 #sirinj{
     position: absolute;
-    left: 18.2%;
+    left: 18.5%;
     top: 27%;
+    width: 2%;
     height: 15%;
     display: none;
 }
@@ -357,7 +361,7 @@
 #fillsirinj{
     position: absolute;
     height: 10%;
-    left: 18.6%;
+    left: 18.9%;
     top: 32%;
     width: 1%;
     display: none;
@@ -366,7 +370,7 @@
 #fillslide{
     position: absolute;
     left: 37%;
-    top: 39%;
+    top: 38%;
     width: 1.7%;
     height: 6%;
     display: none;
@@ -376,15 +380,16 @@
 #fullslide{
     position: absolute;
     left: 37%;
-    top: 39%;
+    top: 38%;
     width: 1.7%;
+    height: 6%;
     display: none;
 }
 
 #sirinj2{
     position: absolute;
-    left: 38%;
-    top: 44.5%;
+    left: 39%;
+    top: 44%;
     height: 3%;
     display: none;
 }
@@ -392,7 +397,7 @@
 #empty{
     position: absolute;
     left: 38%;
-    top: 45.5%;
+    top: 45%;
     height: 1%;
     display: none;
 }

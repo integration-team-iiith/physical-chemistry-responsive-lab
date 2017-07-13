@@ -1,3 +1,8 @@
+#body{
+    width: 100%;
+}
+
+
 #hrline1{
     position: absolute;
     z-index: 4;
@@ -40,6 +45,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 160%;
     width: 50%;
+    z-index: 3;
 }
 
 
@@ -94,7 +100,7 @@
     position: absolute;
     left: 18%;
     top: 9%;
-    height: 17%;
+    height: 130pt;
 }
 
 #samplsoltxt{
@@ -106,11 +112,13 @@
     font-weight: bold;
 }
 
+
 #solvent{
     position: absolute;
     left: 40%;
     top: 9%;
     height: 17%;
+    width: 5%;
 }
 
 
@@ -120,6 +128,7 @@
     left: 40%;
     top: 9%;
     height: 17%;
+    width: 5%;
     display: none;
 }
 
@@ -171,15 +180,15 @@
 
 #spectro{
     position: absolute;
-    left: 10%;
+    left: 15%;
     top: 65%;
-    height: 30%;
+    height: 220pt;
 }
 
 #spectrotxt{
     font-weight: bold;
     position: absolute;
-    left: 23%;
+    left: 18%;
     top: 66%;
     font-size: 120%;
 }
@@ -204,10 +213,10 @@
 
 #blue1{
     position: absolute;
-    left: 40.3%;
+    left: 41%;
     top: 2%;
     height: 15%;
-    width: 4%;
+    width: 3%;
     display: none;
 }
 
@@ -485,7 +494,8 @@
 #innerinstr{
     position: absolute;
     top: 47%;
-    left: 50%;
+    left: 49%;
+    width: 51%;
     display: none;
 }
 
@@ -493,6 +503,6 @@
 #innerinstrtxt{
     position: absolute;
     top: 47.5%;
-    left: 51%;
+    left: 49.5%;
     display: none;
 }

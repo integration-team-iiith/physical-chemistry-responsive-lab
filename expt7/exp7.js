@@ -37,17 +37,16 @@ function helper(){
 	$('#fillsolution').hide();
 	$('#fullsolution').show();
 	$("#fullbottle").show();
-	$('#desicator').on('click',function(){showSlide();});
+	$('#desicatorbtn').on('click',function(){showSlide();});
 }
 
 function showSlide(){
 	$('#slide').show();
-	$('#fullbottle').on('click', function(){fillSlide();});
+	$('#fullsolution').on('click', function(){fillSlide();});
 	document.getElementById('instr').innerHTML = "Click on the sample solution to draw 1ml of the solution with a syringe";
 }
 
 function fillSlide(){
-	$("#fullbottle").hide();
 	document.getElementById('instr').innerHTML = "Click on the solution IR cell to transfer the sample solution until all the air is expelled from the solution cell."
 	$('#fillsirinj').show();
 	$('#sirinj').show();
@@ -65,7 +64,7 @@ function fillSlide1(){
 	$('#sirinj2').show();
 	$('#empty').show();
 	$('#fillslide').show();
-	setTimeout(helper2,600);
+	setTimeout(helper2,1000);
 }
 
 
@@ -93,6 +92,7 @@ function spectro1(){
 
 function evaluate(){
 	$('#mirror').show();
+	setTimeout(stopMirror,3000);
     $('#exp').show();
 	$("#movablemirror").hide();
     var img = document.getElementById('exp');
@@ -102,8 +102,6 @@ function evaluate(){
 
 
 function showGraph(){
-	$("#movablemirror").show();
-	$('#mirror').hide();
     $('#exp').show();
     var img1 = document.getElementById('exp');
     img1.src = "sprites/DefineSprite_20_IR_Sol_exp7_fla.Animation_1_1/124.png"
@@ -116,6 +114,11 @@ function showGraph(){
     else{
         img.src = "yellowgraph.gif"
     }
+}
+
+function stopMirror(){
+	$("#movablemirror").show();
+	$('#mirror').hide();
 }
 
 function stopgraph(){

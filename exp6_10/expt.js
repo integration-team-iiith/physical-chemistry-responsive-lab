@@ -52,7 +52,7 @@ function draw1(){
 function helper1(){
     $('#blue1').hide();
     $('#hrblue').show();
-    $("#hrblue").velocity({width: 100, translateY: 240}, {duration: 1000});
+    $("#hrblue").velocity({width: 100, translateY: 235, translateX: -80}, {duration: 1000});
     setTimeout(setMachine,1000);
 }
 
