@@ -52,8 +52,8 @@ function draw1(){
 function helper1(){
     $('#blue1').hide();
     $('#hrblue').show();
-    $("#hrblue").velocity({width: 100, translateY: 235, translateX: -80}, {duration: 1000});
-    setTimeout(setMachine,1000);
+    $("#hrblue").velocity({width: 100, translateY: 205}, {duration: 1000});
+    setTimeout(setMachine,1200);
 }
 
 /* 1. shows animation of spectromachine filling with solvent liquid
@@ -164,7 +164,7 @@ function draw3(){
 function helper5(){
     $('#green1').hide();
     $("#hrgreen").show();
-    $("#hrgreen").velocity({width: 100, translateY: 240}, {duration: 1000});
+    $("#hrgreen").velocity({width: 100, translateY: 200}, {duration: 1000});
     setTimeout(setMachine2,1000);
 }
 
@@ -175,10 +175,11 @@ function setMachine2(){
     $('#spectro').show();
     var img = document.getElementById("spectro");
     img.src = "greenmachine.gif";
-    setTimeout(helper8,1000);
+    setTimeout(helper8,1200);
 }
 
 function helper8(){
+    $("#hrgreen").hide();
     $("#spectro").show();
     var img = document.getElementById("spectro");
     img.src = "greenmachine/40.png";

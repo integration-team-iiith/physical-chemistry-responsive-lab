@@ -1,5 +1,10 @@
 var y = 0;
 
+/* when someone clicks on methyl benzoicacid btn:
+1. both buttons disappears
+2. onclick on sample bottle activates
+3. instruction text changes 
+*/
 function vanish1(){
 	y = 1;
 	$('#yellowbtn').hide();
@@ -11,6 +16,12 @@ function vanish1(){
 }
 
 
+/* when someone clicks on nitrophynol btn:
+1. both buttons disappears
+2. onclick on sample bottle activates
+3. instruction text changes 
+*/
+
 function vanish2(){
 	$('#yellowbtn').hide();
 	$('#yellowtxt').hide();
@@ -20,6 +31,10 @@ function vanish2(){
 	document.getElementById('instr').innerHTML = "Click on the sample  to transfer small amount (2-5mg) of the substance into the empty sample bottle."
 }
 
+/*when someone clicks on sample bottle with yellow solution:
+1. yellow solution in empty sample bottle disappears
+2. onclick on solvent bottle activates
+3. instruction text changes */
 
 function sampleTransffer(){
 	$('#yellow').show();
@@ -27,12 +42,19 @@ function sampleTransffer(){
 	$('#solvent').on('click',function(){solventTransffer();});
 }
 
+/*when someone clicks on solvent bottle:
+1. animation starts of filling of solvent in sample bottle
+2. instruction text changes
+3. calls helper fub=nction after 1 second */
+
 function solventTransffer(){
 	$('#fillsolution').show();
 	document.getElementById('instr').innerHTML = "Click on the desicator to take out the 'solution IR cell'."
 	setTimeout(helper,1000);
 }
 
+/*1. animation of filling solution disappears and sample bottle appears  with full of mixture of sample and solvent solution
+2. oncclick on desicatorbtn activates */
 function helper(){
 	$('#fillsolution').hide();
 	$('#fullsolution').show();
@@ -40,11 +62,20 @@ function helper(){
 	$('#desicatorbtn').on('click',function(){showSlide();});
 }
 
+/*whensomeone clicks on desicatorbtn:
+1. IRslide appears
+2. onclick on sample bottle containing mixture solution starts
+3. instruction text changes */
+
 function showSlide(){
 	$('#slide').show();
 	$('#fullsolution').on('click', function(){fillSlide();});
 	document.getElementById('instr').innerHTML = "Click on the sample solution to draw 1ml of the solution with a syringe";
 }
+
+/*when someone clicks on mixture part in sample bottle:
+1. aniamtion starts of fillin syringe
+2. calls helper1 function after 0.9 seconds */
 
 function fillSlide(){
 	document.getElementById('instr').innerHTML = "Click on the solution IR cell to transfer the sample solution until all the air is expelled from the solution cell."
@@ -53,13 +84,18 @@ function fillSlide(){
 	setTimeout(helper1,900);
 }
 
-
+/*1. animation of syringe disappears
+2. onclick on slide activates */
 function helper1(){
 	$('#fillsirinj').hide();
 	$('#sirinj').hide();
 	$('#slide').on('click',function(){fillSlide1();});
 }
 
+
+/*when someone clicks on slide:
+1. animation starts showing filling solution into mid part of slide with help of syringe
+2. calls helper2 function after 1 sec  */
 function fillSlide1(){
 	$('#sirinj2').show();
 	$('#empty').show();
@@ -67,7 +103,9 @@ function fillSlide1(){
 	setTimeout(helper2,1000);
 }
 
-
+/* 1. animation disappears of filling solution into slide
+2. onclick on slide activates
+3. instruction text changes */
 function helper2(){
 	$('#sirinj2').hide();
 	$('#empty').hide();
@@ -77,11 +115,18 @@ function helper2(){
 	document.getElementById('instr').innerHTML ="Click on the solution IR cell to place the cell inside the spectrometer."
 }
 
+/* when someone clicks on slide:
+1. spectromachine appears with animation
+2. calls after 3.7 seconds spectro1 function */
+
 function spectro(){
 	$('#machine').show();
     setTimeout(spectro1,3700);
 }
 
+/* 1. animation of spectromachine ends
+2. intruction text gets changed
+3. oclick on start button activates */
 function spectro1(){
 	$('#machine').show();
 	var img = document.getElementById('machine');
@@ -90,6 +135,10 @@ function spectro1(){
     $('#strtbtn').on('click',function(){ evaluate() ;});
 }
 
+/*when someone clicks on startbtn:
+1.animation of microscopic view in spectroscopy machine starts on rightt top side of page
+2.calls stopMirror function after 3sec to stop moving mirror
+3. calls showGraph function after 5sec */
 function evaluate(){
 	$('#mirror').show();
 	setTimeout(stopMirror,3000);
@@ -100,6 +149,14 @@ function evaluate(){
     setTimeout(showGraph,5000);
 }
 
+
+function stopMirror(){
+	$("#movablemirror").show();
+	$('#mirror').hide();
+}
+
+/*1. starts showing graph
+2. calls stopgraph function after 4sec */
 
 function showGraph(){
     $('#exp').show();
@@ -116,11 +173,7 @@ function showGraph(){
     }
 }
 
-function stopMirror(){
-	$("#movablemirror").show();
-	$('#mirror').hide();
-}
-
+/* just stops animation of graph and activates onclick on evaluatebtn */
 function stopgraph(){
 	document.getElementById('instr').innerHTML = "Click on the evaluate button to spectral analysis"
     $('#graph.show');
@@ -133,6 +186,8 @@ function stopgraph(){
     }
 	$("#evltbtn").on("click", function(){urlChange();});
 }
+
+/* when someone clicks on evaluate btn it just opens a new url in a new tab showing graph for corresponding mixtures we've selected  */
 
 function urlChange(){
 	if(y == 1){

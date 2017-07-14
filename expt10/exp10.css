@@ -1,21 +1,27 @@
 #heading{
     position: absolute;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 400%;
     font-weight: bold;
     color: red;
     left: 40%;
     top: 10%;
+    height: 10vh;
+    line-height: 10vh;
+    font-size: 7vh;
+    text-align: center;
 }
 
 #select{
     position: absolute;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 250%;
     font-weight: bold;
     color: darkblue;
     top: 45%;
     left: 17%;
+    height: 10vh;
+    line-height: 10vh;
+    font-size: 4vh;
+    text-align: center;
 }
 
 
@@ -24,6 +30,7 @@
     top: 55%;
     left: 20%;
     height: 8%;
+    width: 12%;
 }
 
 #btn2{
@@ -31,27 +38,35 @@
     top: 70%;
     left: 20%;
     height: 8%;
+    width: 12%;
 }
 
 #sampl1{
     position: absolute;
-    top: 57%;
+    top: 54%;
     left: 22%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 250%;
     font-weight: bold;
     color:#e58404;
+    height: 10vh;
+    line-height: 10vh;
+    font-size: 4vh;
+    text-align: center;
 }
 
 
 #sampl2{
     position: absolute;
-    top: 72%;
+    top: 69%;
     left: 22%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 250%;
     font-weight: bold;
     color:#e58404;
+    height: 10vh;
+    line-height: 10vh;
+    font-size: 4vh;
+    text-align: center;
 }
 
 #selected1{
@@ -81,11 +96,14 @@
 #expselect{
     position: absolute;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 250%;
     font-weight: bold;
     color: darkblue;
     top: 45%;
     left: 60%;
+    height: 10vh;
+    line-height: 10vh;
+    font-size: 4vh;
+    text-align: center;
     display: none;
 }
 

@@ -44,8 +44,10 @@ function cursorPointers(id1, id2){
 }
 
 
-/* If a person clicks on aspirin btn then this function is called, function hides both buttons when someone clicks on aspirin button
-and sets y to 0*/
+/*when someone clicks on aspirine button: 
+1. aspirin and cafine button disappears
+2. onclick n sample bottle activates
+3. instruction text changes*/
 function removeBtn1(){
     $('#aspirin').hide();
     $('#asprntxt').hide();
@@ -57,9 +59,10 @@ function removeBtn1(){
 }
 
 
-/* If a person clicks on caffine btn then this function is called, function hides both buttons when someone clicks on caffine button and 
-sets variable y to 1
-*/
+/*when someone clicks on aspirine button: 
+1. aspirin and cafine button disappears
+2. onclick n sample bottle activates
+3. instruction text changes*/
 function removeBtn2(){
     $('#aspirin').hide();
     $('#asprntxt').hide();
@@ -70,30 +73,16 @@ function removeBtn2(){
     document.getElementById('instr').innerHTML = "Click on the sample bottle (the first bottle) to transfer a small quantity of the sample to the mortar."
 }
 
-
-/* function simply transffers some amount of sample to mortar. function just shows filling of spoon(by using gify)*/
+/* when someoe clicks on sample bottle:
+1. animation starts for transfering sample solution from sample bottle to empty sample pot
+2. it calls emptyspoon function which is basically another animation of spoon after 3 seconds
+3.  activates onclick on mortar*/
 
 function clickSampl(){
     $("#mortar").on("click",function(){mix1();});
     $('#spoonfill').show();
     setTimeout(emptySpoon,3000);
     document.getElementById('instr').innerHTML = "Click on the mortar to grind the sample to fine paste"
-}
-
-
-function mix1(){
-    $('#mortar').show();
-    var img =  document.getElementById('mortar');
-    img.src = "bowl.gif";
-    setTimeout(offMortar1,3000); 
-}
-
-function offMortar1(){
-    $('#mortar').show();
-    var img =  document.getElementById('mortar');
-    img.src = "sprites/DefineSprite_82/1.png";
-    document.getElementById("instr").innerHTML = "Click on the bottle containing Nizol to transfer few drops to the mortar.";
-    $('#nizol').on("click",function(){ sirinj() ;})
 }
 
 
@@ -106,13 +95,42 @@ function emptySpoon(){
     setTimeout(removeSpoon,2800);
 }
 
+
 /* function hides spoon and activates onclick function on nozal bottol */
 
 function removeSpoon(){
     $('#emptyspoon').hide();
 }
 
-/* function fills sirinj with nozal solution */
+
+
+/*when someone clicks on mortar:
+1. animation of mixing solution in mrtar starts
+2. it calls offMortar1 function to stop animation after 3 sec */
+function mix1(){
+    $('#mortar').show();
+    var img =  document.getElementById('mortar');
+    img.src = "bowl.gif";
+    setTimeout(offMortar1,3000); 
+}
+
+/* 1. stops animation of mortar
+2. instructin text changes
+3. onclick on nizol activates*/
+
+function offMortar1(){
+    $('#mortar').show();
+    var img =  document.getElementById('mortar');
+    img.src = "sprites/DefineSprite_82/1.png";
+    document.getElementById("instr").innerHTML = "Click on the bottle containing Nizol to transfer few drops to the mortar.";
+    $('#nizol').on("click",function(){ sirinj() ;})
+}
+
+
+/*when someone clicks on nizol bottle:
+1. animation of drawing solvent from nizol disappears
+2. calls replaceSirinj after 2.5 sec
+3. deactivates onclick on nizol bottle */
 
 function sirinj(){
     $('#fillsirinj').show();
@@ -120,7 +138,10 @@ function sirinj(){
     document.getElementById("nizol").onclick = false;
 }
 
-/* function empties sirinj into mortar */
+/* 1. animation of puring nizol solution over mortar starts
+2. old animation disappears.
+3. calls helper1 function aftr 1 sec just to hide animation of moving drops
+4. calls removeSirinj after 1 second to just hide animation, to activate onclick on mortar also */
 
 function replaceSirinj(){
     $('#fillsirinj').hide();
@@ -143,7 +164,10 @@ function removeSirinj(){
     document.getElementById('instr').innerHTML = "click on the mortar to make a fine paste of sample"
 }
 
-/* function calls gify image to mix the solution in mortar*/
+
+/* when someone again clicks on mortar:
+1. animation of movin mortar starts
+2. after 3sec calls offMortar function to stop animation */
 
 function mix(){
     $('#mortar').show();
@@ -164,8 +188,11 @@ function offMortar(){
     document.getElementById('instr').innerHTML = "Click on mortar to Transfer the sample prepared onto one of the IR discs"
 }
 
-
-/* just to show IR disc and moving of syringe to pour mixture into tht IR disc */
+/* when someone clicks on mortar again:
+1. animation starts of transferring ready mixture in mortar
+2. plate appears in which mixture goes
+3. calls fillplate after 2.5 sec
+ */
 
 function putinplat(){
     $('#spoonfill2').show();
@@ -173,7 +200,9 @@ function putinplat(){
     setTimeout(fillplate,2500);
 }
 
-
+/* 1. just shows animation of pouring solution on IRplate 
+2. calls removespoon to hide this animation after 2seconds
+3. helper2 function in animation of movement of spoon */
 
 function fillplate(){
     $('#spoonfill2').hide();
@@ -194,7 +223,8 @@ function helper2(){
 
 }
 
-/* function removes syringe and defines onclick on IR disc to form a thin film*/
+/* 1.function removes syringe 
+2.  defines onclick on IR disc to form a thin film*/
 
 function removeSpoon2(){
     document.getElementById('instr').innerHTML = "Click on IR discs Place carefully the other disc  and press to form a thin film."
@@ -205,8 +235,11 @@ function removeSpoon2(){
 }
 
 
-/* function moves holder on each other and defines onclick function to show the spectrometer with uses of fo helper function */
-
+/* 1. when someone clicks on IRplate;
+1. animation starts for movemnt of holder and plates
+2. solvent,samplebottle, mortar disappears
+3. instruction  text gets changeda
+4. calls green21 function after 3.2sec */
 function startexp(){
     $('#green1').show();
     var askInt = setInterval(red1,50);
@@ -245,13 +278,17 @@ function red1(){
     }
 
 }
-
+/*1. changes instruction text
+2. activates onclick on irdisc  */
 function green21(){
     document.getElementById('instr').innerHTML = "Click on the holder to place the the sample in the spectrometer."
     $('#green1').on('click',function(){ green22();});
     
 }
 
+/* when someone clicks on covered IRplates:
+1. starts animation moving holder with help of helper3 function
+2. calls green23 functio after 2.8 sec */
 function green22(){
     $('#green1').hide();
     $('#red3').show();
@@ -271,14 +308,17 @@ function helper3(){
     }
 }
 
+/* 1. stops animation of moving holder
+2. activates onclick on holder */
 function green23(){
     var img = document.getElementById('red3');
     img.src = "sprites/DefineSprite_43_IR_Powder_exp6_fla.top_scene_3/221.png"
     $('#red3').on('click',function(){ spectro() ;});
 }
 
+/* 1. stops animation of spectrometer 
+2.defines onclick on startbutton to start the experiment */
 
-/* function shows spectrometer and defines onclick to start the experiment */
 
 function spectro1(){
     $('#machine').show();
@@ -287,6 +327,13 @@ function spectro1(){
     $('#strtbtn').on('click',function(){ evaluate() ;});
 }
 
+
+/* when someone clicks on holder: 
+1. function shows animation of spectrometer
+2. calls spectro1 function after 3.6 seconds
+*/
+
+
 function spectro(){
     document.getElementById('instr').innerHTML = "Click start to run the spectrometer."
     $('#machine').show();
@@ -294,7 +341,9 @@ function spectro(){
 }
 
 
-
+/* when someone clicks on start button:
+1. animation of beam falling on mirror in spectrometer starts
+2. calls showGraph function after 5seconds */
 function evaluate(){
     $('#exp').show();
     var img = document.getElementById('exp');
@@ -302,6 +351,8 @@ function evaluate(){
     setTimeout(showGraph,5000);
 }
 
+/*1. starts animation of graph depending on which button we've selected in starting
+2. stops animation of microscopic view of beams  */
 function showGraph(){
     $('#exp').show();
     var img1 = document.getElementById('exp');
@@ -318,6 +369,8 @@ function showGraph(){
     }
 }
 
+
+/* stops animation of graph based n which one is selected */
 function stopgraph(){
     $('#graph.show');
     var img =  document.getElementById('graph');
@@ -330,6 +383,7 @@ function stopgraph(){
     $("#evltbtn").on("click", function(){urlChange();});
 }
 
+/* onclicking on evaluate button it opens a new url in new tab showing graph */
 function urlChange(){
     if(y==0){
         var win = window.open('https://ccnsb06-iiith.vlabs.ac.in/exp6_10/aspirin/plot_IR_aspirin_exp6.html','_blank');
