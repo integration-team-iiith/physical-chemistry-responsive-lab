@@ -4,6 +4,7 @@ var y = 0;
 var x = 1;
 var z = 101;
 var p = 1;
+var int2;
 var askint;
 function moveImage(){
     id = setInterval(frame, 5);
@@ -54,6 +55,7 @@ function removeBtn1(){
     $('#cafine').hide();
     $('#cafintxt').hide();
     y = 0;
+    cursorPointers("aspirin","sampl");
     $('#sampl').on("click", function(){clickSampl(); }); 
     document.getElementById('instr').innerHTML = "Click on the sample bottle (the first bottle) to transfer a small quantity of the sample to the mortar."
 }
@@ -69,6 +71,7 @@ function removeBtn2(){
     $('#cafine').hide();
     $('#cafintxt').hide();
     y = 1;
+    cursorPointers("cafine","sampl");
     $('#sampl').on("click", function(){clickSampl(); });
     document.getElementById('instr').innerHTML = "Click on the sample bottle (the first bottle) to transfer a small quantity of the sample to the mortar."
 }
@@ -79,6 +82,7 @@ function removeBtn2(){
 3.  activates onclick on mortar*/
 
 function clickSampl(){
+    cursorPointers("sampl","mortar");
     $("#mortar").on("click",function(){mix1();});
     $('#spoonfill').show();
     setTimeout(emptySpoon,3000);
@@ -110,7 +114,7 @@ function removeSpoon(){
 function mix1(){
     $('#mortar').show();
     var img =  document.getElementById('mortar');
-    img.src = "bowl.gif";
+    img.src = "Images/mortar.gif";
     setTimeout(offMortar1,3000); 
 }
 
@@ -119,9 +123,10 @@ function mix1(){
 3. onclick on nizol activates*/
 
 function offMortar1(){
+    cursorPointers("mortar","nizol");
     $('#mortar').show();
     var img =  document.getElementById('mortar');
-    img.src = "sprites/DefineSprite_82/1.png";
+    img.src = "Images/sprites/DefineSprite_82/1.png";
     document.getElementById("instr").innerHTML = "Click on the bottle containing Nizol to transfer few drops to the mortar.";
     $('#nizol').on("click",function(){ sirinj() ;})
 }
@@ -172,7 +177,7 @@ function removeSirinj(){
 function mix(){
     $('#mortar').show();
     var img =  document.getElementById('mortar');
-    img.src = "bowl.gif";
+    img.src = "Images/mortar.gif";
     setTimeout(offMortar,3000); 
 }
 
@@ -180,10 +185,11 @@ function mix(){
 
 
 function offMortar(){
+    cursorPointers("mortar","mortar1");
     $('#mortar').hide();
     $('#mortar1').show();
     var img =  document.getElementById('mortar');
-    img.src = "sprites/DefineSprite_82/1.png";
+    img.src = "Images/sprites/DefineSprite_82/1.png";
     $('#mortar1').on('click',function(){putinplat();});
     document.getElementById('instr').innerHTML = "Click on mortar to Transfer the sample prepared onto one of the IR discs"
 }
@@ -214,7 +220,7 @@ function helper2(){
     if(p<40){
         $('#emptyspoon2').show();
         var img = document.getElementById("emptyspoon2");
-        img.src = "sprites/DefineSprite_84_IR_Powder_exp6_fla.emptysepctual_28/"+ p + ".png";
+        img.src = "Images/sprites/DefineSprite_84_IR_Powder_exp6_fla.emptysepctual_28/"+ p + ".png";
     }
     else{
         $("#emptyspoon2").hide();
@@ -227,6 +233,8 @@ function helper2(){
 2.  defines onclick on IR disc to form a thin film*/
 
 function removeSpoon2(){
+    cursorPointers("mortar1","plate");
+    cursorPointers("mortar1","fill");
     document.getElementById('instr').innerHTML = "Click on IR discs Place carefully the other disc  and press to form a thin film."
     $('#emptyspoon2').hide();
     $('#fill').show();
@@ -263,7 +271,7 @@ function red1(){
     var flask = [];
     var i;
     for(i=101;i<=163;i++){
-        flask[i] = "sprites/DefineSprite_43_IR_Powder_exp6_fla.top_scene_3/" + i + ".png" 
+        flask[i] = "Images/sprites/DefineSprite_43_IR_Powder_exp6_fla.top_scene_3/" + i + ".png" 
     }
     if(z < 163){
         img.src = flask[z];
@@ -281,6 +289,7 @@ function red1(){
 /*1. changes instruction text
 2. activates onclick on irdisc  */
 function green21(){
+    cursorPointers("plate","green1");
     document.getElementById('instr').innerHTML = "Click on the holder to place the the sample in the spectrometer."
     $('#green1').on('click',function(){ green22();});
     
@@ -300,7 +309,7 @@ function helper3(){
     if(z>=165 && z<=221){
         $('#red3').show();
         var img = document.getElementById("red3");
-        img.src = "sprites/DefineSprite_43_IR_Powder_exp6_fla.top_scene_3/" + z + ".png"
+        img.src = "Images/sprites/DefineSprite_43_IR_Powder_exp6_fla.top_scene_3/" + z + ".png"
         z++;
     }
     else{
@@ -311,8 +320,9 @@ function helper3(){
 /* 1. stops animation of moving holder
 2. activates onclick on holder */
 function green23(){
+    cursorPointers("green1","red3");
     var img = document.getElementById('red3');
-    img.src = "sprites/DefineSprite_43_IR_Powder_exp6_fla.top_scene_3/221.png"
+    img.src = "Images/sprites/DefineSprite_43_IR_Powder_exp6_fla.top_scene_3/221.png"
     $('#red3').on('click',function(){ spectro() ;});
 }
 
@@ -321,9 +331,10 @@ function green23(){
 
 
 function spectro1(){
+    cursorPointers("red3","strtbtn");
     $('#machine').show();
     var img = document.getElementById("machine");
-    img.src = "binaryData/last2.png";
+    img.src = "Images/spectrometer.png";
     $('#strtbtn').on('click',function(){ evaluate() ;});
 }
 
@@ -347,7 +358,7 @@ function spectro(){
 function evaluate(){
     $('#exp').show();
     var img = document.getElementById('exp');
-    img.src = "binaryData/light.gif";
+    img.src = "Images/beam.gif";
     setTimeout(showGraph,5000);
 }
 
@@ -356,16 +367,16 @@ function evaluate(){
 function showGraph(){
     $('#exp').show();
     var img1 = document.getElementById('exp');
-    img1.src = "sprites/DefineSprite_20/124.png"    
+    img1.src = "Images/sprites/DefineSprite_20/124.png"    
     $('#graph').show();
     var img = document.getElementById('graph');
     if(y==1){
         setTimeout(stopgraph,10500);
-        img.src = "binaryData/bluegraph.gif";
+        img.src = "Images/bluegraph.gif";
     }
     else{
         setTimeout(stopgraph,10500);
-        img.src = "binaryData/yellowgraph.gif"
+        img.src = "Images/yellowgraph.gif"
     }
 }
 
@@ -375,11 +386,12 @@ function stopgraph(){
     $('#graph.show');
     var img =  document.getElementById('graph');
     if(y==1){
-        img.src = "sprites/DefineSprite_133_IR_Powder_exp6_fla.graph_aspirine_45/105.png";
+        img.src = "Images/sprites/DefineSprite_133_IR_Powder_exp6_fla.graph_aspirine_45/105.png";
 }
     else{
-        img.src = "sprites/DefineSprite_136_IR_Powder_exp6_fla.graph_caffeine_46/105.png";
+        img.src = "Images/sprites/DefineSprite_136_IR_Powder_exp6_fla.graph_caffeine_46/105.png";
     }
+    cursorPointers("strtbtn","evltbtn");
     $("#evltbtn").on("click", function(){urlChange();});
 }
 

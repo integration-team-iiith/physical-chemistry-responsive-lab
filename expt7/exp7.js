@@ -1,5 +1,12 @@
 var y = 0;
 
+
+//To disable and enable the cursor pointers on elements.
+function cursorPointers(id1, id2){
+    document.getElementById(id1).style.cursor = "default";
+    document.getElementById(id2).style.cursor = "pointer";
+}
+
 /* when someone clicks on methyl benzoicacid btn:
 1. both buttons disappears
 2. onclick on sample bottle activates
@@ -11,6 +18,7 @@ function vanish1(){
 	$('#yellowtxt').hide();
 	$('#redbtn').hide();
 	$('#redtxt').hide();
+	cursorPointers("yellowbtn","sampl");
 	$('#sampl').on('click',function(){sampleTransffer();});
 	document.getElementById('instr').innerHTML = "Click on the sample  to transfer small amount (2-5mg) of the substance into the empty sample bottle."
 }
@@ -27,6 +35,7 @@ function vanish2(){
 	$('#yellowtxt').hide();
 	$('#redbtn').hide();
 	$('#redtxt').hide();
+	cursorPointers("redbtn","sampl");
 	$('#sampl').on('click',function(){sampleTransffer();});
 	document.getElementById('instr').innerHTML = "Click on the sample  to transfer small amount (2-5mg) of the substance into the empty sample bottle."
 }
@@ -38,6 +47,7 @@ function vanish2(){
 
 function sampleTransffer(){
 	$('#yellow').show();
+	cursorPointers("sampl","solvent");
 	document.getElementById('instr').innerHTML = "Click on the solvent bottle to transfer 2 to 3ml of the solvent (methylene chloride) to the sample to prepared a clear solution."
 	$('#solvent').on('click',function(){solventTransffer();});
 }
@@ -56,6 +66,7 @@ function solventTransffer(){
 /*1. animation of filling solution disappears and sample bottle appears  with full of mixture of sample and solvent solution
 2. oncclick on desicatorbtn activates */
 function helper(){
+	cursorPointers("solvent","desicatorbtn");
 	$('#fillsolution').hide();
 	$('#fullsolution').show();
 	$("#fullbottle").show();
@@ -68,6 +79,7 @@ function helper(){
 3. instruction text changes */
 
 function showSlide(){
+	cursorPointers("desicatorbtn","fullsolution");
 	$('#slide').show();
 	$('#fullsolution').on('click', function(){fillSlide();});
 	document.getElementById('instr').innerHTML = "Click on the sample solution to draw 1ml of the solution with a syringe";
@@ -87,6 +99,7 @@ function fillSlide(){
 /*1. animation of syringe disappears
 2. onclick on slide activates */
 function helper1(){
+	cursorPointers("fullsolution","slide");
 	$('#fillsirinj').hide();
 	$('#sirinj').hide();
 	$('#slide').on('click',function(){fillSlide1();});
@@ -107,6 +120,7 @@ function fillSlide1(){
 2. onclick on slide activates
 3. instruction text changes */
 function helper2(){
+	cursorPointers("slide","fullslide");
 	$('#sirinj2').hide();
 	$('#empty').hide();
 	$('#fillslide').hide();
@@ -128,9 +142,10 @@ function spectro(){
 2. intruction text gets changed
 3. oclick on start button activates */
 function spectro1(){
+	cursorPointers("fullslide","strtbtn");
 	$('#machine').show();
 	var img = document.getElementById('machine');
-	img.src = "last2.png";
+	img.src = "Images/spectromachine.png";
 	document.getElementById('instr').innerHTML = "Click on 'start' button to start the spectrometer.";
     $('#strtbtn').on('click',function(){ evaluate() ;});
 }
@@ -140,17 +155,21 @@ function spectro1(){
 2.calls stopMirror function after 3sec to stop moving mirror
 3. calls showGraph function after 5sec */
 function evaluate(){
+	$("#uppersupport").show();
+	$("#lowersupport").show();
 	$('#mirror').show();
 	setTimeout(stopMirror,3000);
     $('#exp').show();
 	$("#movablemirror").hide();
     var img = document.getElementById('exp');
-    img.src = "light.gif";
+    img.src = "Images/beam.gif";
     setTimeout(showGraph,5000);
 }
 
 
 function stopMirror(){
+	$("#uppersupport").hide();
+	$("#lowersupport").hide();
 	$("#movablemirror").show();
 	$('#mirror').hide();
 }
@@ -161,15 +180,15 @@ function stopMirror(){
 function showGraph(){
     $('#exp').show();
     var img1 = document.getElementById('exp');
-    img1.src = "sprites/DefineSprite_20_IR_Sol_exp7_fla.Animation_1_1/124.png"
+    img1.src = "Images/sprites/DefineSprite_20_IR_Sol_exp7_fla.Animation_1_1/124.png"
     setTimeout(stopgraph,4000);    
     $('#graph').show();
     var img = document.getElementById('graph');
     if(y==1){
-        img.src = "greengraph.gif";
+        img.src = "Images/greengraph.gif";
     }
     else{
-        img.src = "yellowgraph.gif"
+        img.src = "Images/yellowgraph.gif"
     }
 }
 
@@ -179,11 +198,12 @@ function stopgraph(){
     $('#graph.show');
     var img =  document.getElementById('graph');
     if(y==1){
-        img.src = "greenf.png";
+        img.src = "Images/greenf.png";
     }
     else{
-        img.src = "yellowf.png";
+        img.src = "Images/yellowf.png";
     }
+	cursorPointers("strtbtn","evltbtn");
 	$("#evltbtn").on("click", function(){urlChange();});
 }
 

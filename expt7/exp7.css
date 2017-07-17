@@ -5,6 +5,7 @@
     width: 10%;
     height: 8%;
     border: darkblue;
+    cursor: pointer;
 }
 
 #yellowtxt{
@@ -12,8 +13,11 @@
     top: 16%;
     left: 6%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 130%;
+    font-size: 2vh;
+    height: 6vh;
+    width: 11vh;
     font-weight: bold;
+    cursor: pointer;
 }
 
 
@@ -24,6 +28,7 @@
     width: 10%;
     height: 8%;
     border: darkred;
+    cursor: pointer;
 }
 
 #redtxt{
@@ -31,8 +36,12 @@
     top: 27%;
     left: 5.5%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 130%;
+    font-size: 2vh;
+    height: 6vh;
+    width: 11vh;
+    text-align: center;
     font-weight: bold;
+    cursor: pointer;
 }
 
 
@@ -50,6 +59,10 @@
     position: absolute;
     left: 16%;
     top: 48%;
+    text-align: center;
+    font-size: 2vh;
+    height: 5vh;
+    width: 15vh;
 }
 
 #sampl{
@@ -63,7 +76,11 @@
 #sampltxt{
     position: absolute;
     top: 23%;
-    left: 18%;
+    left: 16%;
+    text-align: center;
+    font-size: 2vh;
+    height: 5vh;
+    width: 15vh;
 }
 
 
@@ -106,8 +123,12 @@
 
 #solventtxt{
     position: absolute;
-    left: 28%;
+    left: 25.5%;
     top: 26%;
+    text-align: center;
+    font-size: 2vh;
+    height: 5vh;
+    width: 15vh;
 }
 
 #desicator{
@@ -132,7 +153,11 @@
 #desicatortxt{
     position: absolute;
     left: 36%;
-    top: 23%;
+    top: 21%;
+    text-align: center;
+    font-size: 2vh;
+    height: 5vh;
+    width: 15vh;
 }
 
 #hrline1{
@@ -227,7 +252,7 @@
     top: 52%;
     left: 2%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 160%;
+    font-size: 3vh;
     width: 50%;
 }
 
@@ -277,28 +302,37 @@
 #fixedmirror{
     position: absolute;
     left: 64%;
+    top: 1%;
     height: 4.5%;
+    width: 11%;
+
 }
 
 #movablemirror{
     position: absolute;
-    left: 84%;
-    top: 17%;
+    left: 83%;
+    top: 17.5%;
+    height: 14.5%;
+    width: 14%;
 }
 
 #uppersupport{
     position: absolute;
+    height: 1%;
     width: 10%;
-    top: 17.7%;
+    top: 18.2%;
     left: 86%;
+    display: none;
+    
 }
 
 
 #lowersupport{
     position: absolute;
     width: 10%;
-    top: 29%;
+    top: 29.5%;
     left: 86%;
+    display: none;
 }
 
 

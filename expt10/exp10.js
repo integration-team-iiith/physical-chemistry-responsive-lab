@@ -518,11 +518,17 @@ function MSurlChange(){
 
 // If User  selects btn3 i.e.NMR Experiment then this Part of Js will Work for all functionalities of that experiment
 
+/* function just shows page where all buttons and assets are present for required page and also hides starting page */
 
 function moveToNmr(){
     $("#container").hide();
     $("#NMRcontainer").show();
 }
+
+/* when someone clicks on sample button:
+1. red solution appears in injector
+2. onclick activates on load sample button and also onclick on sample button deactivats
+*/
 
 function NMRshowsample(){
     $("#NMRred-injector").show();
@@ -530,6 +536,12 @@ function NMRshowsample(){
     $("#NMRsample-button").onclick = false;
     $("#NMRload-sample").on("click",function(){NMRpushinjector();});
 }
+
+/* when someone clicks on load button:
+1. injector moves into magnetic field 
+2. animation of moving ring and arrows starts (for this it calls helper2 function)
+3. an image appears at left bottom showing direction of magnetic field
+4. activates onclick on start button */
 
 function NMRpushinjector(){
     $("#NMRred-injector").velocity({translateY:350},{duration:1000});
@@ -545,6 +557,11 @@ function NMRhelper2(){
     $("#NMRvertical-arrows").velocity("reverse",{duration: 10});
 }
 
+/* when someone clicks on start button:
+1. animation of moving arrows start at right side(by calling NMRhelper3 function)
+2. one more arrow showing direction of magnetic field appears on right side
+3. onclick on plot button activates  */
+
 function NMRhelper(){
     $("#NMRup-arrow").show();
     $("#NMRhorizontal-arrows-2").show();
@@ -559,6 +576,8 @@ function NMRhelper3(){
     $("#NMRhorizontal-arrows-2").velocity("reverse",{duration:1});
     $("#NMRhorizontal-arrows-1").velocity("reverse",{duration:1});
 }
+
+/* starts plotting graph at right bottom of page */
 
 function NMRhelper1(){
     $("#NMRbenzene-graph").show();

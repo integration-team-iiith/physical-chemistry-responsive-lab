@@ -1,3 +1,11 @@
+
+//To disable and enable the cursor pointers on elements.
+function cursorPointers(id1, id2){
+    document.getElementById(id1).style.cursor = "default";
+    document.getElementById(id2).style.cursor = "pointer";
+}
+
+
 /* when someone clicks loadsample button : 
  1. syringe moves towards that hollow instrument (1st line)
  2. after 1sec calls helper function just to show the yellowdrop released by syringe (2nd...)
@@ -11,7 +19,7 @@
 
 
 function loadSample(){
-    $("#syringe").velocity({translateX:450}, {duration:1000});
+    $("#syringe").velocity({translateX:"97%"}, {duration:1000});
     setTimeout(helper,1000);
     $("#ylwdrop").velocity({translateX: 70, translateY:30}, {delay:1000, duration:1000});
     $("#innerinstr").show();
@@ -34,6 +42,8 @@ function helper(){
 /* this function just shows movement of ion drops */
 
 function helper1(){
+    cursorPointers("load","ionisation");
+    cursorPointers("loadtxt","ionisationtxt");
     $("#ionisation").on("click", function(){ionisation();});
     $("#ionisationtxt").on("click", function(){ionisation();});
     $('#ylwdrop1').show();
@@ -104,6 +114,8 @@ function ionisation(){
     document.getElementById("innerinstrtxt").innerHTML = "Positively charged radical ions are formed by bombardment of beam of &nbsp;high energy electrons."
     document.getElementById("ionisation").onclick = false;
     document.getElementById("ionisationtxt").onclick = false;
+    cursorPointers("ionisation","acceleration");
+    cursorPointers("ionisationtxt","accelerationtxt");
     $("#acceleration").on("click", function(){acceleration();});
     $("#accelerationtxt").on("click", function(){acceleration();});
 }
@@ -185,6 +197,8 @@ function acceleration(){
     $("#arrow2").hide();
     $("#arrow1").velocity({translateX: 10, translateY: -10},{loop:true,  duration:100});
     document.getElementById("innerinstrtxt").innerHTML = "The positively charged radical ions are accelerated by perforated negative electrodes.";
+    cursorPointers("acceleration","deflection");
+    cursorPointers("accelerationtxt","deflectiontxt");
     $("#deflection").on("click", function(){ deflection();});
     $("#deflectiontxt").on("click", function(){ deflection();});
     document.getElementById("acceleration").onclick = false;
@@ -203,8 +217,11 @@ function deflection(){
     $("#temp2").hide();
     $("#emptypipe").show();
     $("#lines").velocity({opacity:1},{duration: 5000});
+    cursorPointers("deflection","evaluation");
+    cursorPointers("deflectiontxt","evaluationtxt");
     document.getElementById("innerinstrtxt").innerHTML = "The ions are sorted and separted by the magnetic filed according to their mass/ charge ratio."
     $("#evaluation").on("click",function(){ evaluation();});
+    $("#evaluationtxt").on("click",function(){ evaluation();});
 }
 
 /* when someone clicks on  evaluation button: 
