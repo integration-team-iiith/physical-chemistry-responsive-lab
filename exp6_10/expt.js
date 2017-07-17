@@ -1,5 +1,13 @@
 var y = 0;
 
+
+//To disable and enable the cursor pointers on elements.
+function cursorPointers(id1, id2){
+    document.getElementById(id1).style.cursor = "default";
+    document.getElementById(id2).style.cursor = "pointer";
+}
+
+
 /* when someone clicks on aspirin btn:
 1. both buttons disappears
 2. innerhtml changes and onclick on solvent bottle activates
@@ -12,6 +20,7 @@ function vanish1(){
     $('#nitrophenol').hide();
     $('#nitrotxt').hide();
     y=1;
+    cursorPointers("aspirin","solvent");
     document.getElementById('instr').innerHTML = "Click on the solvent bottle to draw 1 ml of the solvent (methanol)  and inject it into the sample inlet to clean any impurity in the sample pathway."
     $('#solvent').on("click", function(){ draw1() ;});
 }
@@ -29,6 +38,7 @@ function vanish2(){
     $('#nitrophenol').hide();
     $('#nitrotxt').hide();
     y=0;
+    cursorPointers("aspirin","solvent");
     document.getElementById('instr').innerHTML = "Click on the solvent bottle to draw 1 ml of the solvent (methanol) and inject it into the sample inlet to clean any impurity in the sample pathway."
     $('#solvent').on("click", function(){ draw1() ;});
 }
@@ -52,7 +62,7 @@ function draw1(){
 function helper1(){
     $('#blue1').hide();
     $('#hrblue').show();
-    $("#hrblue").velocity({width: 100, translateY: 205}, {duration: 1000});
+    $("#hrblue").velocity({width: "5%", translateY: 205}, {duration: 1000});
     setTimeout(setMachine,1200);
 }
 
@@ -62,14 +72,15 @@ function helper1(){
 function setMachine(){
     $('#spectro').show();
     var img = document.getElementById("spectro");
-    img.src = "bluemachine.gif";
+    img.src = "Images/bluemachine.gif";
     setTimeout(helper7,1000);
 }
 
 function helper7(){
+    cursorPointers("solvent","samplsol");
     $('#spectro').show();
     var img = document.getElementById("spectro");
-    img.src = "bluemachine/39.png";
+    img.src = "Images/bluemachine/39.png";
     $("#hrblue").hide();
     $('#samplsol').on("click", function(){ spoon1() ;});
 }
@@ -95,6 +106,7 @@ function spoon2(){
 3. activates onclik on solvent bottle again */
 
 function helper2(){
+    cursorPointers("samplsol","solvent1");
     $('#fill').show();
     $('#spoon2').hide();
     $('#solvent1').on("click",function(){draw2();});
@@ -126,9 +138,10 @@ function helper3(){
 /* 1. activates onclick on sample bottle */
 
 function helper4(){
+    cursorPointers("solvent1","sample2");
     $('#sample2').show();
     var img = document.getElementById('sample2');
-    img.src = "full/45.png";
+    img.src = "Images/full_bottle.png";
     $('#syringe2').hide();
     $('#sample2').on("click", function(){ shake(); });
     document.getElementById("instr").innerHTML = "Click on the sample solution to make a clear solution.";
@@ -143,6 +156,7 @@ function shake(){
 }
 
 function helper9(){
+    cursorPointers("sample2","changebeaker");
     document.getElementById("instr").innerHTML = "Click on the sample solution to draw 1 ml of the sample prepared to load on to the mass spectrometer."
     $("#sample2").hide();
     $("#changebeaker").show();
@@ -164,7 +178,7 @@ function draw3(){
 function helper5(){
     $('#green1').hide();
     $("#hrgreen").show();
-    $("#hrgreen").velocity({width: 100, translateY: 200}, {duration: 1000});
+    $("#hrgreen").velocity({width: "5%", translateY: 200}, {duration: 1000});
     setTimeout(setMachine2,1000);
 }
 
@@ -174,7 +188,7 @@ function helper5(){
 function setMachine2(){
     $('#spectro').show();
     var img = document.getElementById("spectro");
-    img.src = "greenmachine.gif";
+    img.src = "Images/greenmachine.gif";
     setTimeout(helper8,1200);
 }
 
@@ -182,7 +196,7 @@ function helper8(){
     $("#hrgreen").hide();
     $("#spectro").show();
     var img = document.getElementById("spectro");
-    img.src = "greenmachine/40.png";
+    img.src = "Images/greenmachine/40.png";
     setTimeout(start,1000);
 }
 
@@ -200,7 +214,7 @@ function start(){
 function helper6(){
     $("#greennew1").show();
     var img = document.getElementById("greennew1");
-    img.src = "binaryData/81.png";
+    img.src = "Images/final_frame.png";
     $('#ylwdrop1').show();
     $('#ylwdrop2').show();
     $('#ylwdrop3').show();
@@ -269,7 +283,8 @@ function helper12(){
     $("#box1").hide();
     document.getElementById("innerinstrtxt").innerHTML = "The ions are sorted and separted by the magnetic filed according to their mass/ charge ratio."
     $("#temp2").hide();
-    $("rainbow").show()
+    $("#rainbow").show();
+    $("#line").velocity({opacity : 1},{duration: 2000});
     setTimeout(graphshow,1000);
 }
 
@@ -278,10 +293,10 @@ function graphshow(){
     $("graph").show();
     var img = document.getElementById("graph");
     if(y==1){
-        img.src = "cafingraph.gif";
+        img.src = "Images/cafingraph.gif";
     }
     else{
-        img.src = "asprngraph.gif"
+        img.src = "Images/asprngraph.gif"
     }
     setTimeout(stopGraph,4000);
 }
@@ -293,11 +308,13 @@ function stopGraph(){
     $("graph").show();
     var img = document.getElementById("graph");
     if(y==1){
-        img.src = "asprngraph.png";
+        img.src = "Images/asprngraph.png";
     }
     else{
-        img.src = "cafingraph.png";
+        img.src = "Images/cafingraph.png";
     }
+        cursorPointers("changebeaker","evaluate");
+        cursorPointers("changebeaker","evlttxt")
         $("#evaluate").on("click", function(){urlChange();});
 }
 
