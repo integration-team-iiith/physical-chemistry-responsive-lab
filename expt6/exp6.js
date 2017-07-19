@@ -164,6 +164,7 @@ function helper1(){
 /* to hide sirinj*/
 
 function removeSirinj(){
+    cursorPointers("mortar","mortar");
     $('#emptysirinj').hide();
     $('#mortar').on("click", function(){ mix() ;});
     document.getElementById('instr').innerHTML = "click on the mortar to make a fine paste of sample"
@@ -286,10 +287,11 @@ function red1(){
     }
 
 }
+
 /*1. changes instruction text
 2. activates onclick on irdisc  */
 function green21(){
-    cursorPointers("plate","green1");
+    cursorPointers("plate","green1");   
     document.getElementById('instr').innerHTML = "Click on the holder to place the the sample in the spectrometer."
     $('#green1').on('click',function(){ green22();});
     

@@ -31,6 +31,7 @@
     left: 20%;
     height: 8%;
     width: 12%;
+    cursor: pointer;
 }
 
 #btn2{
@@ -39,34 +40,35 @@
     left: 20%;
     height: 8%;
     width: 12%;
+    cursor: pointer;
 }
 
 #sampl1{
     position: absolute;
     top: 54%;
-    left: 22%;
+    left: 21%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-weight: bold;
     color:#e58404;
     height: 10vh;
     line-height: 10vh;
-    font-size: 4vh;
-    text-align: center;
+    font-size: 3.5vh;
+    cursor: pointer;
 }
 
 
 #sampl2{
     position: absolute;
     top: 69%;
-    left: 22%;
+    left: 21%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 250%;
     font-weight: bold;
     color:#e58404;
     height: 10vh;
     line-height: 10vh;
-    font-size: 4vh;
+    font-size: 3.5vh;
     text-align: center;
+    cursor: pointer;
 }
 
 #selected1{
@@ -74,7 +76,7 @@
     top: 62%;
     left: 35%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 300%;
+    font-size: 4vh;
     font-weight: bold;
     color: red;
     display: none;
@@ -87,7 +89,7 @@
     top: 62%;
     left: 35%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 300%;
+    font-size: 4vh;
     font-weight: bold;
     color: red;
     display: none;
@@ -114,6 +116,7 @@
     width: 25%;
     height: 8%;
     display: none;
+    cursor: pointer;
 }
 
 
@@ -123,6 +126,7 @@
     top: 64%;
     width: 25%;
     height: 8%;
+    cursor: pointer;
     display: none;
 }
 
@@ -133,6 +137,7 @@
     top: 74%;
     width: 25%;
     height: 8%;
+    cursor: pointer;
     display: none;
 }
 
@@ -141,9 +146,10 @@
     left: 63%;
     top: 56%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 250%;
+    font-size: 4vh;
     font-weight: bold;
     color:#726d66;
+    cursor: pointer;
     display: none;
 
 }
@@ -154,9 +160,10 @@
     left: 63%;
     top: 66%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 250%;
+    font-size: 4vh;
     font-weight: bold;
     color:#726d66;
+    cursor: pointer;
     display: none;
 }
 
@@ -166,9 +173,10 @@
     left: 66%;
     top: 76%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 250%;
+    font-size: 4vh;
     font-weight: bold;
     color:#726d66;
+    cursor: pointer;
     display: none;
 }
 
@@ -184,6 +192,7 @@
     left: 15%;
     height: 15%;
     width: 5%;
+    cursor: pointer;
 }
 
 #IRsampltxt{
@@ -191,7 +200,9 @@
     top: 22%;
     left: 16%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 160%; 
+    font-size: 2.5vh;
+    height: 5vh;
+    width: 6vh;
 }
 
 #IRnizol{
@@ -207,7 +218,9 @@
     top: 22%;
     left: 30%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 160%;
+    font-size: 2.5vh;
+    height: 5vh;
+    width: 6vh;
 }
 
 #IRmortar{
@@ -233,7 +246,9 @@
     top: 45%;
     left: 22.5%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 160%;
+    font-size: 2.5vh;
+    height: 5vh;
+    width: 6vh;
     font-style: oblique;
 }
 
@@ -281,7 +296,8 @@
     top: 88%;
     left: 15%;
     width: 10%;
-    height: 13%
+    height: 13%;
+    cursor: pointer;
 }
 
 
@@ -290,7 +306,8 @@
     top: 90%;
     left: 17%;
     font-weight: bold;
-    font-size: 100%;
+    font-size: 1.2vh;
+    cursor: pointer;
 }
 
 #IRevltbtn{
@@ -321,20 +338,24 @@
     top: 52%;
     left: 2%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 160%;
+    font-size: 2.5vh;
+    height: 5vh;
+    width: 50%
 }
 
 #IRspoonfill{
     position: absolute;
     top: 0.1%;
-    left: 13%;
+    left: 12.8%;
     height: 20%;
+    width: 8%;
     display: none;
 }
 
 #IRemptyspoon{
     position: absolute;
     height: 20%;
+    width: 8%;
     left: 19%;
     top: 20%;
     z-index: 2;
@@ -344,6 +365,7 @@
 #IRfillsirinj{
     position: absolute;
     height: 20%;
+    width: 1.5%;
     left: 30.5%;
     top: 2%;
     display: none;
@@ -352,16 +374,28 @@
 #IRemptysirinj{
     position: absolute;
     height: 20%;
-    left: 23%;
-    top: 25%;
+    left: 23.5%;
+    top: 20%;
+    z-index: 2;
+    width: 1.5%;
     display: none;
 }
 
+
+#IRdrop{
+    position: absolute;
+    top: 28%;
+    left: 24%;
+    height: 5%;
+    width: 0.25%;
+    display: none;
+}
 
 #IRplate{
     position: absolute;
     top: 34%;
     left: 34%;
+    width: 8%;
     display: none;
 }
 
@@ -370,6 +404,7 @@
     height: 20%;
     left: 32%;
     top: 22%;
+    width: 8%;
     display: none;
 }
 
@@ -379,6 +414,7 @@
     left: 19%;
     top: 20%;
     z-index: 2;
+    width: 8%;
     display: none;
 }
 
@@ -386,7 +422,8 @@
 #IRfill{
     position: absolute;
     left: 35.5%;
-    top: 37.5%;
+    top: 37.9%;
+    width: 4%;
     display: none;
 }
 
@@ -404,7 +441,7 @@
     z-index: 6;
     top: 30%;
     left: 15%;
-    height: 50%;
+    height: 60%;
     display: none;
 }
 
@@ -464,6 +501,31 @@
     display: none;
 }
 
+#IRbeamsplitter{
+    position: absolute;
+    top: 17.2%;
+    left: 67%;
+    height: 12%;
+}
+
+#IRfixedmirror{
+    position: absolute;
+    left: 64%;
+    height: 4.5%;
+    width: 11%;
+    top: 0.6%;
+}
+
+
+#IRmovablemirror{
+    position: absolute;
+    left: 83%;
+    top: 17%;
+    height: 14.5%;
+    width: 14%;
+}
+
+
 /* css ends here for IR solution Experiment*/
 
 #MScontainer{
@@ -510,10 +572,12 @@
 
 #MSinstr{
     position: absolute;
-    top: 55%;
+    top: 57.5%;
     left: 2%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 160%;
+    font-size: 2.5vh;
+    width: 50%;
+    z-index: 3;
 }
 
 
@@ -533,6 +597,7 @@
     left: 18%;
     top: 9%;
     height: 17%;
+    width: 5%;
 }
 
 #MSsamplsoltxt{
@@ -540,7 +605,9 @@
     left: 18%;
     top: 27%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 160%;
+    font-size: 2.5vh;
+    height: 5vh;
+    width: 7vh;
     font-weight: bold;
 }
 
@@ -549,6 +616,8 @@
     left: 40%;
     top: 9%;
     height: 17%;
+    width: 5%;
+    cursor: pointer;
 }
 
 
@@ -558,6 +627,7 @@
     left: 40%;
     top: 9%;
     height: 17%;
+    width: 5%;
     display: none;
 }
 
@@ -567,7 +637,9 @@
     left: 40%;
     top: 27%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 160%;
+    font-size: 2.5vh;
+    height: 5vh;
+    width: 7vh;
     font-weight: bold;
 }
 
@@ -575,6 +647,7 @@
     position: absolute;
     left: 30%;
     top: 35%;
+    width: 5.2%;
     height: 17%;
 }
 
@@ -591,27 +664,30 @@
 
 #MSchangebeaker{
     position: absolute;
-    left: 30%;
-    top: 35.3%;
-    height: 20%;
-    width: 5.2%;
+    left: 29.5%;
+    top: 34%;
+    height: 18.8%;
+    width: 6.2%;
     display: none;
 }
 
 #MSsampletxt{
     position: absolute;
-    left: 28.5%;
-    top: 53%;
+    left: 29.5%;
+    top: 52.5%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 160%;
+    font-size: 2.5vh;
+    width: 7vh;
+    height: 5vh;
     font-weight: bold;
 }
 
 #MSspectro{
     position: absolute;
-    left: 20%;
+    left: 18%;
     top: 65%;
-    height: 30%;
+    height: 29%;
+    width: 18%;
 }
 
 #MSspectrotxt{
@@ -619,7 +695,9 @@
     position: absolute;
     left: 23%;
     top: 66%;
-    font-size: 120%;
+    width: 18%;
+    height: 10%;
+    font-size: 1.8vh;
 }
 
 #MSevaluate{
@@ -632,11 +710,11 @@
 
 #MSevlttxt{
     position: absolute;
-    left: 41.5%;
+    left: 41%;
     top: 72.5%;
     color: yellow;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 160%;
+    font-size: 2vh;
     font-weight: bold;
 }
 
@@ -646,7 +724,8 @@
     top: 80%;
     left: 38%;
     width: 10%;
-    height: 13%
+    height: 13%;
+    cursor: pointer;
 }
 
 
@@ -655,16 +734,17 @@
     top: 82.5%;
     left: 40%;
     font-weight: bold;
-    font-size: 100%;
+    font-size: 1.2vh;
     color: yellow;
+    cursor: pointer;
 }
 
 #MSblue1{
     position: absolute;
-    left: 40.3%;
+    left: 41%;
     top: 2%;
     height: 15%;
-    width: 4%;
+    width: 3%;
     display: none;
 }
 
@@ -682,17 +762,19 @@
 
 #MSspoon1{
     position: absolute;
-    left: 16%;
+    left: 15.5%;
     top: 3%;
     height: 20%;
+    width: 10%;
     display: none;
 }
 
 #MSspoon2{
     position: absolute;
     height: 20%;
+    width: 10%;
     top: 27%;
-    left:28%;
+    left:27.5%;
     display: none;
 }
 
@@ -701,6 +783,7 @@
     top: 50%;
     left: 30.5%;
     width: 4%;
+    height: 2%;
     display: none;
 }
 
@@ -710,6 +793,7 @@
     height: 19%;
     top: 24%;
     left: 32%;
+    width: 1.5%;
     display: none;
 }
 
@@ -718,91 +802,27 @@
     height: 19%;
     left: 41.5%;
     top: 3%;
+    width: 1.5%;
     display: none;
 }
 
 
-#MSpipe1{
+#MSchamber{
     position: absolute;
-    left: 50%;
-    top: 5%;
-    width: 35%;
-}
-
-#MSround1{
-    position: absolute;
-    left: 63.3%;
-    top: 15%;
-    z-index: 2;
-    width: 0.4%;
+    top: 3%;
+    left: 56%;
+    height: 30%;
+    width: 30%;
 }
 
 
-#MSround3{
-    position: absolute;
-    left: 66%;
-    top: 15.9%;
-    z-index: 2;
-    width: 0.4%;
-}
-
-
-#MSround2{
-    position: absolute;
-    left: 64.6%;
-    top: 15.5%;
-    z-index: 2;
-    width: 0.4%;
-}
-
-#MSirplate{
-    position: absolute;
-    left: 59%;
-    top: 15%;
-    width: 2%;
-    transform: rotate(-1deg);
-}
-
-#MSspring{
-    position: absolute;
-    left: 58%;
-    top: 14%;
-    width: 3.5%;
-}
-
-#MSnorth{
-    position: absolute;
-    left: 68%;
-    top: 9%;
-    height: 5%;
-}
-
-#MSN{
-    position: absolute;
-    left: 68.5%;
-    top: 11%;
-}
-
-
-#MSsouth{
-    position: absolute;
-    top: 22%;
-    left: 68%;
-    height: 5%;
-}
-
-
-#MSS{
-    position: absolute;
-    top: 24%;
-    left: 68.5%;
-}
 
 #MSgreennew{
     position: absolute;
     top: 35%;
     left: 53%;
     width: 30%;
+    height: 12%;
 }
 
 #MSgreennew1{
@@ -810,6 +830,7 @@
     top: 35%;
     left: 53%;
     width: 30%;
+    height: 12%;
     display: none;
 }
 
@@ -818,6 +839,7 @@
     left: 75%;
     top: 40%;
     width: 0.7%;
+    height: 1%;
     display: none;
 }
 
@@ -827,6 +849,7 @@
     left: 75%;
     top: 42%;
     width: 0.7%;
+    height: 1%;
     display: none;
 }
 
@@ -836,6 +859,7 @@
     left: 73%;
     top: 40%;
     width: 0.7%;
+    height: 1%;
     display: none;
 }
 
@@ -845,6 +869,7 @@
     left: 72%;
     top: 41%;
     width: 0.7%;
+    height: 1%;
     display: none;
 }
 
@@ -854,6 +879,7 @@
     left: 73%;
     top: 42%;
     width: 0.7%;
+    height: 1%;
     display: none;
 }
 
@@ -861,7 +887,8 @@
     position: absolute;
     left: 55%;
     top: 33%;
-    width: 10%;
+    width: 9%;
+    height: 12%;
     display: none;
 }
 
@@ -870,6 +897,7 @@
     left: 57%;
     top: 36%;
     width: 1.5%;
+    height: 1%;
     display: none;
 }
 
@@ -879,6 +907,7 @@
     left: 57.5%;
     top: 38%;
     width: 1.5%;
+    height: 1%;
     display: none;
 }
 
@@ -888,6 +917,7 @@
     left: 58%;
     top: 40%;
     width: 1.5%;
+    height: 1%;
     display: none;
 }
 
@@ -897,6 +927,7 @@
     left: 58%;
     top: 36%;
     width: 1.5%;
+    height: 1%;
     display: none;
 }
 
@@ -906,6 +937,7 @@
     left: 60%;
     top: 40%;
     width: 1.5%;
+    height: 1%;
     display: none;
 }
 
@@ -915,6 +947,7 @@
     left: 60%;
     top: 37%;
     width: 1.5%;
+    height: 1%;
     display: none;
 }
 
@@ -924,6 +957,7 @@
     left: 58%;
     top: 42%;
     width: 1.5%;
+    height: 1%;
     display: none;
 }
 
@@ -933,6 +967,7 @@
     left: 61%;
     top: 41%;
     width: 1.5%;
+    height: 1%;
     display: none;
 }
 
@@ -940,6 +975,8 @@
     position: absolute;
     left: 60%;
     top: 30%;
+    height: 20%;
+    width: 25%;
     display: none;
 }
 
@@ -947,7 +984,9 @@
 #MShrblue{
     position: absolute;
     top: 60.5%;
-    left: 30%;
+    left: 28%;
+    height: 25%;
+    width: 20%;
     display: none;
 }
 
@@ -955,24 +994,37 @@
 #MShrgreen{
     position: absolute;
     top: 60.5%;
-    left: 30%;
+    left: 28%;
+    height: 25%;
+    width: 20%;
     display: none;
 }
 
 #MSrainbow{
     position: absolute;
-    top: 35%;
+    top: 33%;
     left: 65%;
     height: 15%;
-    transform: rotate(20deg);
+    width: 15%;
     display: none;
+}
+
+
+#MSline{
+    position: absolute;
+    top: 33.2%;
+    left: 65.3%;
+    height: 15%;
+    width: 15%;
+    opacity: 0;    
 }
 
 #MSbox1{
     position: absolute;
     top: 13%;
-    left: 63%;
-    height: 8%;
+    left: 64%;
+    height: 9%;
+    width: 4.5%;
     display: none;
 }
 
@@ -981,20 +1033,25 @@
     top: 11%;
     left: 56%;
     height: 8%;
+    width: 4%;
     display: none;
 }
 
 #MSarrow{
     position: absolute;
     top: 5%;
-    left: 58%;
+    left: 58.5%;
+    height: 6%;
+    width: 1%;
     display: none;
 }
 
 #MSarrow1{
     position: absolute;
     top: 6%;
-    left: 65%;
+    left: 65.5%;
+    height: 6%;
+    width: 1%;
     display: none;
 }
 
@@ -1003,13 +1060,16 @@
     top: 20%;
     left: 54%;
     height: 15%;
+    width: 9%;
     display: none;
 }
 
 #MSinnerinstr{
     position: absolute;
     top: 47%;
-    left: 50%;
+    left: 49%;
+    width: 51%;
+    height: 3%;
     display: none;
 }
 
@@ -1017,7 +1077,10 @@
 #MSinnerinstrtxt{
     position: absolute;
     top: 47.5%;
-    left: 51%;
+    left: 49.5%;
+    font-size: 70%;
+    width: 50%;
+    height: 3%;
     display: none;
 }
 
@@ -1037,8 +1100,9 @@
 #NMRborder{
     position: absolute;
     top: 5%;
-    left: 18%;
+    left: 2%;
     height: 90%;
+    width: 100%;
 }
 
 #NMRsample-button{
@@ -1046,6 +1110,8 @@
     top: 2%;
     left: 12%;
     height: 10%;
+    width: 10%;
+    cursor: pointer;
 }
 
 #NMRload-sample{
@@ -1053,6 +1119,7 @@
     top: 2%;
     left: 38%;
     height: 10%;
+    width: 10%;
 }
 
 
@@ -1061,6 +1128,7 @@
     top: 12%;
     left: 38%;
     height: 10%;
+    width: 10%;
 }
 
 
@@ -1069,12 +1137,14 @@
     top: 22%;
     left: 38%;
     height: 10%;
+    width: 10%;
 }
 
 #NMRinjector{
     position: absolute;
     top: 15%;
     left: 25%;
+    width: 3%;
     height: 35%;
 }
 
@@ -1084,6 +1154,7 @@
     top: 15%;
     left: 25%;
     height: 35%;
+    width: 3%;
     display: none;
 }
 
@@ -1098,7 +1169,7 @@
     position: absolute;
     top: 59%;
     left: 22.5%;
-    width: 8%;;
+    width: 8%;
 }
 
 
@@ -1107,6 +1178,7 @@
     top: 5%;
     left: 49%;
     height: 35%;
+    width: 10%;
 }
 
 #NMRn-pole{
@@ -1114,19 +1186,22 @@
     top: 5%;
     left: 80%;
     height: 35%;
+    width: 10%;
 }
 
 #NMRconstant-molecules{
     position: absolute;
     top: 10%;
     left: 60%;
-    display: none;
+    width: 20%;
 }
 
 #NMRring{
     left: 23%;
     position: absolute;
     top: 40%;
+    width: 7%;
+    height: 6%;
     display: none;
 }
 
@@ -1142,6 +1217,7 @@
     top: 88%;
     left: 40%;
     height: 10%;
+    width: 8%;
 }
 
 
@@ -1150,7 +1226,8 @@
     top: 86%;
     left: 7%;
     width: 10%;
-    height: 13%
+    height: 13%;
+    cursor: pointer;
 }
 
 
@@ -1159,14 +1236,16 @@
     top: 88%;
     left: 9%;
     font-weight: bold;
-    font-size: 100%;
+    font-size: 1.5vh;
+    cursor: pointer;
 }
 
 #NMRgraph{
     position: absolute;
     top: 50%;
-    left: 55%;
+    left: 52%;
     height: 46%;
+    width: 42%;
 }
 
 
@@ -1176,6 +1255,7 @@
     left: 56%;
     height: 47%;
     z-index: 2;
+    width: 45%;
     display: none;
 }
 
@@ -1183,29 +1263,36 @@
     position: absolute;
     top: 38%;
     left: 63%;
+    height: 10%;
+    width: 10%;
     display: none;
 }
 
 #NMRbelow-arrow{
     position: absolute;
-    top: 80%;
+    top: 85%;
     left: 20%;
     height: 10%;
+    width: 10%;
     display: none;
 }
 
 #NMRvertical-arrows{
     position: absolute;
     top: 30%;
-    left: 23%;
-    display: none;
+    left: 24%;
+    height: 10%;
+    width: 5%;
     z-index: 3;
+    display: none;
 }
 
 #NMRhorizontal-arrows-2{
     position: absolute;
     top: 30%;
     left: 55%;
+    height: 6%;
+    width: 7%;
     display: none;
 }
 
@@ -1214,6 +1301,8 @@
     position: absolute;
     top: 10%;
     left: 55%;
+    height: 6%;
+    width: 7%;
     display: none;
 }
 

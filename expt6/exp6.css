@@ -266,7 +266,6 @@
 
 #green1{
     position: absolute;
-    z-index: 2;
     width: 45%;
     height: 50%;
     display: none;
@@ -303,7 +302,7 @@
     position: absolute;
     width: 6.5%;
     height: 8.8%;
-    top: 10.5%;
+    top: 11%;
     left: 13.5%;
     z-index: 3;
     display: none;
