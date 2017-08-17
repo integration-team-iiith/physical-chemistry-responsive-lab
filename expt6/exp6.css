@@ -42,7 +42,7 @@
     cursor: pointer;
 }
 
-#sampl{
+#sample{
     position: absolute;
     top: 7%;
     left: 15%;
@@ -50,7 +50,7 @@
     width: 5%;
 }
 
-#sampltxt{
+#sampletxt{
     position: absolute;
     top: 22%;
     left: 16%;
@@ -170,8 +170,8 @@
 
 #instr{
     position: absolute;
-    top: 52%;
-    left: 2%;
+    top: 49%;
+    left: 0.5%;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2.5vh;
     height: 5vh;
@@ -267,7 +267,7 @@
 #green1{
     position: absolute;
     width: 45%;
-    height: 50%;
+    height: 47%;
     display: none;
     z-index: 2;
 }
@@ -333,7 +333,7 @@
     position: absolute;
     z-index: 4;
     width: 45%;
-    height: 50%;
+    height: 47%;
     display: none;
 }
 

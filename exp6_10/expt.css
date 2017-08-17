@@ -1,10 +1,10 @@
 #hrline1{
     position: absolute;
     z-index: 4;
-    top: 60%;
-    width: 42%;
-    left: 7%;
-    border: 1px dotted black;
+    top: 53.5%;
+    width: 48%;
+    left: 1%;
+    border: 1.5px dotted black;
     border-style: none none dotted;
     color: white;
     background-color: white;
@@ -14,10 +14,10 @@
 #hrline2{
     position: absolute;
     z-index: 4;
-    left: 49%;
-    top: 50%;
-    width: 42%;
-    border: 1px dotted black;
+    left: 49.11%;
+    top: 53.5%;
+    width: 50%;
+    border: 1.5px dotted black;
     border-style: none none dotted;
     color: white;
     background-color: white;
@@ -26,7 +26,7 @@
 #vrline1{
     position: absolute;
     left: 49%;
-    border-left: thin dotted black;
+    border-left: 1.5px dotted black;
     z-index: 4;
     height: 100%;
     top: 4%;
@@ -35,10 +35,11 @@
 
 #instr{
     position: absolute;
-    top: 57%;
-    left: 2%;
+    top: 48.5%;
+    left: 0.2%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2.5vh;
+    font-size: 1.8vh;
+    font-weight: bold;
     width: 50%;
     z-index: 3;
 }
@@ -46,17 +47,17 @@
 
 #graph{
     position: absolute;
-    top: 52%;
+    top: 55%;
     left: 54%;
     height: 43%;
-    width: 33%;
+    width: 40%;
     z-index: 1;
 }
 
 #aspirin{
     position: absolute;
     top: 15%;
-    left: 5%;
+    left: 4%;
     width: 10%;
     height: 7%;
     cursor: pointer;
@@ -66,7 +67,7 @@
 #aspirintxt{
     position: absolute;
     top: 17%;
-    left: 6%;
+    left: 5%;
     cursor: pointer;
     height: 5vh;
     width: 8vh;
@@ -79,7 +80,7 @@
 #nitrophenol{
     position: absolute;
     top: 25%;
-    left: 5%;
+    left: 4%;
     cursor: pointer;
     width: 10%;
     height: 7%;
@@ -89,7 +90,7 @@
 #nitrotxt{
     position: absolute;
     top: 27%;
-    left: 5.5%;
+    left: 5%;
     height: 3%;
     cursor: pointer;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -102,18 +103,18 @@
 
 #samplsol{
     position: absolute;
-    left: 18%;
-    top: 9%;
+    left: 20%;
+    top: 5%;
     height: 18%;
     width: 5%;
 }
 
 #samplsoltxt{
     position: absolute;
-    left: 18%;
-    top: 27%;
+    left: 20%;
+    top: 25%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2.5vh;
+    font-size: 2vh;
     height: 5vh;
     width: 7vh;
     font-weight: bold;
@@ -122,9 +123,9 @@
 
 #solvent{
     position: absolute;
-    left: 40%;
-    top: 9%;
-    height: 17%;
+    left: 35%;
+    top: 5%;
+    height: 18%;
     width: 5%;
 }
 
@@ -132,9 +133,9 @@
 
 #solvent1{
     position: absolute;
-    left: 40%;
-    top: 9%;
-    height: 17%;
+    left: 35%;
+    top: 5%;
+    height: 18%;
     width: 5%;
     display: none;
 }
@@ -142,10 +143,10 @@
 
 #solventtxt{
     position: absolute;
-    left: 40%;
-    top: 27%;
+    left: 35%;
+    top: 25%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2.5vh;
+    font-size: 2vh;
     height: 5vh;
     width: 7vh;
     font-weight: bold;
@@ -153,11 +154,11 @@
 
 #sample{
     position: absolute;
-    left: 30%;
-    top: 35%;
+    left: 27.5%;
+    top: 26.5%;
     height: 20%;
-    width: 5.2%;
-    height: 17%;
+    width: 5%;
+    height: 14%;
 }
 
 
@@ -182,10 +183,10 @@
 
 #sampletxt{
     position: absolute;
-    left: 30%;
-    top: 52%;
+    left: 28%;
+    top: 42.75%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 2.5vh;
+    font-size: 2vh;
     height: 5vh;
     width: 7vh;
     font-weight: bold;
@@ -193,10 +194,10 @@
 
 #spectro{
     position: absolute;
-    left: 18%;
-    top: 65%;
+    left: 12%;
+    top: 60%;
     height: 29%;
-    width: 18%;
+    width: 25%;
 }
 
 #spectrotxt{
@@ -229,8 +230,8 @@
 
 #blue1{
     position: absolute;
-    left: 41%;
-    top: 2%;
+    left: 36%;
+    top: 0.5%;
     height: 15%;
     width: 3%;
     display: none;
@@ -250,8 +251,8 @@
 
 #spoon1{
     position: absolute;
-    left: 15.5%;
-    top: 3%;
+    left: 18%;
+    top: 2.5%;
     height: 20%;
     width: 10%;
     display: none;
@@ -261,15 +262,15 @@
     position: absolute;
     height: 20%;
     width: 10%;
-    top: 27%;
-    left:27.5%;
+    top: 25%;
+    left:23%;
     display: none;
 }
 
 #fill{
     position: absolute;
-    top: 50%;
-    left: 30.5%;
+    top: 38.5%;
+    left: 28%;
     width: 4%;
     height: 2%;
     display: none;
@@ -279,9 +280,9 @@
 #syringe2{
     position: absolute;
     height: 19%;
-    top: 24%;
+    top: 25%;
     left: 32%;
-    width: 1.5%;
+    width: 1.2%;
     display: none;
 }
 
@@ -472,10 +473,10 @@
 
 #hrblue{
     position: absolute;
-    top: 60.5%;
-    left: 28%;
-    height: 25%;
-    width: 20%;
+    top: 44.5%;
+    left: 29%;
+    height: 18%;
+    width: 26%;
     display: none;
 }
 

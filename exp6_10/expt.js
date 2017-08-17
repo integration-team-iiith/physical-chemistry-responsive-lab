@@ -22,7 +22,7 @@ function vanish1(){
     y=1;
     cursorPointers("aspirin","solvent");
     document.getElementById('instr').innerHTML = "Click on the solvent bottle to draw 1 ml of the solvent (methanol)  and inject it into the sample inlet to clean any impurity in the sample pathway."
-    $('#solvent').on("click", function(){ draw1() ;});
+        $('#solvent').on("click", function(){ draw1();});
 }
 
 
@@ -53,7 +53,7 @@ function draw1(){
     $("#solvent1").show();
     $('#blue1').show();
     document.getElementById('instr').innerHTML = "Click on the sample bottle to transfer small amount (around 1mg) of the substance into the empty sample bottle"
-    setTimeout(helper1,1000);
+    setTimeout(helper1,800);
 }
 
 /* 1.hides old animation of syringe
@@ -98,7 +98,7 @@ function spoon1(){
 function spoon2(){
     $('#spoon1').hide();
     $('#spoon2').show();
-    setTimeout(helper2,2800);
+     setTimeout(helper2,2800);
 }
 
 /* 1. shows plate having sample on a plate inside empty sample bottle
@@ -114,7 +114,7 @@ function helper2(){
 
 /* when someone clicks on solvent solution again:
 1. instr changes and it shows a syringe drawing solvent from solvent box
-2. calls helper3 function after 1 sec  */
+2. calls helper3 function after 1 sec  
 
 function draw2(){
     document.getElementById("instr").innerHTML = "Click on the sample solution to draw 1 ml of the sample prepared to load on to the mass spectrometer."

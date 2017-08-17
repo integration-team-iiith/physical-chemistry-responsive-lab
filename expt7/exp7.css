@@ -47,18 +47,18 @@
 
 #samplbotl{
     position: absolute;
-    top: 31%;
+    top: 29%;
     left: 17%;
     height: 15%;
-    width: 5.2%;
+    width: 6%;
 }
 
 
 
 #samplbtltxt{
     position: absolute;
-    left: 16%;
-    top: 48%;
+    left: 17%;
+    top: 45%;
     text-align: center;
     font-size: 2vh;
     height: 5vh;
@@ -86,29 +86,29 @@
 
 #yellow{
     position: absolute;
-    left: 18.5%;
-    top: 42.4%;
-    width: 2.1%;
+    left: 18.8%;
+    top: 40.3%;
+    width: 2.4%;
     height: 3%;
     display: none;
 }
 
 
-#fillsolution{
+/*#fillsolution{
     position: absolute;
     left: 18.6%;
     top: 40.4%;
     width: 2.1%;
     display: none;
 }
-
+*/
 
 #fullsolution{
     position: absolute;
-    left: 18.6%;
-    top: 37.5%;
+    left: 18.8%;
+    top: 35.4%;
     height: 8%;
-    width: 2.1%;
+    width: 2.54%;
     display: none;
 }
 
@@ -176,7 +176,7 @@
     position: absolute;
     z-index: 4;
     top: 56%;
-    width: 50%;
+    width: 48%;
     border: 1px dotted black;
     border-style: none none dotted;
     color: white;
@@ -201,9 +201,9 @@
 #hrline4{
     position: absolute;
     z-index: 4;
-    left: 55%;
+    left: 50%;
     top: 56%;
-    width: 48%;
+    width: 50%;
     border: 1px dotted black;
     border-style: none none dotted;
     color: white;
@@ -249,11 +249,11 @@
 
 #instr{
     position: absolute;
-    top: 52%;
-    left: 2%;
+    top: 50%;
+    left: 0.6%;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 3vh;
-    width: 50%;
+    font-size: 2vh;
+    width: 45%;
 }
 
 
@@ -268,7 +268,7 @@
 
 #graph{
     position: absolute;
-    top: 54%;
+    top: 57%;
     left: 54%;
     height: 45%;
     width: 35%;
@@ -311,7 +311,7 @@
 #movablemirror{
     position: absolute;
     left: 83%;
-    top: 17.5%;
+    top: 18%;
     height: 14.5%;
     width: 14%;
 }
@@ -377,27 +377,27 @@
 #slide{
     position: absolute;
     left: 35%;
-    top: 30%;
-    width: 5%;
+    top: 29%;
+    width: 4%;
     height: 20%;
     display: none;
 }
 
 #sirinj{
     position: absolute;
-    left: 18.5%;
-    top: 27%;
-    width: 2%;
-    height: 15%;
+    left: 19.2%;
+    top: 26%;
+    width: 1.8%;
+    height: 12%;
     display: none;
 }
 
 #fillsirinj{
     position: absolute;
     height: 10%;
-    left: 18.9%;
-    top: 32%;
-    width: 1%;
+    left: 19.65%;
+    top: 28%;
+    width: 0.8%;
     display: none;
 }
 
@@ -413,24 +413,24 @@
 
 #fullslide{
     position: absolute;
-    left: 37%;
-    top: 38%;
-    width: 1.7%;
+    left: 36.8%;
+    top: 37%;
+    width: 1.2%;
     height: 6%;
     display: none;
 }
 
 #sirinj2{
     position: absolute;
-    left: 39%;
-    top: 44%;
+    left: 37%;
+    top: 43%;
     height: 3%;
     display: none;
 }
 
 #empty{
     position: absolute;
-    left: 38%;
+    left: 37%;
     top: 45%;
     height: 1%;
     display: none;
@@ -448,7 +448,7 @@
 
 #mirror{
     position: absolute;
-    top: 17.7%;
+    top: 18%;
     left: 87%;
     height: 12.7%;
     display: none;

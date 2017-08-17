@@ -55,8 +55,8 @@ function removeBtn1(){
     $('#cafine').hide();
     $('#cafintxt').hide();
     y = 0;
-    cursorPointers("aspirin","sampl");
-    $('#sampl').on("click", function(){clickSampl(); }); 
+    cursorPointers("aspirin","sample");
+    $('#sample').on("click", function(){clickSample(); }); 
     document.getElementById('instr').innerHTML = "Click on the sample bottle (the first bottle) to transfer a small quantity of the sample to the mortar."
 }
 
@@ -71,8 +71,8 @@ function removeBtn2(){
     $('#cafine').hide();
     $('#cafintxt').hide();
     y = 1;
-    cursorPointers("cafine","sampl");
-    $('#sampl').on("click", function(){clickSampl(); });
+    cursorPointers("cafine","sample");
+    $('#sample').on("click", function(){clickSample(); });
     document.getElementById('instr').innerHTML = "Click on the sample bottle (the first bottle) to transfer a small quantity of the sample to the mortar."
 }
 
@@ -81,8 +81,8 @@ function removeBtn2(){
 2. it calls emptyspoon function which is basically another animation of spoon after 3 seconds
 3.  activates onclick on mortar*/
 
-function clickSampl(){
-    cursorPointers("sampl","mortar");
+function clickSample(){
+    cursorPointers("sample","mortar");
     $("#mortar").on("click",function(){mix1();});
     $('#spoonfill').show();
     setTimeout(emptySpoon,3000);
@@ -93,7 +93,7 @@ function clickSampl(){
 /* function pours sample solution into moratr*/
 
 function emptySpoon(){
-    document.getElementById("sampl").onclick = false;
+    document.getElementById("sample").onclick = false;
     $('#spoonfill').hide();
     $('#emptyspoon').show();
     setTimeout(removeSpoon,2800);
@@ -257,10 +257,10 @@ function startexp(){
     $('#mortartxt').hide();
     $('#mortar1').hide();
     $('#nizol').hide();
-    $('#sampl').hide();
+    $('#sample').hide();
     $('#plate').hide();
     $('#fill').hide();
-    $('#sampltxt').hide();
+    $('#sampletxt').hide();
     $('#nizoltxt').hide();
     document.getElementById('instr').innerHTML = "Click the IR discs to Move the IR plates to the plate holder."
 }

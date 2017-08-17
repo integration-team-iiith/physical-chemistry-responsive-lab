@@ -59,8 +59,8 @@ function sampleTransffer(){
 
 function solventTransffer(){
 	$('#fillsolution').show();
-	document.getElementById('instr').innerHTML = "Click on the desicator to take out the 'solution IR cell'."
-	setTimeout(helper,1000);
+	document.getElementById('instr').innerHTML = "Click on the desiccator to take out the 'solution IR cell'."
+	setTimeout(helper,100);
 }
 
 /*1. animation of filling solution disappears and sample bottle appears  with full of mixture of sample and solvent solution
@@ -92,7 +92,9 @@ function showSlide(){
 function fillSlide(){
 	document.getElementById('instr').innerHTML = "Click on the solution IR cell to transfer the sample solution until all the air is expelled from the solution cell."
 	$('#fillsirinj').show();
-	$('#sirinj').show();
+	$('#sirinj').show('slow', function(){
+        document.getElementById('fullsolution').disabled=true;
+    })
 	setTimeout(helper1,900);
 }
 
