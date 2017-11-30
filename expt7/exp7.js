@@ -88,14 +88,18 @@ function showSlide(){
 /*when someone clicks on mixture part in sample bottle:
 1. aniamtion starts of fillin syringe
 2. calls helper1 function after 0.9 seconds */
+var click=0;
 
 function fillSlide(){
-	document.getElementById('instr').innerHTML = "Click on the solution IR cell to transfer the sample solution until all the air is expelled from the solution cell."
-	$('#fillsirinj').show();
-	$('#sirinj').show('slow', function(){
-        document.getElementById('fullsolution').disabled=true;
-    })
-	setTimeout(helper1,900);
+	if(!click){
+		click++;
+		document.getElementById('instr').innerHTML = "Click on the solution IR cell to transfer the sample solution until all the air is expelled from the solution cell."
+		$('#fillsirinj').show();
+		$('#sirinj').show('slow', function(){
+	        document.getElementById('fullsolution').disabled=true;
+	    })
+		setTimeout(helper1,900);
+	}
 }
 
 /*1. animation of syringe disappears
