@@ -55,7 +55,7 @@ function sampleTransffer(){
 /*when someone clicks on solvent bottle:
 1. animation starts of filling of solvent in sample bottle
 2. instruction text changes
-3. calls helper fub=nction after 1 second */
+3. calls helper function after 1 second */
 
 function solventTransffer(){
 	$('#fillsolution').show();
@@ -111,15 +111,18 @@ function helper1(){
 	$('#slide').on('click',function(){fillSlide1();});
 }
 
-
+var fill=0;
 /*when someone clicks on slide:
 1. animation starts showing filling solution into mid part of slide with help of syringe
 2. calls helper2 function after 1 sec  */
 function fillSlide1(){
-	$('#sirinj2').show();
-	$('#empty').show();
-	$('#fillslide').show();
-	setTimeout(helper2,1000);
+	if(!fill){
+		fill++;
+		$('#sirinj2').show();
+		$('#empty').show();
+		$('#fillslide').show();
+		setTimeout(helper2,1000);
+	}
 }
 
 /* 1. animation disappears of filling solution into slide
@@ -139,6 +142,7 @@ function helper2(){
 1. spectromachine appears with animation
 2. calls after 3.7 seconds spectro1 function */
 
+
 function spectro(){
 	$('#machine').show();
     setTimeout(spectro1,3700);
@@ -146,7 +150,7 @@ function spectro(){
 
 /* 1. animation of spectromachine ends
 2. intruction text gets changed
-3. oclick on start button activates */
+3. onclick on start button activates */
 function spectro1(){
 	cursorPointers("fullslide","strtbtn");
 	$('#machine').show();
