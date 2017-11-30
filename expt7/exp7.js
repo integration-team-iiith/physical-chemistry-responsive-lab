@@ -1,5 +1,5 @@
 var y = 0;
-
+var event=0;
 
 //To disable and enable the cursor pointers on elements.
 function cursorPointers(id1, id2){
@@ -46,10 +46,13 @@ function vanish2(){
 3. instruction text changes */
 
 function sampleTransffer(){
-	$('#yellow').show();
-	cursorPointers("sampl","solvent");
-	document.getElementById('instr').innerHTML = "Click on the solvent bottle to transfer 2 to 3ml of the solvent (methylene chloride) to the sample to prepared a clear solution."
-	$('#solvent').on('click',function(){solventTransffer();});
+	if(!event){
+		event++;
+		$('#yellow').show();
+		cursorPointers("sampl","solvent");
+		document.getElementById('instr').innerHTML = "Click on the solvent bottle to transfer 2 to 3ml of the solvent (methylene chloride) to the sample to prepared a clear solution."
+		$('#solvent').on('click',function(){solventTransffer();});
+	}
 }
 
 /*when someone clicks on solvent bottle:
@@ -58,19 +61,25 @@ function sampleTransffer(){
 3. calls helper function after 1 second */
 
 function solventTransffer(){
-	$('#fillsolution').show();
-	document.getElementById('instr').innerHTML = "Click on the desiccator to take out the 'solution IR cell'."
-	setTimeout(helper,100);
+	if(event==1){
+		event++;
+		$('#fillsolution').show();
+		document.getElementById('instr').innerHTML = "Click on the desiccator to take out the 'solution IR cell'."
+		setTimeout(helper,100);
+	}
 }
 
 /*1. animation of filling solution disappears and sample bottle appears  with full of mixture of sample and solvent solution
 2. oncclick on desicatorbtn activates */
 function helper(){
-	cursorPointers("solvent","desicatorbtn");
-	$('#fillsolution').hide();
-	$('#fullsolution').show();
-	$("#fullbottle").show();
-	$('#desicatorbtn').on('click',function(){showSlide();});
+	if(event==2){
+		event++;
+		cursorPointers("solvent","desicatorbtn");
+		$('#fillsolution').hide();
+		$('#fullsolution').show();
+		$("#fullbottle").show();
+		$('#desicatorbtn').on('click',function(){showSlide();});
+	}
 }
 
 /*whensomeone clicks on desicatorbtn:
@@ -79,20 +88,22 @@ function helper(){
 3. instruction text changes */
 
 function showSlide(){
-	cursorPointers("desicatorbtn","fullsolution");
-	$('#slide').show();
-	$('#fullsolution').on('click', function(){fillSlide();});
-	document.getElementById('instr').innerHTML = "Click on the sample solution to draw 1ml of the solution with a syringe";
+	if(event==3){
+		event++;
+		cursorPointers("desicatorbtn","fullsolution");
+		$('#slide').show();
+		$('#fullsolution').on('click', function(){fillSlide();});
+		document.getElementById('instr').innerHTML = "Click on the sample solution to draw 1ml of the solution with a syringe";
+	}
 }
 
 /*when someone clicks on mixture part in sample bottle:
-1. aniamtion starts of fillin syringe
+1. animation starts of fillin syringe
 2. calls helper1 function after 0.9 seconds */
-var click=0;
 
 function fillSlide(){
-	if(!click){
-		click++;
+	if(event==4){
+		event++;
 		document.getElementById('instr').innerHTML = "Click on the solution IR cell to transfer the sample solution until all the air is expelled from the solution cell."
 		$('#fillsirinj').show();
 		$('#sirinj').show('slow', function(){
@@ -105,19 +116,21 @@ function fillSlide(){
 /*1. animation of syringe disappears
 2. onclick on slide activates */
 function helper1(){
-	cursorPointers("fullsolution","slide");
-	$('#fillsirinj').hide();
-	$('#sirinj').hide();
-	$('#slide').on('click',function(){fillSlide1();});
+	if(event==5){
+		event++;
+		cursorPointers("fullsolution","slide");
+		$('#fillsirinj').hide();
+		$('#sirinj').hide();
+		$('#slide').on('click',function(){fillSlide1();});
+	}
 }
 
-var fill=0;
 /*when someone clicks on slide:
 1. animation starts showing filling solution into mid part of slide with help of syringe
 2. calls helper2 function after 1 sec  */
 function fillSlide1(){
-	if(!fill){
-		fill++;
+	if(event==6){
+		event++;
 		$('#sirinj2').show();
 		$('#empty').show();
 		$('#fillslide').show();
@@ -129,35 +142,43 @@ function fillSlide1(){
 2. onclick on slide activates
 3. instruction text changes */
 function helper2(){
-	cursorPointers("slide","fullslide");
-	$('#sirinj2').hide();
-	$('#empty').hide();
-	$('#fillslide').hide();
-	$('#fullslide').show();
-	$('#fullslide').on('click',function(){spectro();});
-	document.getElementById('instr').innerHTML ="Click on the solution IR cell to place the cell inside the spectrometer."
+	if(event==7){
+		event++;
+		cursorPointers("slide","fullslide");
+		$('#sirinj2').hide();
+		$('#empty').hide();
+		$('#fillslide').hide();
+		$('#fullslide').show();
+		$('#fullslide').on('click',function(){spectro();});
+		document.getElementById('instr').innerHTML ="Click on the solution IR cell to place the cell inside the spectrometer."
+	}
 }
 
 /* when someone clicks on slide:
 1. spectromachine appears with animation
 2. calls after 3.7 seconds spectro1 function */
 
-
 function spectro(){
-	$('#machine').show();
-    setTimeout(spectro1,3700);
+	if(event==8){
+		event++;
+		$('#machine').show();
+	    setTimeout(spectro1,3700);
+	}
 }
 
 /* 1. animation of spectromachine ends
 2. intruction text gets changed
 3. onclick on start button activates */
 function spectro1(){
-	cursorPointers("fullslide","strtbtn");
-	$('#machine').show();
-	var img = document.getElementById('machine');
-	img.src = "Images/spectromachine.png";
-	document.getElementById('instr').innerHTML = "Click on 'start' button to start the spectrometer.";
-    $('#strtbtn').on('click',function(){ evaluate() ;});
+	if(event==9){
+		event++;
+		cursorPointers("fullslide","strtbtn");
+		$('#machine').show();
+		var img = document.getElementById('machine');
+		img.src = "Images/spectromachine.png";
+		document.getElementById('instr').innerHTML = "Click on 'start' button to start the spectrometer.";
+	    $('#strtbtn').on('click',function(){ evaluate() ;});
+	}
 }
 
 /*when someone clicks on startbtn:
@@ -165,71 +186,82 @@ function spectro1(){
 2.calls stopMirror function after 3sec to stop moving mirror
 3. calls showGraph function after 5sec */
 function evaluate(){
-	$("#uppersupport").show();
-	$("#lowersupport").show();
-	$('#mirror').show();
-	setTimeout(stopMirror,3000);
-    $('#exp').show();
-	$("#movablemirror").hide();
-    var img = document.getElementById('exp');
-    img.src = "Images/beam.gif";
-    setTimeout(showGraph,5000);
+	if(event==10){
+		event++;
+		$("#uppersupport").show();
+		$("#lowersupport").show();
+		$('#mirror').show();
+		setTimeout(stopMirror,3000);
+	    $('#exp').show();
+		$("#movablemirror").hide();
+	    var img = document.getElementById('exp');
+	    img.src = "Images/beam.gif";
+	    setTimeout(showGraph,5000);
+	}
 }
 
 
 function stopMirror(){
-	$("#uppersupport").hide();
-	$("#lowersupport").hide();
-	$("#movablemirror").show();
-	$('#mirror').hide();
+	if(event==11){
+		event++;
+		$("#uppersupport").hide();
+		$("#lowersupport").hide();
+		$("#movablemirror").show();
+		$('#mirror').hide();
+	}
 }
 
 /*1. starts showing graph
 2. calls stopgraph function after 4sec */
 
 function showGraph(){
-    $('#exp').show();
-    var img1 = document.getElementById('exp');
-    img1.src = "Images/sprites/DefineSprite_20_IR_Sol_exp7_fla.Animation_1_1/124.png"
-    setTimeout(stopgraph,4000);    
-    $('#graph').show();
-    var img = document.getElementById('graph');
-    if(y==1){
-        img.src = "Images/greengraph.gif";
-    }
-    else{
-        img.src = "Images/yellowgraph.gif"
-    }
+	if(event==12){
+		event++;
+	    $('#exp').show();
+	    var img1 = document.getElementById('exp');
+	    img1.src = "Images/sprites/DefineSprite_20_IR_Sol_exp7_fla.Animation_1_1/124.png"
+	    setTimeout(stopgraph,4000);    
+	    $('#graph').show();
+	    var img = document.getElementById('graph');
+	    if(y==1){
+	        img.src = "Images/greengraph.gif";
+	    }
+	    else{
+	        img.src = "Images/yellowgraph.gif"
+	    }
+	}
 }
 
 /* just stops animation of graph and activates onclick on evaluatebtn */
 function stopgraph(){
-	document.getElementById('instr').innerHTML = "Click on the evaluate button to spectral analysis"
-    $('#graph.show');
-    var img =  document.getElementById('graph');
-    if(y==1){
-        img.src = "Images/greenf.png";
-    }
-    else{
-        img.src = "Images/yellowf.png";
-    }
-	cursorPointers("strtbtn","evltbtn");
-	$("#evltbtn").on("click", function(){urlChange();});
+	if(event==13){
+		event++;
+		document.getElementById('instr').innerHTML = "Click on the evaluate button to spectral analysis"
+	    $('#graph.show');
+	    var img =  document.getElementById('graph');
+	    if(y==1){
+	        img.src = "Images/greenf.png";
+	    }
+	    else{
+	        img.src = "Images/yellowf.png";
+	    }
+		cursorPointers("strtbtn","evltbtn");
+		$("#evltbtn").on("click", function(){urlChange();});
+	}
 }
 
 /* when someone clicks on evaluate btn it just opens a new url in a new tab showing graph for corresponding mixtures we've selected  */
 
 function urlChange(){
-	if(y == 1){
-		var win = window.open('https://ccnsb06-iiith.vlabs.ac.in/exp6_10/benzoic/benzoic_acid_IR_expt10.html','_blank');
-        win.focus();
-	}
-	else{
-		var win = window.open('https://ccnsb06-iiith.vlabs.ac.in/exp6_10/nitrophenol/2-nitrophenol_IR_expt10.html','_blank');
-        win.focus();
+	if(event==14){
+		event++;
+		if(y == 1){
+			var win = window.open('https://ccnsb06-iiith.vlabs.ac.in/exp6_10/benzoic/benzoic_acid_IR_expt10.html','_blank');
+	        win.focus();
+		}
+		else{
+			var win = window.open('https://ccnsb06-iiith.vlabs.ac.in/exp6_10/nitrophenol/2-nitrophenol_IR_expt10.html','_blank');
+	        win.focus();
+		}
 	}
 }
-
-
-
-
