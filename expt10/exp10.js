@@ -751,7 +751,7 @@ function NMRpushinjector(){
 }
 
 function NMRhelper2(){
-    $("#NMRvertical-arrows").velocity({translateY:100},{duration:500});
+    $("#NMRvertical-arrows").velocity({translateY:105},{duration:1500});
     $("#NMRvertical-arrows").velocity("reverse",{duration: 10});
 }
 

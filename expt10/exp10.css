@@ -1151,25 +1151,27 @@
 
 #NMRred-injector{
     position: absolute;
-    top: 15%;
+    top: 12%;
     left: 25%;
-    height: 35%;
+    height: 37%;
     width: 3%;
+    z-index: 2;
     display: none;
 }
 
 #NMRmagentic-field{
     position: absolute;
-    top: 40%;
-    left: 6%;
-    width: 40%;
+    top: 38%;
+    left: 7%;
+    width: 38%;
+    z-index: 3;
 }
 
 #NMRcurve{
     position: absolute;
     top: 59%;
-    left: 22.5%;
-    width: 8%;
+    left: 23%;
+    width: 7.2%;
 }
 
 
@@ -1279,10 +1281,10 @@
 
 #NMRvertical-arrows{
     position: absolute;
-    top: 30%;
-    left: 24%;
-    height: 10%;
-    width: 5%;
+    top: 1%;
+    left: 23%;
+    height: 25%;
+    width: 7%;
     z-index: 3;
     display: none;
 }
