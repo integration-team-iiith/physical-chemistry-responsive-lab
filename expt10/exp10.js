@@ -300,9 +300,12 @@ function IRgreen23(){
 
 function IRspectro1(){
     cursorPointers("IRred3","IRstrtbtn");
-    $('#IRmachine').show();
-    var img = document.getElementById("IRmachine");
-    img.src = "exp6/Images/spectrometer.png";
+    $('#IRmachine1').show();
+    setTimeout(function() {
+        $('#IRmachine').hide();
+    }, 100);
+    // var img = document.getElementById("IRmachine");
+    // img.src = "exp6/Images/spectrometer.png";
     $('#IRstrtbtn').on('click',function(){ IRevaluate() ;});
 }
 
@@ -315,7 +318,7 @@ function IRspectro1(){
 function IRspectro(){
     document.getElementById('IRinstr').innerHTML = "Click start to run the spectrometer."
     $('#IRmachine').show();
-    setTimeout(IRspectro1,3600);
+    setTimeout(IRspectro1,3500);
 }
 
 
