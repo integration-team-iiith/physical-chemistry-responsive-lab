@@ -362,11 +362,11 @@ function IRstopgraph(){
         img.src = "exp6/Images/sprites/DefineSprite_136_IR_Powder_exp6_fla.graph_caffeine_46/105.png";
     }
     cursorPointers("IRstrtbtn","IRevltbtn");
-    $("#IRevltbtn").on("click", function(){IRurlChange();});
 }
 
 function IRurlChange(){
     if(y==0){
+        console.log("yes");
         var win = window.open('https://ccnsb06-iiith.vlabs.ac.in/exp6_10/aspirin/plot_IR_aspirin_exp6.html','_blank');
         win.focus();
     }
