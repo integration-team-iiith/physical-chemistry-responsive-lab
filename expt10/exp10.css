@@ -724,6 +724,7 @@
     color: yellow;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2vh;
+    cursor: default;
     font-weight: bold;
 }
 

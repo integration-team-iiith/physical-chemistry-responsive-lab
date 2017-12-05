@@ -668,8 +668,7 @@ function MSstopGraph(){
         img.src = "exp6_10/Images/cafingraph.png";
     }
         cursorPointers("MSchangebeaker","MSevaluate");
-        cursorPointers("MSchangebeaker","MSevlttxt")
-        $("#MSevaluate").on("click", function(){MSurlChange();});
+        cursorPointers("MSchangebeaker","MSevlttxt");
 }
 
 
