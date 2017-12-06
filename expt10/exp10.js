@@ -767,16 +767,43 @@ function NMRhelper(){
     $("#NMRup-arrow").show();
     $("#NMRhorizontal-arrows-2").show();
     $("#NMRhorizontal-arrows-1").show();
-    setInterval(NMRhelper3,1000);
+    $("#NMRhorizontal-arrows-2").animate({
+        left:"+=21%"
+    },2000);
+    $("#NMRhorizontal-arrows-2").animate({
+        left: "-=21%"
+    },10);
+    $("#NMRhorizontal-arrows-1").animate({
+        left:"+=21%"
+    },2000);
+    $("#NMRhorizontal-arrows-1").animate({
+        left: "-=21%"
+    },10);
+    setInterval(function () {
+        $("#NMRhorizontal-arrows-2").animate({
+            left:"+=21%"
+        },2000);
+        $("#NMRhorizontal-arrows-2").animate({
+            left: "-=21%"
+        },10);
+        $("#NMRhorizontal-arrows-1").animate({
+            left:"+=21%"
+        },2000);
+        $("#NMRhorizontal-arrows-1").animate({
+            left: "-=21%"
+        },10);
+        // $("#NMRhorizontal-arrows-2").css("left","55%");
+        // $("#NMRhorizontal-arrows-1").velocity({translateX:"300%"},{duration:1000});
+        // $("#NMRhorizontal-arrows-1").velocity({translateX: "10%"},{duration: 1});
+        // $("#NMRhorizontal-arrows-1").css("left","55%");
+    },1001);
     $("#NMRplot").on("click",function(){NMRhelper1();});
+    $("#NMRmolecules").hide();
+    $("#NMRconstant-molecules").show();
 }
 
-function NMRhelper3(){
-    $("#NMRhorizontal-arrows-2").velocity({translateX:"300%"},{duration:1000});
-    $("#NMRhorizontal-arrows-1").velocity({translateX:"300%"},{duration:1000});
-    $("#NMRhorizontal-arrows-2").velocity({translateX: "10%"},{duration:1});
-    $("#NMRhorizontal-arrows-1").velocity({translateX: "10%"},{duration:1});
-}
+// function NMRhelper3(){
+// }
 
 /* starts plotting graph at right bottom of page */
 
