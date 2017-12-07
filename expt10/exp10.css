@@ -1205,9 +1205,11 @@
 
 #NMRconstant-molecules{
     position: absolute;
-    top: 10%;
+    top: 6%;
     left: 60%;
     width: 20%;
+    height: 34%;
+    display: none;
 }
 
 #NMRring{
@@ -1262,14 +1264,43 @@
     width: 42%;
 }
 
+#NMRfinalGraph{
+    position: absolute;
+    top: 50%;
+    left: 52.4%;
+    height: 46%;
+    width: 41.4%;
+    display: none;
+}
+
+#NMRfinalGraph2{
+    position: absolute;
+    top: 50%;
+    left: 52.4%;
+    height: 46%;
+    width: 41.4%;
+    display: none;
+}
+
 
 #NMRbenzene-graph{
     position: absolute;
     top: 50%;
-    left: 56%;
+    left: 52.4%;
     height: 47%;
     z-index: 2;
-    width: 45%;
+    width: 41.3%;
+    display: none;
+}
+
+
+#NMRbenzene-graph2{
+    position: absolute;
+    top: 50%;
+    left: 52.4%;
+    height: 47%;
+    z-index: 2;
+    width: 41.3%;
     display: none;
 }
 

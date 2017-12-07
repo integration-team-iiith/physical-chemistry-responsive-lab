@@ -808,10 +808,23 @@ function NMRhelper(){
 /* starts plotting graph at right bottom of page */
 
 function NMRhelper1(){
-    $("#NMRbenzene-graph").show();
-    $("#NMRgraph").hide();
+    if(y==0){
+        $("#NMRbenzene-graph2").show();
+        setTimeout(function() {
+            $("#NMRfinalGraph2").show();
+            $("#NMRbenzene-graph2").hide();
+        }, 4900);
+    }
+    else{
+        $("#NMRbenzene-graph").show();
+        setTimeout(function() {
+            $("#NMRfinalGraph").show();
+            $("#NMRbenzene-graph").hide();
+        }, 4900);
+    }
+    $("#NMRgraph").hide();    
     cursorPointers("NMRplot","NMRevaluate");
-    $("#NMRevaluate").on("click",function(){NMRurlchange();});
+    // $("#NMRevaluate").on("click",function(){NMRurlchange();});
 }
 
 function NMRurlchange(){
