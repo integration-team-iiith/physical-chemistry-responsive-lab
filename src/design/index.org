@@ -1,0 +1,33 @@
+#+TITLE: Physical Chemistry Responsive Lab
+#+AUTHOR: VLEAD
+#+DATE: [2017-12-07 Thursday]
+#+PROPERTY: results output
+#+PROPERTY: exports code
+#+SETUPFILE: ../org-templates/level-1.org
+#+options: ^:nil
+#+LATEX: Literal LaTeX code for export
+
+* Introduction 
+  :PROPERTIES:
+  :CUSTOM_ID: introduction
+  :END: 
+  This document describes  the design of =Physical-Chemistry-Responsive Lab=.
+
+* Design
+  :PROPERTIES:
+  :CUSTOM_ID: design
+  :END: 
+  The Physical-Chemistry-Responsive Lab consists of five experiments.
+  HTML,JavaScript and CSS are used to implement the responsive labs.
+** Experiment-5
+   Nuclear Magnetic Resosnace Spectrocopy and Evaulation of Simple 1H NMR Spectra of Select Organic Compounds
+** Experiment-6
+   Instrumentation and Working Principles of Infra Red (IR) Spectroscopy Using Salt Plates
+** Experiment-7
+   Instrumentation and Working Principles of Solutions Infra Red (IR) Spectroscopy
+** Experiment-8
+   Instrumentation and Working Principles Principles of Mass Spectroscopy
+** Experiment-9
+   Determination of Molar Mass of Simple Compounds Using Mass Spectroscopy
+** Experiment-10
+   Identification of Unknown Components Using Spectroscopic Techniques

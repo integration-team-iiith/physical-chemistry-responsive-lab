@@ -1,0 +1,45 @@
+#+TITLE: Plan for Physical Chemistry Responsive Lab
+#+AUTHOR: VLEAD
+#+DATE: [2017-12-07 Thursday]
+#+PROPERTY: results output
+#+PROPERTY: exports code
+#+SETUPFILE: ../org-templates/level-1.org
+#+options: ^:nil
+#+LATEX: Literal LaTeX code for export
+
+* Introduction
+  - This document contains the realization plan for
+    fixing the different issues in Physical Chemistry
+    Responsive lab.
+
+
+* Detailed Plan 
+** Fixing issues in Physical Chemistry Responsive lab
+   
+#+caption:  Fixing issues
+#+name: Issues Table
+|---+----+-----------------------------------------------------------------------------------------------------------------------------------+--------+--------+------------|
+|   | S. | Tasks                                                                                                                             | Github | Status | Assignee   |
+|   | NO |                                                                                                                                   | Issues |        |            |
+|   |    |                                                                                                                                   |        |        |            |
+|   |    |                                                                                                                                   |        |        |            |
+|   |    |                                                                                                                                   |        |        |            |
+|---+----+-----------------------------------------------------------------------------------------------------------------------------------+--------+--------+------------|
+|   | 1. | QA_Identification of unknown components using spectroscopic techniques(NMR)_Experiment_irrelevant-graph                           | [[https://github.com/integration-team-iiith/physical-chemistry-responsive-lab/issues/73][73]]     | Done   | MaheeSurya |
+|   |    |                                                                                                                                   |        |        |            |
+|---+----+-----------------------------------------------------------------------------------------------------------------------------------+--------+--------+------------|
+|   | 2. | QA_Identification of unknown components using spectroscopic techniques(NMR)-Sample-2_Experiment_irrelevant-graph                  | [[https://github.com/integration-team-iiith/physical-chemistry-responsive-lab/issues/83][83]]     | Done   | MaheeSurya |
+|   |    |                                                                                                                                   |        |        |            |
+|---+----+-----------------------------------------------------------------------------------------------------------------------------------+--------+--------+------------|
+|   | 3. | QA_Identification of unknown components using spectroscopic techniques(IR Solution)-Sample-2_Experiment_irrelevant-graph          | [[https://github.com/integration-team-iiith/physical-chemistry-responsive-lab/issues/76][76]]     | Done   | MaheeSurya |
+|   |    |                                                                                                                                   |        |        |            |
+|---+----+-----------------------------------------------------------------------------------------------------------------------------------+--------+--------+------------|
+|   | 4. | QA_Identification of unknown components using spectroscopic techniques(NMR)_Experiment_unassigned-link                            | [[https://github.com/integration-team-iiith/physical-chemistry-responsive-lab/issues/72][72]]     | Done   | MaheeSurya |
+|   |    |                                                                                                                                   |        |        |            |
+|---+----+-----------------------------------------------------------------------------------------------------------------------------------+--------+--------+------------|
+|   | 5. | QA_Identification of unknown components using spectroscopic techniques(NMR)_Experiment_improper-positioning-of-UI-buttons-&-poles | [[https://github.com/integration-team-iiith/physical-chemistry-responsive-lab/issues/69][69]]     | Done   | MaheeSurya |
+|   |    |                                                                                                                                   |        |        |            |
+|---+----+-----------------------------------------------------------------------------------------------------------------------------------+--------+--------+------------|
+|   | 6. | QA_Identification of unknown components using spectroscopic techniques(NMR)_Experiment_Graph-panel                                | [[https://github.com/integration-team-iiith/physical-chemistry-responsive-lab/issues/71][71]]     | Done   | MaheeSurya |
+|   |    |                                                                                                                                   |        |        |            |
+|---+----+-----------------------------------------------------------------------------------------------------------------------------------+--------+--------+------------|

@@ -1,29 +1,31 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script 
+            src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js">
+        </script>
         <link type = "text/css" rel = "stylesheet" href="exp10.css">
+        <script  src = "velocity.js"></script>
         <script  src = "ui.js"> </script>
         <script type="text/javascript" src = "exp10.js"> </script>
-        <script  src = "velocity.js"></script>
         <title> Experiment-10 </title>
     </head>
     <body>
         <div id = "container">
             <div id = "heading"> Experiment </div> 
             <div id = "select" > Select Any Sample </div>
-            <img id = "btn1" src = "shapes/2.png" onclick="showoptn1()" >
-            <img id = "btn2" src = "shapes/2.png" onclick="showoptn2()" >
+            <img id = "btn1" src = "Images/btn.png" onclick="showoptn1()" >
+            <img id = "btn2" src = "Images/btn.png" onclick="showoptn2()" >
             <div id = "sampl1" onclick="showoptn1()" > Sample 1 </div>
             <div id = "sampl2" onclick="showoptn2()" > Sample 2 </div>
             <div id = "selected1" > Sample 1 Selected </div>
             <div id = "selected2" > Sample 2 Selected </div>
             <div id = "expselect" > Select Any Experiment </div>
-            <img id = "exp1" src = "shapes/2.png" onclick="moveToIr()" >
-            <img id = "exp2" src = "shapes/2.png" onclick="moveToMass()" >
-            <img id = "exp3" src = "shapes/2.png" onclick="moveToNmr()" >
+            <img id = "exp1" src = "Images/btn.png" onclick="moveToIr()" >
+            <img id = "exp2" src = "Images/btn.png" onclick="moveToMass()" >
+            <img id = "exp3" src = "Images/btn.png" onclick="moveToNmr()" >
             <div id = "exp1txt" onclick="moveToIr()" > IR Solution </div>
             <div id = "exp2txt" onclick="moveToMass()" > Mass Spec. </div>
             <div id = "exp3txt" onclick="moveToNmr()" > NMR. </div>
@@ -33,39 +35,43 @@
             <div id = "IRcontainer">
             <hr item-width="500">
             <div id = "IRverticalline" > </div>
-            <img id = "IRsampl" src = 'exp6/sprites/DefineSprite_62/1.png' onclick="IRclickSampl()" >
+            <img id = "IRsampl" src = 'exp6/Images/sprites/DefineSprite_62/1.png' onclick="IRclickSampl()" >
             <div id = "IRsampltxt"> Sampl </div>
-            <img id = "IRnizol" src = "exp6/sprites/DefineSprite_71/1.png">
+            <img id = "IRnizol" src = "exp6/Images/sprites/DefineSprite_71/1.png">
             <div id = "IRnizoltxt"> Nizol </div>
-            <img id = "IRmortar" src = "exp6/sprites/DefineSprite_82/1.png">
-            <img id = "IRmortar1" src = "exp6/sprites/DefineSprite_82/1.png">
+            <img id = "IRmortar" src = "exp6/Images/sprites/DefineSprite_82/1.png">
+            <img id = "IRmortar1" src = "exp6/Images/sprites/DefineSprite_82/1.png">
             <div id = "IRmortartxt"> Mortar </div>
-            <img id = "IRspectrometer" src = "exp6/shapes/108.png">
-            <img id = "IRchain" src = "exp6/shapes/109.png">
-            <img id = "IRbigchain" src = "exp6/shapes/111.png">
-            <img id = "IRcap" src = "exp6/shapes/114.png">
-            <img id = "IRstrtbtn" src = "exp6/buttons/DefineButton2_50/1.png">
-            <img id = "IRevltbtn" src = "exp6/buttons/DefineButton2_148/1.png">
-            <img id = "IRexp" src = "exp6/sprites/DefineSprite_20/2.png">
-            <img id = "IRgraph" src = "exp6/shapes/127.png">
-            <img id = "IRspoonfill" src = "exp6/fillspoon.gif">
-            <img id = "IRemptyspoon" src = "exp6/emptyspoon.gif">
-            <img id = "IRfillsirinj" src = "exp6/fillsirinj.gif">
-            <img id = "IRemptysirinj" src = "exp6/emptysirinj.gif">
-            <img id = "IRplate" src = "exp6/shapes/32.png">
-            <img id = "IRfill" src = "exp6/shapes/93.png">
-            <img id = "IRspoonfill2" src = "exp6/fillspoon.gif">
-            <img id = "IRemptyspoon2" src = "exp6/emptyspoon.gif">
-            <img id = "IRgreen1" src = "exp6/binaryData/green1.gif">
-            <img id = "IRmachine" src = "exp6/binaryData/last1.gif">
+            <img id = "IRspectrometer" src = "exp6/Images/spectro.png">
+            <img id = "IRchain" src = "exp6/Images/chain.png">
+            <img id = "IRbigchain" src = "exp6/Images/bigchain.png">
+            <img id = "IRcap" src = "exp6/Images/cap.png">
+            <img id = "IRstrtbtn" src = "exp6/Images/startbtn.png">
+            <img id = "IRevltbtn" src = "exp6/Images/evaluatebtn.png" 
+                onclick="IRurlChange()">
+            <img id = "IRexp" src = "exp6/Images/sprites/DefineSprite_20/2.png">
+            <img id = "IRgraph" src = "exp6/Images/graph.png">
+            <img id = "IRspoonfill" src = "exp6/Images/fillspoon.gif">
+            <img id = "IRemptyspoon" src = "exp6/Images/emptyspoon.gif">
+            <img id = "IRfillsirinj" src = "exp6/Images/fillsirinj.gif">
+            <img id = "IRemptysirinj" src = "exp6/Images/emptysirinj.gif">
+            <img id = "IRplate" src = "exp6/Images/plate.png">
+            <img id = "IRfill" src = "exp6/Images/fill.png">
+            <img id = "IRspoonfill2" src = "exp6/Images/fillspoon.gif">
+            <img id = "IRemptyspoon2" src = "exp6/Images/emptyspoon.gif">
+            <img id = "IRgreen1" src = "exp6/Images/sprites/DefineSprite_43_IR_Powder_exp6_fla.top_scene_3/101.png">
+            <img id = "IRmachine" src = "exp6/Images/spectrometer.gif">
+            <img id = "IRmachine1" src = "exp6/Images/spectrometer.png">
             <div id = "IRinstr">  click on the sample bottle to transffer a small quantity of the sample to the mortar.  </div> 
-            <img id = "IRgreen2" src = "exp6/greenslide.png">
-            <img id = "IRgreen3" src = "exp6/green2.gif">
-            <img id = "IRred2" src = "exp6/redslide.png">
-            <img id = "IRred3" src = "exp6/red2.gif">
+            <img id = "IRred2" src = "exp6/Images/redslide.png">
+            <img id = "IRred3" src = "exp6/Images/sprites/DefineSprite_43_IR_Powder_exp6_fla.top_scene_3/165.png">
             <div id = "IRhrline1"> </div>
-            <img id = "IRgobackbtn" src = "exp6/shapes/21.png" onclick="window.location.reload()" >
-            <div id = "IRgobacktxt"> go back to <br> perform <br> another <br> experiment </div> 
+            <img id = "IRbeamsplitter" src = "exp6/Images/beamsplitter.png">
+            <img id = "IRfixedmirror" src = "exp6/Images/fixedmirror.png">
+            <img id = "IRdrop" src = "exp6/Images/drops.png">
+            <img id = "IRmovablemirror" src = "exp6/Images/movablemirror.png">
+            <img id = "IRgobackbtn" src = "Images/btn2.png" onclick="window.location.reload()" >
+            <!-- <div id = "IRgobacktxt" onclick="window.location.reload()" > go back to <br> perform <br> another <br> experiment </div> --> 
             </div>
 
             <!-- All tags/divs ends here for IR solution -->
@@ -78,66 +84,59 @@
             <div id = "MShrline2"> </div>
             <div id = "MSvrline1"> </div>
             <div id = "MSinstr"> Click on the solvent bottle to draw 1 ml of the solvent (methanol) and inject it into the sample inlet to clean any impurity in the sample pathway."</div>
-            <img id = "MSgraph" src = "exp6_10/shapes/158.png">
-            <img id = "MSsamplsol" src = "exp6_10/shapes/3.png">
+            <img id = "MSgraph" src = "exp6_10/Images/graph.png">
+            <img id = "MSsamplsol" src = "exp6_10/Images/samplsol.png">
             <div id = "MSsamplsoltxt"> Sample </div>
-            <img id = "MSsolvent" src = "exp6_10/shapes/19.png">
-            <img id = "MSsolvent1" src = "exp6_10/shapes/19.png">
+            <img id = "MSsolvent" src = "exp6_10/Images/solvent.png">
+            <img id = "MSsolvent1" src = "exp6_10/Images/solvent.png">
             <div id = "MSsolventtxt"> Solvent </div>
-            <img id = "MSsample" src = "exp6_10/shapes/empty.png">
-            <img id = "MSsample2" src = "exp6_10/fullbeaker.gif">
+            <img id = "MSblue1" src = "exp6_10/Images/draw_solvent.gif">
+            <img id = "MSsample" src = "exp6_10/Images/empty.png">
+            <img id = "MSsample2" src = "exp6_10/Images/fullbeaker.gif">
             <div id = "MSsampletxt"> Sample Bottle</div>
-            <img id = "MSspectro" src = "exp6_10/images/1.png">
+            <img id = "MSspectro" src = "exp6_10/Images/spectro.png">
             <div id = "MSspectrotxt"> Mass Spectrometer</div>
-            <img id = "MSevaluate" src = "exp6_10/shapes/2.png" >
-            <div id = "MSevlttxt"> Evaluate </div>
-            <img id = "MSblue1" src = "exp6_10/blue/blue12.gif">
-            <img id = "MSspoon1" src = "exp6_10/fillspoon.gif">
-            <img id = "MSspoon2" src = "exp6_10/emptyspoon.gif">
-            <img id = "MSfill" src = "exp6_10/shapes/21.png">
-            <img id = "MSsyringe1" src = "exp6_10/fillsirinj.gif">
-            <img id = "MSsyringe2" src = "exp6_10/emptysirinj.gif">
-            <img id = "MSgreen1" src = "exp6_10/green1.gif">
-            <img id = "MSpipe1" src = "exp6_10/shapes/pipe.png">
-            <img id = "MSround1" src = "exp6_10/shapes/76.png">
-            <img id = "MSround2" src = "exp6_10/shapes/76.png">
-            <img id = "MSround3" src = "exp6_10/shapes/76.png">
-            <img id = "MSirplate" src = "exp6_10/shapes/70.png">
-            <img id = "MSspring" src = "exp6_10/shapes/77.png">
-            <img id = "MSnorth" src = "exp6_10/shapes/71.png">
-            <img id = "MSsouth" src = "exp6_10/shapes/71.png">
-            <img id = "MSgreennew" src = "exp6_10/binaryData/0.png">
-            <img id = "MSgreennew1" src = "exp6_10/greennew.gif">
-            <div id = "MSN"> N </div>
-            <div id = "MSS" > S </div>
-            <img id = "MSylwdrop1" src = "exp6_10/shapes/147.png">
-            <img id = "MSylwdrop2" src = "exp6_10/shapes/147.png">
-            <img id = "MSylwdrop3" src = "exp6_10/shapes/147.png">
-            <img id = "MSylwdrop4" src = "exp6_10/shapes/147.png">
-            <img id = "MSylwdrop5" src = "exp6_10/shapes/147.png">
-            <img id = "MStemp1" src = "exp6_10/shapes/136.png">
-            <img id = "MSion1" src = "exp6_10/shapes/141.png">
-            <img id = "MSion2" src = "exp6_10/shapes/141.png">
-            <img id = "MSion3" src = "exp6_10/shapes/141.png">
-            <img id = "MSion4" src = "exp6_10/shapes/141.png">
-            <img id = "MSion5" src = "exp6_10/shapes/141.png">
-            <img id = "MSion6" src = "exp6_10/shapes/141.png">
-            <img id = "MSion7" src = "exp6_10/shapes/141.png">
-            <img id = "MSion8" src = "exp6_10/shapes/141.png">
-            <img id = "MStemp2" src = "exp6_10/last.gif">
-            <img id = "MShrblue" src = "exp6_10/bluesyringe.png">
-            <img id = "MShrgreen" src = "exp6_10/greensyringe.png">
-            <img id = "MSchangebeaker" src = "exp6_10/changebeaker.png">
-            <img id = "MSrainbow" src = "exp6_10/shapes/78.png">
-            <img id = "MSbox1" src = "exp6_10/shapes/153.png">
-            <img id = "MSbox" src = "exp6_10/shapes/118.png">
-            <img id = "MSarrow" src = "exp6_10/shapes/120.png">
-            <img id = "MSarrow1" src = "exp6_10/shapes/120.png">
-            <img id = "MSarrow2" src = "exp6_10/shapes/123.png">
-            <img id = "MSinnerinstr" src = "exp6_10/shapes/110.png">
+            <img id = "MSevaluate" src = "exp6_10/Images/evaluate.png" 
+                onclick="MSurlChange()" >
+            <div id = "MSevlttxt" onclick="MSurlChange()"> Evaluate </div>
+            <img id = "MSspoon1" src = "exp6_10/Images/fillspoon.gif">
+            <img id = "MSspoon2" src = "exp6_10/Images/emptyspoon.gif">
+            <img id = "MSfill" src = "exp6_10/Images/fill.png">
+            <img id = "MSsyringe1" src = "exp6_10/Images/fillsirinj.gif">
+            <img id = "MSsyringe2" src = "exp6_10/Images/emptysirinj.gif">
+            <img id = "MSgreen1" src = "exp6_10/Images/draw_mixture.gif">
+            <img id = "MSgreennew" src = "exp6_10/Images/initial_frame.png">
+            <img id = "MSgreennew1" src = "exp6_10/Images/greennew.gif">
+            <img id = "MSylwdrop1" src = "exp6_10/Images/ylwdrop.png">
+            <img id = "MSylwdrop2" src = "exp6_10/Images/ylwdrop.png">
+            <img id = "MSylwdrop3" src = "exp6_10/Images/ylwdrop.png">
+            <img id = "MSylwdrop4" src = "exp6_10/Images/ylwdrop.png">
+            <img id = "MSylwdrop5" src = "exp6_10/Images/ylwdrop.png">
+            <img id = "MStemp1" src = "exp6_10/Images/temp1.png">
+            <img id = "MSion1" src = "exp6_10/Images/ion.png">
+            <img id = "MSion2" src = "exp6_10/Images/ion.png">
+            <img id = "MSion3" src = "exp6_10/Images/ion.png">
+            <img id = "MSion4" src = "exp6_10/Images/ion.png">
+            <img id = "MSion5" src = "exp6_10/Images/ion.png">
+            <img id = "MSion6" src = "exp6_10/Images/ion.png">
+            <img id = "MSion7" src = "exp6_10/Images/ion.png">
+            <img id = "MSion8" src = "exp6_10/Images/ion.png">
+            <img id = "MStemp2" src = "exp6_10/Images/last.gif">
+            <img id = "MShrblue" src = "exp6_10/Images/bluesyringe.png">
+            <img id = "MShrgreen" src = "exp6_10/Images/greensyringe.png">
+            <img id = "MSchangebeaker" src = "exp6_10/Images/changebeaker.png">
+            <img id = "MSrainbow" src = "exp6_10/Images/empty_chamber.png">
+            <img id = "MSline" src = "exp6_10/Images/line.png">
+            <img id = "MSbox1" src = "exp6_10/Images/box1.png">
+            <img id = "MSbox" src = "exp6_10/Images/box.png">
+            <img id = "MSarrow" src = "exp6_10/Images/arrow.png">
+            <img id = "MSarrow1" src = "exp6_10/Images/arrow.png">
+            <img id = "MSarrow2" src = "exp6_10/Images/arrow2.png">
+            <img id = "MSchamber" src = "exp6_10/Images/chamber.png">
+            <img id = "MSinnerinstr" src = "exp6_10/Images/innerinstr.png">
             <div id = "MSinnerinstrtxt">The sample is introduced into the vaporisation chamber which is instantly vapourised due to high vacuum and heat. </div>
-            <img id = "MSgobackbtn" src = "exp6_10/shapes/2.png" onclick="window.location.reload()" >
-            <div id = "MSgobacktxt"> go back to <br> perform <br> another <br> experiment </div> 
+            <img id = "MSgobackbtn" src = "exp6_10/Images/gobackbtn.png" onclick="window.location.reload()" >
+            <div id = "MSgobacktxt" onclick="window.location.reload()" > go back to <br> perform <br> another <br> experiment </div> 
             </div>
             <!-- All tags/divs ends here for Mass Spec experiment -->
 
@@ -145,7 +144,7 @@
 
 	    <div id = "NMRcontainer">
 		<img id="NMRborder" src="exp5/images/border.png">
-        <img id="NMRsample-button" src="exp5/images/sample_button.png" onclick="NMRshowsample()" >
+        <img id="NMRsample-button" src="exp5/images/fillsample.png" onmousemove="changeIcon()" >
 		<img id="NMRload-sample" src="exp5/images/load_sample.png" >
         <img id="NMRstart" src="exp5/images/start.png">
         <img id="NMRplot" src="exp5/images/plot.png">
@@ -156,13 +155,16 @@
         <img id="NMRconstant-molecules" src="exp5/images/constant_molecules.png">
 		<img id="NMRs-pole" src="exp5/images/s_pole.png">
         <img id="NMRn-pole" src="exp5/images/n_pole.png">
-		<img id="NMRring" src="exp5/images/ring.gif">
-		<img id="NMRmolecules" src="exp5/images/molecules.gif">
-		<img id="NMRevaluate"  src="exp5/images/evaluate.png"  >
-        <img id="NMRgobackbtn" src = "exp6/shapes/21.png" onclick="window.location.reload()" >
-        <div id="NMRgobacktxt"> go back to <br> perform <br> another <br> experiment </div> 
-        <img id="NMRbenzene-graph" src="exp5/images/benzene_graph.gif">
-		<img id="NMRgraph" src="exp5/images/graph.png">
+		<img id="NMRring" src="exp5/images/ring1.gif">
+		<img id="NMRmolecules" src="exp5/images/molecules1.gif">
+		<img id="NMRevaluate"  src="exp5/images/evaluate.png" onclick="NMRurlchange()">
+        <img id="NMRgobackbtn" src = "exp5/images/gobackbtn.png" onclick="window.location.reload()" >
+        <div id="NMRgobacktxt" onclick="window.location.reload()" > go back to <br> perform <br> another <br> experiment </div> 
+        <img id="NMRbenzene-graph" src="Images/graph1.gif">
+        <img id="NMRbenzene-graph2" src="Images/graph2.gif">
+        <img id="NMRgraph" src="exp5/images/graph.png">
+        <img id="NMRfinalGraph" src="Images/final_graph.png">
+		<img id="NMRfinalGraph2" src="Images/final_graph2.png">
 		<img id="NMRvertical-arrows" src="exp5/images/vertical_arrows.png">
         <img id="NMRbelow-arrow" src="exp5/images/below_arrow.png">
         <img id="NMRup-arrow" src="exp5/images/up_arrow.png">
