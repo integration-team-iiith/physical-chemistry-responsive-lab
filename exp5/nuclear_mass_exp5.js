@@ -6,13 +6,13 @@ var modal = {
 
   // onload function: call init method on window onload.
     window.onload=function() {
-      view.init();
-      view.activateEvents();
+      view.initialInstructions();
+      view.activateElements();
     }
 
 var view ={
 
-  loadsamplecount: 0;
+  loadsamplecount: 0,
 
 
   //showElements: calls this function to show the elements by its id.
