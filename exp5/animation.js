@@ -13,11 +13,12 @@
 
         $("#benzene").click(function() {
             $("#injector").hide();
+            $("#red-injector").show();
             $("#green-injector").hide();
             $("#blue-injector").hide();
-            $("#red-injector").delay(10).fadeIn();
-            $("#acetaldehyde").off("click");
-            $("#ethyl").off("click");
+            $("#load-sample").off("click");
+            $("#plot").off("click");
+            $("#evaluate").off("click");
 
             $("#load-sample").click(function() {
                 if(event==1){
@@ -26,6 +27,8 @@
                     $("#vertical-arrows").delay(10).fadeIn();
                     $("#below-arrow").delay(10).fadeIn();
                     $("#red-injector").animate({top: '245px'});
+                    $("#acetaldehyde").off("click");
+                    $("#ethyl").off("click");
                 }
             });
 
@@ -48,12 +51,13 @@
 
         $("#acetaldehyde").click(function() {
             $("#injector").hide();
+            $("#blue-injector").show();
             $("#green-injector").hide();
             $("#red-injector").hide();
-            $("#blue-injector").delay(1).fadeIn();
-            $("#ethyl").off("click");
-            $("#benzene").off("click");
-
+            $("#load-sample").off("click");
+            $("#plot").off("click");
+            $("#evaluate").off("click");
+        
             $("#load-sample").click(function() {
                 if (event==1) {
                     event++; 
@@ -61,6 +65,8 @@
                     $("#vertical-arrows").delay(10).fadeIn();
                     $("#below-arrow").delay(10).fadeIn();
                     $("#blue-injector").animate({top: '245px'});
+                    $("#ethyl").off("click");
+                    $("#benzene").off("click");
                 }
             });
 
@@ -83,11 +89,12 @@
 
         $("#ethyl").click(function() {
             $("#injector").hide();
+            $("#green-injector").show();
             $("#blue-injector").hide();
             $("#red-injector").hide();
-            $("#green-injector").delay(10).fadeIn();
-            $("#benzene").off("click");
-            $("#acetaldehyde").off("click");
+            $("#load-sample").off("click");
+            $("#plot").off("click");
+            $("#evaluate").off("click");
             
             $("#load-sample").click(function() {
                 if (event==1) {
@@ -96,6 +103,8 @@
                     $("#vertical-arrows").delay(10).fadeIn();
                     $("#below-arrow").delay(10).fadeIn();
                     $("#green-injector").animate({top: '245px'});
+                    $("#benzene").off("click");
+                    $("#acetaldehyde").off("click");
                 }
             });
         
