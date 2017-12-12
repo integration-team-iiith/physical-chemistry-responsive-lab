@@ -1,350 +1,498 @@
-#container{
-	width: 1000px;
-	height: 660px;
-	position: absolute;
-	margin-left: 12%;
-	margin-top: 0.5%;
-	border: solid 1px lightgrey;
+#load{
+    position: absolute;
+    top: 5%;
+    left: 7%;
+    height: 9.2%;
+    width: 11.25%;
+    z-index: 1;
 }
 
-#load{
-	position: absolute;
-	margin-top: 3%;
-	margin-left: 1%;
-	cursor: pointer;
+
+#loadtxt{
+    position: absolute;
+    top: 5.3%;
+    left: 10%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 140%;
+    font-weight: bold;
+    z-index: 1;
 }
 
 #ionisation{
-	position: absolute;
-	margin-top: 8%;
-	margin-left: 1%; 
-	cursor: pointer;
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    height: 9.2%;
+    width: 11.25%;
+    z-index: 1;
 }
+
+#ionisationtxt{
+    position: absolute;
+    top: 17.6%;
+    left: 9%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 140%;
+    font-weight: bold;
+    z-index: 1;
+}
+
 
 #acceleration{
-	position: absolute;
-	margin-top: 13%;
-	margin-left: 1%;	
-	cursor: pointer;
+    position: absolute;
+    top: 25%;
+    left: 7%;
+    height: 9.2%;
+    width: 11.25%;
+    z-index: 1;
 }
 
+
+#accelerationtxt{
+    position: absolute;
+    top: 27.5%;
+    left: 8.3%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 140%;
+    font-weight: bold;
+    z-index: 1;
+}
+
+
 #deflection{
-	position: absolute;
-	margin-top: 18%;
-	margin-left: 1%;
-	cursor: pointer;
+    position: absolute;
+    top: 35%;
+    left: 7%;
+    height: 9.2%;
+    width: 11.25%;
+    z-index: 1;
+}
+
+
+#deflectiontxt{
+    position: absolute;
+    top: 37.5%;
+    left: 9%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 140%;
+    font-weight: bold;
+    z-index: 1;
 }
 
 #evaluation{
-	position: absolute;
-	margin-top: 23%;
-	margin-left: 1%;	
-	cursor: pointer;
+    position: absolute;
+    top: 45%;
+    left: 7%;
+    height: 9.2%;
+    width: 11.25%;
+    z-index: 1;
 }
 
-#syringe{
-	z-index: 3;
-	position: absolute;
-	margin-top: 45%;
-	margin-left: 1%;
-	/*display: none;*/
+
+#evaluationtxt{
+    position: absolute;
+    top: 47.5%;
+    left: 9%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 140%;
+    font-weight: bold;
+    z-index: 1;
+}
+
+#innerinstr{
+    position: absolute;
+    top: 95%;
+    width: 70%;
+    left: 8%;
+    display: none;
+    z-index: 1;
+}
+
+#innerinstrtxt{
+    position: absolute;
+    top: 96%;
+    left: 9%;
+    display: none;
+    z-index: 1;
+}
+
+
+
+#temp2{
+    position: absolute;
+    top: 57%;
+    left: 40%;
+    height: 35%;
+    display: none;
+}
+
+#rainbow{
+    display: none;
 }
 
 #box{
-	position: absolute;
-	width: 75%;
-	height: 50%;
-	margin-top: 0.2%;
-	margin-left: 15.8%;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    display: none;
 }
 
-#ions{
-	z-index: 2;
-	position: absolute;
-	width: 55%;
-	margin-top: 40%;
-	margin-left: 40%;
-	display: none;
+#box1{
+    position: absolute;
+    top: 18%;
+    left: 36%;
+    width: 10%;
+    display: none;
 }
-
-#tube{
-	z-index: 2;
-	position: absolute;
-	margin-top: 34%;
-	margin-left: 39%;
-	width: 60%;
-	height: 35%;
-	
-}
-
-/*#molecule{
-	z-index: 3;
-	position: absolute;
-	margin-top: 35%;
-	margin-left: 57%;
-	display: none;
-	-webkit-transition: 1s ease-in-out;
-    -webkit-animation-direction: alternate;
-    animation: molecule 5s ;
-    animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease;; /* Safari 4.0 - 8.0 */
-/*	animation-direction: alternate;
-   
-}
-
-@keyframes molecule {
-    from {left: 0px;} to {left: 10px;}
-    from {top: 0px;} to {top :40px ;}
-}*/
 
 #arrow{
-	position: absolute;
-	margin-top: 0.3%;
-	margin-left: 28%;
-	display: none;
-
+    position: absolute;
+    top: 8%;
+    left: 25%;
+    height: 7%;
+    display:none
 }
 
-#arrow-2{
-	position: absolute;
-	margin-top: 1.5%;
-	margin-left: 41.5%;
-	display: none;
-}
-
-
-#square-2{
-	position: absolute;
-	margin-top:8.5%;
-	margin-left: 38%;
-	width: 11%;
-	height: 21% ;
-	display: none;
-}
-
-#square{
-	position: absolute;
-	margin-top:5%;
-	margin-left: 18.3%;
-	width: 15%;
-	height: 24% ;
-	display: none;
-}
-
-#curve{
-	position: absolute;
-	margin-top: 15%;
-	margin-left: 17.5%;
-	width: 24%;
-	display: none;
-}
-
-#circle{
-	position: absolute;
-	margin-top: 27.6%;
-	margin-left: 16.7%;
-	width: 25.3%;
-	display: none;
-}
-
-#color-lines {
-	position: absolute;
-	margin-left: 35%;
-	margin-top: 26%;
-	width: 35%;
-	display: none;
-}
-
-#molecule{
-	z-index: 4;
-	position: absolute;
-	margin-left: 57.2%;
-	margin-top: 34.3%;
-	animation: molecule 8s ;
-	display: none;
-    animation-iteration-count: 1;
-    animation-direction: reverse-alternate;
-}
-@keyframes molecule{
-	from{left:0px;} to {left: 90px;}
-	from{top: 0px;} to {top:30px;}
-}
-
-#moving-molecules-1{
-	z-index: 4;
-	position: absolute;
-	margin-top: 30%;
-	margin-left: 68%;
-	width: 4%;
-	display: none;
-	animation: moving-molecules-1 1.3s ;
-    animation-iteration-count: infinite;
-	animation-direction: alternate;
-}
-
-@keyframes moving-molecules-1 {
-    from {left: 0px;} to {left: 20px;}
+#arrow1{
+    position: absolute;
+    top: 9%;
+    left: 39%;
+    height: 8%;
+    display: none;
 }
 
 
-#moving-molecules-2{
-	z-index: 4;
-	position: absolute;
-	margin-top: 31%;
-	margin-left: 63%;
-	width: 4%;
-	display: none;
-	animation: moving-molecules-2 1.4s ;
-    animation-iteration-count: infinite;
-	animation-direction: alternate;
-}
-@keyframes moving-molecules-2 {
-    from {left: 0px;} to {left: 18px;}
-}
 
-#moving-molecules-3{
-	z-index: 4;
-	position: absolute;
-	margin-top: 33%;
-	margin-left: 60%;
-	width: 4%;
-   	display: none;
-    animation: moving-molecules-3 1.4s ;
-    animation-iteration-count: infinite;
-	animation-direction: alternate;
-}
-@keyframes moving-molecules-3 {
-    from {left: 0px;} to {left: 20px;}
-}
-
-#moving-molecules-4{
-	z-index: 4;
-	position: absolute;
-	margin-top: 33%;
-	margin-left: 65.5%;
-	width: 4%;
-	display: none;
-	animation: moving-molecules-4 1.3s ;
-    animation-iteration-count: infinite;
-	animation-direction: alternate;
-}
-@keyframes moving-molecules-4 {
-    from {left: 0px;} to {left: 18px;}
-}
-
-#moving-molecules-5{
-	z-index: 4;
-	position: absolute;
-	margin-top: 33.5%;
-	margin-left: 63%;
-	width: 4%;
-	display: none;
-	animation: moving-molecules-5 1.3s ;
-    animation-iteration-count: infinite;
-	animation-direction: alternate;
-}
-@keyframes moving-molecules-5 {
-    from {left: 0px;} to {left: 20px;}
-}
-
-#moving-molecules-6{
-	z-index: 4;
-	position: absolute;
-	margin-top: 35.8%;
-	margin-left: 60.2%;
-	width: 4%;
-	display: none;
-	animation: moving-molecules-6 1.4s ;
-    animation-iteration-count: infinite;
-	animation-direction: alternate;
-}
-@keyframes moving-molecules-6 {
-    from {left: 0px;} to {left: 18px;}
+#ylwdrop{
+    position: absolute;
+    left: 60.3%;
+    top: 72%;
+    display: none;
 }
 
 
-#moving-molecules-7{
-	z-index: 4;
-	position: absolute;
-	margin-top: 32.5%;
-	margin-left: 68%;
-	width: 4%;
-	display: none;
-	animation: moving-molecules-7 1.3s ;
-    animation-iteration-count: infinite;
-	animation-direction: alternate;
-}
-@keyframes moving-molecules-7 {
-    from {left: 0px;} to {left: 20px;}
+#ylwdrop1{
+    position: absolute;
+    left: 61%;
+    top: 72%;
+    z-index: 2;
+    display: none;
 }
 
-#moving-molecules-8{
-	z-index: 4;
-	position: absolute;
-	margin-top: 34.5%;
-	margin-left: 67.5%;
-	width: 4%;
-	display: none;
-	animation: moving-molecules-8 1.4s ;
-    animation-iteration-count: infinite;
-	animation-direction: alternate;
-}
-@keyframes moving-molecules-8 {
-    from {left: 0px;} to {left: 18px;}
+#ylwdrop2{
+    position: absolute;
+    left: 63%;
+    top: 73%;
+    z-index: 2;
+    display: none;
 }
 
-#moving-molecules-9{
-	z-index: 4;
-	position: absolute;
-	margin-top: 35.5%;
-	margin-left: 64.5%;
-	width: 4%;
-	display: none;
-	animation: moving-molecules-9 1.3s ;
-    animation-iteration-count: infinite;
-	animation-direction: alternate;
-}
-@keyframes moving-molecules-9 {
-    from {left: 0px;} to {left: 20px;}
+#ylwdrop3{
+    position: absolute;
+    left: 64%;
+    top: 75%;
+    z-index: 2;
+    display: none;
 }
 
-#electrode{
-	position: absolute;
-	margin-top: 27%;
-	margin-left: 30%;
-	width: 48%;
-	height: 40%;
-	display: none;
-
+#ylwdrop4{
+    position: absolute;
+    left: 61%;
+    top: 75%;
+    z-index: 2;
+    display: none;
 }
 
-#demo{
-	position: absolute;
-	width: 800px;
-	margin-left: 16%;
-	margin-top: 47%;
-	border : solid 1px black;
-	display: none;
-	/*border : 2px solid grey;*/
+#ylwdrop5{
+    position: absolute;
+    left: 62%;
+    top: 78%;
+    z-index: 2;
+    display: none;
 }
 
-#step1, #step2, #step3, #step4 {
-	position: absolute;
-	margin-left: 13%;
-	margin-top:47%;
-	display: none;
+#ion1{
+    position: absolute;
+    top: 66%;
+    left: 28%;
+    z-index: 2;
+    height: 1.5%;
+    display: none;
 }
 
-#northpole {
-	position: absolute;
-	margin-left: 43%;
-	margin-top: 28%;
-	display: none;
+
+#ion2{
+    position: absolute;
+    top: 67%;
+    left: 25%;
+    z-index: 2;
+    height: 1.5%;
+    display: none;
 }
 
-#southpole {
-	position: absolute;
-	margin-left: 43%;
-	margin-top: 48%;
-	display: none;
+#ion3{
+    position: absolute;
+    top: 68%;
+    left: 27.5%;
+    z-index: 2;
+    height: 1.5%;
+    display: none;
 }
+
+#ion4{
+    position: absolute;
+    top: 70%;
+    left: 27.5%;
+    z-index: 2;
+    height: 1.5%;
+    display: none;
+}
+
+#ion5{
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    z-index: 2;
+    height: 1.5%;
+    display: none;
+}
+
+#ion6{
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    z-index: 2;
+    height: 1.5%;
+    display: none;
+}
+
+#ion7{
+    position: absolute;
+    top: 73%;
+    left: 27%;
+    z-index: 2;
+    height: 1.5%;
+    display: none;
+}
+
+#ion8{
+    position: absolute;
+    top: 74%;
+    left: 25%;
+    z-index: 2;
+    height: 1.5%;
+    display: none;
+}
+
+#temp1{
+    position: absolute;
+    top: 60%;
+    left: 20%;
+    display: none;
+}
+
+
+#arrow2{
+    position: absolute;
+    top: 35%;
+    left: 19%;
+    height: 33%;
+    width: 17%;
+    display: none;
+}
+
+#pipe1{
+    position: absolute;
+    left: 7%;
+    top: 2%;
+    height: 95%;
+    width: 80%;
+    z-index: -1;
+}
+
+
+#round1{
+    position: absolute;
+    top: 24%;
+    left: 37.5%;
+    height: 10%;
+    z-index: 1;
+}
+
+
+#round2{
+    position: absolute;
+    top: 24.5%;
+    left: 40.2%;
+    height: 10%;
+    z-index: 1;
+}
+
+
+#round3{
+    position: absolute;
+    top: 25.5%;
+    left: 43.5%;
+    height: 10%;
+    z-index: 1;
+}
+
+#irplate{
+    position: absolute;
+    top: 24.5%;
+    left: 28%;
+    width: 4%;
+    z-index: 1;
+}
+
+#irplate1{
+    position: absolute;
+    top: 76%;
+    left: 60%;
+    z-index: 1;
+}
+
+#spring{
+    position: absolute;
+    top: 22%;
+    left: 28.5%;
+    width: 5%;
+    z-index: 1;
+}
+
+#spring1{
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    z-index: 1;
+}
+
+#north{
+    position: absolute;
+    top: 15%;
+    left: 48%;
+    height: 10%;
+    z-index: 1;
+}
+
+#south{
+    position: absolute;
+    top: 40%;
+    left: 48%;
+    height: 10%;
+    z-index: 1;
+}
+
+
+#syringe{
+    position: absolute;
+    top: 72%;
+    left: 10%;
+    width: 23%;
+    z-index: 2;
+}
+
+
+#greennew{
+    position: absolute;
+    top: 60%;
+    left: 47%;
+    width: 35%;
+    z-index: 1;
+}
+
+
+#S{
+    position: absolute;
+    top: 45%;
+    left: 49.5%;
+    z-index: 1;
+    -webkit-text-fill-color: grey;
+}
+
+#N{
+    position: absolute;
+    top: 20%;
+    left: 49.5%;
+    z-index: 1;
+    -webkit-text-fill-color: grey;
+}
+
+#negdrop1{
+    position: absolute;
+    top: 55%;
+    left: 23%;
+    display: none;
+}
+
+
+#negdrop2{
+    position: absolute;
+    top: 55%;
+    left: 25%;
+    display: none;
+}
+
+
+#negdrop3{
+    position: absolute;
+    top: 55%;
+    left: 27%;
+    display: none;
+}
+
+
+#negdrop4{
+    position: absolute;
+    top: 57%;
+    left: 22%;
+    display: none;
+}
+
+
+#negdrop5{
+    position: absolute;
+    top: 57%;
+    left: 24%;
+    display: none;
+}
+
+#negdrop6{
+    position: absolute;
+    top: 58%;
+    left: 26%;
+    display: none;
+}
+
+#negdrop7{
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    display: none;
+}
+
+
+
+#negdrop8{
+    position: absolute;
+    top: 60%;
+    left: 23%;
+    display: none;
+}
+
+#emptypipe{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    height: 39%;
+    width: 30%;
+    display: none;
+}
+
+#lines{
+    position: absolute;
+    top: 49.5%;
+    left: 29.5%;
+    opacity: 0;
+}
+
