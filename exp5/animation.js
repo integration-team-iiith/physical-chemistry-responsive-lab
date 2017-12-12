@@ -1,10 +1,14 @@
+    var event=0;
 
     $(document).ready(function(){
         $("#sample-button").click(function(){
-            $("#chem-border").delay(0).fadeIn();
-            $("#benzene").delay(10).fadeIn();
-            $("#acetaldehyde").delay(10).fadeIn(); 
-            $("#ethyl").delay(10).fadeIn();                
+            if(event==0){
+                event++;
+                $("#chem-border").delay(0).fadeIn();
+                $("#benzene").delay(10).fadeIn();
+                $("#acetaldehyde").delay(10).fadeIn(); 
+                $("#ethyl").delay(10).fadeIn();                
+            }
         });
 
         $("#benzene").click(function() {
@@ -12,21 +16,32 @@
             $("#green-injector").hide();
             $("#blue-injector").hide();
             $("#red-injector").delay(10).fadeIn();
+            $("#acetaldehyde").off("click");
+            $("#ethyl").off("click");
 
             $("#load-sample").click(function() {
-                $("#ring").delay(10).fadeIn();
-                $("#vertical-arrows").delay(10).fadeIn();
-                $("#below-arrow").delay(10).fadeIn();
-                $("#red-injector").animate({top: '245px'});
+                if(event==1){
+                    event++;
+                    $("#ring").delay(10).fadeIn();
+                    $("#vertical-arrows").delay(10).fadeIn();
+                    $("#below-arrow").delay(10).fadeIn();
+                    $("#red-injector").animate({top: '245px'});
+                }
             });
 
             $("#plot").click(function() {
-                $("#graph").hide();
-                $("#benzene-graph").delay(1).fadeIn();
+                if(event==2){
+                    event++; 
+                    $("#graph").hide();
+                    $("#benzene-graph").delay(1).fadeIn();
+                }
             });
 
             $("#evaluate").click(function(){
-                window.open("graph/plot_benzene.html");
+                if (event==3) {
+                    event++; 
+                    window.open("graph/plot_benzene.html");
+                }
             });
 
        });
@@ -36,21 +51,32 @@
             $("#green-injector").hide();
             $("#red-injector").hide();
             $("#blue-injector").delay(1).fadeIn();
+            $("#ethyl").off("click");
+            $("#benzene").off("click");
 
             $("#load-sample").click(function() {
-                $("#ring").delay(10).fadeIn();
-                $("#vertical-arrows").delay(10).fadeIn();
-                $("#below-arrow").delay(10).fadeIn();
-                $("#blue-injector").animate({top: '245px'});
+                if (event==1) {
+                    event++; 
+                    $("#ring").delay(10).fadeIn();
+                    $("#vertical-arrows").delay(10).fadeIn();
+                    $("#below-arrow").delay(10).fadeIn();
+                    $("#blue-injector").animate({top: '245px'});
+                }
             });
 
             $("#plot").click(function() {
-                $("#graph").hide();
-                $("#acetaldehyde-graph").delay(1).fadeIn();
+                if (event==2) {
+                    event++; 
+                    $("#graph").hide();
+                    $("#acetaldehyde-graph").delay(1).fadeIn();
+                }
             });
 
             $("#evaluate").click(function(){
-                window.open("graph/plot_acetaldehyde.html");
+                if (event==3) {
+                    event++; 
+                    window.open("graph/plot_acetaldehyde.html");
+                }
             });
         
         });
@@ -60,22 +86,33 @@
             $("#blue-injector").hide();
             $("#red-injector").hide();
             $("#green-injector").delay(10).fadeIn();
-
+            $("#benzene").off("click");
+            $("#acetaldehyde").off("click");
+            
             $("#load-sample").click(function() {
-                $("#ring").delay(10).fadeIn();
-                $("#vertical-arrows").delay(10).fadeIn();
-                $("#below-arrow").delay(10).fadeIn();
-                $("#green-injector").animate({top: '245px'});
+                if (event==1) {
+                    event++; 
+                    $("#ring").delay(10).fadeIn();
+                    $("#vertical-arrows").delay(10).fadeIn();
+                    $("#below-arrow").delay(10).fadeIn();
+                    $("#green-injector").animate({top: '245px'});
+                }
             });
         
 
             $("#plot").click(function() {
-                $("#graph").hide();
-                $("#ethyl-graph").delay(1).fadeIn();
+                if(event==2) {
+                    event++; 
+                    $("#graph").hide();
+                    $("#ethyl-graph").delay(1).fadeIn();
+                }
             });
 
             $("#evaluate").click(function(){
-                window.open("graph/plot_ethylacetate.html");
+                if(event==3) {
+                    event++; 
+                    window.open("graph/plot_ethylacetate.html");
+                }
             });
 
         });
