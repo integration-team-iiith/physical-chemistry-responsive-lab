@@ -114,7 +114,7 @@ function helper2(){
 
 /* when someone clicks on solvent solution again:
 1. instr changes and it shows a syringe drawing solvent from solvent box
-2. calls helper3 function after 1 sec  
+2. calls helper3 function after 1 sec  */
 
 function draw2(){
     document.getElementById("instr").innerHTML = "Click on the sample solution to draw 1 ml of the sample prepared to load on to the mass spectrometer."
